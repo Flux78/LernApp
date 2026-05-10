@@ -1187,6 +1187,34 @@ function renderStats() {
             </div>
         `;
     });
+
+    // Kontakt & Datenschutz
+    html += `
+        <div style="margin-top: 40px; padding: 20px; border-top: 1px solid var(--border-color); font-size: 0.85em; text-align: left; line-height: 1.6; opacity: 0.9;">
+            <h3 style="margin-bottom: 10px;">📩 Kontakt & Datenschutz</h3>
+            
+            <p><strong>Kontakt</strong><br>
+            Bei Fragen oder Anregungen wende dich an:<br>
+            Alias: Flux78<br>
+            E-Mail: <a href="mailto:flux78.ferry499@silomails.com" style="color: var(--primary-color);">flux78.ferry499@silomails.com</a></p>
+
+            <p style="margin-top: 15px;"><strong>Datenschutzerklärung</strong><br>
+            Diese Anwendung ist eine rein clientseitige Web-App. Es werden <strong>keine personenbezogenen Daten auf einem Server gespeichert oder erhoben</strong>. 
+            Sämtliche Lernfortschritte, Statistiken und Einstellungen werden ausschließlich lokal in deinem Browser (Web Storage) gespeichert.</p>
+
+            <p><strong>Zweck der Datenspeicherung</strong><br>
+            Die lokale Speicherung dient einzig dem Zweck, deinen Lernstand (Punkte, Badges, beantwortete Fragen) über verschiedene Sitzungen hinweg zu erhalten und das adaptive Lernen ("Smart Mode") zu ermöglichen.</p>
+
+            <p><strong>Zustimmung</strong><br>
+            Durch die Nutzung dieser App erklärst du dich mit der lokalen Speicherung deiner Lernfortschritte einverstanden. Du kannst diese Daten jederzeit in den Einstellungen über "Fortschritt zurücksetzen" löschen.</p>
+            
+            <div style="margin-top: 20px; font-size: 0.8em; opacity: 0.7; text-align: center;">
+                <p>Inhalte basieren auf dem bayerischen Lehrplan (6R / 8G).<br>
+                Hintergrundbilder von <a href="https://unsplash.com" target="_blank" style="color: var(--primary-color);">Unsplash</a>.<br>
+                Keine Gewähr für die Richtigkeit der Inhalte.</p>
+            </div>
+        </div>
+    `;
     
     container.innerHTML = html;
 }
