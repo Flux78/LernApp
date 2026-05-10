@@ -1327,11 +1327,71 @@ function resetProgress() {
     }
 }
 
+// ======================= MOBILE OPTIMIERUNG =======================
+
+/**
+ * Injiziert responsive Styles und Meta-Tags für eine bessere Nutzung auf Smartphones.
+ */
+function injectMobileStyles() {
+    // Viewport Meta-Tag sicherstellen
+    if (!document.querySelector('meta[name="viewport"]')) {
+        const meta = document.createElement('meta');
+        meta.name = "viewport";
+        meta.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no";
+        document.head.appendChild(meta);
+    }
+
+    const style = document.createElement('style');
+    style.textContent = `
+        @media (max-width: 600px) {
+            :root { --font-size-base: 14px; }
+            
+            .tense-card { padding: 15px !important; }
+            
+            /* Antwort-Buttons: Größer für Daumen, mehr Abstand */
+            .option-btn { 
+                padding: 16px 12px !important; 
+                font-size: 1rem !important;
+                min-height: 55px;
+                margin-bottom: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            #options-grid { 
+                grid-template-columns: 1fr !important; 
+                gap: 14px !important; /* Schutz vor Missklicks */
+            }
+            
+            #question-text { font-size: 1.2rem !important; line-height: 1.4 !important; }
+            
+            /* Fach-Umschalter horizontal scrollbar machen */
+            #subject-selector {
+                display: flex !important;
+                overflow-x: auto !important;
+                -webkit-overflow-scrolling: touch;
+                gap: 8px !important;
+                padding: 5px 0 10px 0 !important;
+                justify-content: flex-start !important;
+                scrollbar-width: none; /* Firefox */
+            }
+            #subject-selector::-webkit-scrollbar { display: none; } /* Chrome/Safari */
+            .subject-btn { flex: 0 0 auto !important; white-space: nowrap !important; font-size: 0.9rem !important; }
+            
+            .stat-card { padding: 12px !important; }
+            .feedback-area { padding: 15px !important; }
+        }
+    `;
+    document.head.appendChild(style);
+}
+
 // ======================= INIT =======================
 
 function init() {
     // Zuerst State laden (initialisiert auch die Fach-Daten)
     loadState();
+    injectMobileStyles();
     
     renderSubjectSelector();
     updateSubjectUI();
