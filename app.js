@@ -27,6 +27,7 @@ let state = {
     questionStats: {},
     subjectStats: {},
     sessionCount: 0,
+    unlockedIndices: [], // Speichert die Keys der zufällig freigeschalteten Fragen
     showSkipButton: true
 };
 
@@ -241,7 +242,8 @@ function switchSubject(subjectKey) {
         smartMode: true, confetti: true, darkMode: state.darkMode,
         currentMode: 'categories', currentCategory: null, difficultyFilter: null,
         showSkipButton: state.showSkipButton,
-        categories: {}, answers: [], questionStats: {}, subjectStats: {}
+        categories: {}, answers: [], questionStats: {}, subjectStats: {},
+        unlockedIndices: []
     };
     
     loadState();
@@ -275,6 +277,7 @@ function getMinecraftStatus() {
     let totalOtherAnswers = 0;
     let anySubjectReachedTen = false;
     let totalPossibleMinecraft = 0;
+    let totalPossibleOtherQuestions = 0;
 
     Object.entries(subjectRegistry).forEach(([key, subject]) => {
         if (!subject.data || subject.grade !== '6r') return;
@@ -292,20 +295,55 @@ function getMinecraftStatus() {
             }
         }
 
+        // Berechne die Gesamtanzahl der verfügbaren Fragen in diesem Fach
+        let subjectQuestionCount = 0;
+        Object.values(subject.data.questions).forEach(cat => subjectQuestionCount += cat.length);
+
         if (key === 'minecraft') {
-            Object.values(subject.data.questions).forEach(cat => totalPossibleMinecraft += cat.length);
+            totalPossibleMinecraft = subjectQuestionCount;
         } else {
+            totalPossibleOtherQuestions += subjectQuestionCount;
             totalOtherAnswers += sTotal;
             if (sTotal >= 10) anySubjectReachedTen = true;
         }
     });
 
-    const unlockedCount = Math.floor(totalOtherAnswers / 10);
+    // Dynamisches Verhältnis: Wie viele normale Fragen ergeben eine Minecraft-Frage?
+    const questionsPerUnlock = totalPossibleMinecraft > 0 ? (totalPossibleOtherQuestions / totalPossibleMinecraft) : 10;
+    let unlockedCount = Math.floor(totalOtherAnswers / questionsPerUnlock);
+    // Deckelung auf die maximal verfügbaren Minecraft-Fragen
+    unlockedCount = Math.min(unlockedCount, totalPossibleMinecraft);
+    
+    // NEU: Zufällige Zuordnung der freigeschalteten Fragen
+    if (currentSubject === 'minecraft') {
+        if (!state.unlockedIndices) state.unlockedIndices = [];
+        
+        // Wenn wir mehr Fragen verdient haben, als IDs gespeichert sind: neue würfeln
+        if (state.unlockedIndices.length < unlockedCount) {
+            let allPossibleKeys = [];
+            Object.entries(currentSubjectData.questions).forEach(([cat, list]) => {
+                list.forEach((_, idx) => allPossibleKeys.push(`${cat}:${idx}`));
+            });
+            
+            // Nur die nehmen, die noch NICHT in unlockedIndices sind
+            let lockedKeys = allPossibleKeys.filter(k => !state.unlockedIndices.includes(k));
+            
+            while (state.unlockedIndices.length < unlockedCount && lockedKeys.length > 0) {
+                const randIdx = Math.floor(Math.random() * lockedKeys.length);
+                const pickedKey = lockedKeys.splice(randIdx, 1)[0];
+                state.unlockedIndices.push(pickedKey);
+            }
+            // State speichern, damit die Auswahl permanent bleibt
+            saveState();
+        }
+    }
+
     return {
         unlocked: anySubjectReachedTen,
         unlockedCount: unlockedCount,
         totalPossible: totalPossibleMinecraft,
-        percent: totalPossibleMinecraft > 0 ? Math.min(100, Math.round((unlockedCount / totalPossibleMinecraft) * 100)) : 0
+        percent: totalPossibleMinecraft > 0 ? Math.min(100, Math.round((unlockedCount / totalPossibleMinecraft) * 100)) : 0,
+        questionsPerUnlock: questionsPerUnlock
     };
 }
 
@@ -467,6 +505,15 @@ function renderDashboard() {
     const subjectAbbr = subjectRegistry[currentSubject]?.abbr || '';
     grid.innerHTML = '';
 
+    // Berechnung der freigeschalteten Fragen pro Kategorie für Minecraft
+    let unlockedPerCategory = {};
+    if (currentSubject === 'minecraft' && state.unlockedIndices) {
+        state.unlockedIndices.forEach(id => {
+            const [cat] = id.split(':');
+            unlockedPerCategory[cat] = (unlockedPerCategory[cat] || 0) + 1;
+        });
+    }
+
     // Minecraft Fortschritt oben anzeigen
     if (currentSubject === 'minecraft') {
         const status = getMinecraftStatus();
@@ -479,7 +526,7 @@ function renderDashboard() {
                 <div class="progress-fill high" style="width: ${status.percent}%; background: #4e7d1d;"></div>
             </div>
             <div style="font-size: 0.85em; margin-top: 10px; opacity: 0.8;">
-                Du erhältst 1 neue Minecraft-Frage für je 10 beantwortete Fragen in den Schulfächern!<br>
+                Du erhältst 1 neue Minecraft-Frage für je ${Math.floor(status.questionsPerUnlock)} beantwortete Fragen in den Schulfächern!<br>
                 (Aktueller Bonus: +${status.unlockedCount} Fragen)
             </div>
         `;
@@ -522,13 +569,30 @@ function renderDashboard() {
             else { accuracyClass = 'low'; badgeClass = 'practice'; badgeText = 'Üben!'; }
         }
         
+        const unlockedInThisCat = unlockedPerCategory[key] || 0;
+        const isCategoryLocked = currentSubject === 'minecraft' && (unlockedInThisCat || 0) === 0;
+
         const card = document.createElement('div');
         card.className = 'tense-card';
+        if (isCategoryLocked) {
+            card.style.opacity = '0.6';
+            card.style.filter = 'grayscale(0.5)';
+            card.title = "Noch keine Fragen in dieser Kategorie freigeschaltet.";
+        }
         card.style.borderLeft = `4px solid ${category.color}`;
+
+        let unlockedDisplay = "";
+        if (currentSubject === 'minecraft') {
+            unlockedDisplay = `<div style="font-size: 0.85em; margin-bottom: 8px; font-weight: bold; color: ${isCategoryLocked ? 'var(--text-color)' : 'var(--success)'}">
+                ${isCategoryLocked ? '🔒 Noch gesperrt' : `🔓 Freigeschaltet: ${unlockedInThisCat} / ${currentSubjectData.questions[key].length}`}
+            </div>`;
+        }
+
         card.innerHTML = `
             <div class="vocab-icon">${category.icon}</div>
             <h3>[${subjectAbbr}] ${category.name}</h3>
             <div class="tense-desc">${category.desc}</div>
+            ${unlockedDisplay}
             <div class="progress-section">
                 <div class="progress-header">
                     <span>Genauigkeit</span>
@@ -544,6 +608,13 @@ function renderDashboard() {
             </div>
         `;
         card.onclick = () => startCategorySession(key);
+        card.onclick = () => {
+            if (isCategoryLocked) {
+                alert("Lerne erst in anderen Fächern weiter, um Fragen in dieser Minecraft-Kategorie freizuschalten!");
+                return;
+            }
+            startCategorySession(key);
+        };
         grid.appendChild(card);
     });
     
@@ -619,16 +690,11 @@ function nextQuestion() {
     // MINECRAFT SPEZIAL: Pool auf freigeschaltete Fragen begrenzen
     if (currentSubject === 'minecraft') {
         const status = getMinecraftStatus();
-        // Wir erstellen eine stabile Liste aller MC Fragen, um zu bestimmen welche freigeschaltet sind
-        let allMC = [];
-        Object.entries(currentSubjectData.questions).forEach(([catKey, questions]) => {
-            questions.forEach((q, idx) => allMC.push({catKey, idx}));
-        });
         
-        // Die ersten 'unlockedCount' Fragen gelten als freigeschaltet
-        const unlockedIDs = allMC.slice(0, status.unlockedCount).map(item => `${item.catKey}-${item.idx}`);
+        // Nutze die im State gespeicherten zufälligen IDs
+        const unlockedIDs = state.unlockedIndices || [];
         
-        pool = pool.filter(q => unlockedIDs.includes(`${q.category}-${q.index}`));
+        pool = pool.filter(q => unlockedIDs.includes(`${q.category}:${q.index}`));
         
         if (pool.length === 0) {
             alert("Du hast noch keine Fragen für Minecraft freigeschaltet. Lerne erst in den anderen Fächern weiter!");
@@ -659,11 +725,12 @@ function nextQuestion() {
                 weightedPool.push(q);
             }
         });
-        questionObj = weightedPool[Math.floor(Math.random() * weightedPool.length)];
+        questionObj = weightedPool.length > 0 ? weightedPool[Math.floor(Math.random() * weightedPool.length)] : null;
     } else {
         // Normaler Zufall
         questionObj = pool[Math.floor(Math.random() * pool.length)];
     }
+
 
     if (!questionObj) {
         console.error('Keine Frage gefunden!');
