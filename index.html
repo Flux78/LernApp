@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LernApp - 6. Klasse Realschule Bayern</title>
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Theme Script - vor dem Rendern ausführen -->
+    <script>
+        (function() {
+            // Zentraler DarkMode Check
+            const darkMode = localStorage.getItem('lernapp_darkMode') === 'true';
+            
+            if (darkMode) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+    
+    <style>
+        :root {
+            --bg-color: #f5f5f5;
+            --text-color: #333;
+            --card-bg: #fff;
+            --primary-color: #4CAF50;
+            --secondary-color: #2196F3;
+            --border-color: #ddd;
+            --success: #10b981;
+            --success-rgb: 16, 185, 129; /* RGB-Werte für rgba() */
+            --warning: #f59e0b;
+            --warning-rgb: 245, 158, 11;
+            --error: #ef4444;
+            --error-rgb: 239, 68, 68;
+            --subject-bg: none;
+            /* Neue Variablen für Glossy-Effekt */
+            --glossy-highlight: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 100%);
+            --glossy-shadow-inset: inset 0 1px 0 rgba(255,255,255,0.2);
+            --button-base-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            --card-base-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            --border-radius-btn: 8px;
+            --border-radius-card: 12px;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #1a1a1a;
+            --text-color: #f0f0f0;
+            --card-bg: #2d2d2d;
+            --primary-color: #66bb6a;
+            --secondary-color: #42a5f5;
+            --border-color: #444;
+            --success-rgb: 52, 211, 153;
+            --warning-rgb: 251, 191, 36;
+            --error-rgb: 248, 113, 113;
+            --glossy-highlight: linear-gradient(to bottom, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
+            --glossy-shadow-inset: inset 0 1px 0 rgba(255,255,255,0.02);
+            --success: #34d399;
+            --warning: #fbbf24;
+            --error: #f87171;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: var(--subject-bg);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.14; /* Erhöht für bessere Erkennbarkeit (+10%) */
+            z-index: -1;
+            pointer-events: none;
+            transition: background-image 0.5s ease-in-out;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            font-size: 1.5em;
+        }
+        
+        #subject-selector {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .subject-btn {
+            padding: 8px 16px;
+            border: 2px solid var(--border-color);
+            border-radius: var(--border-radius-btn); /* Fancier: leicht abgerundet */
+            background: var(--card-bg);
+            background-image: var(--glossy-highlight); /* Fancier: Glossy-Effekt */
+            box-shadow: var(--button-base-shadow), var(--glossy-shadow-inset); /* Fancier: Tieferer Schatten */
+            color: var(--text-color);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+        .subject-btn:hover {
+            transform: translateY(-2px) scale(1.02); /* Fancier: Etwas stärkerer Hover-Effekt */
+            box-shadow: var(--button-base-shadow), var(--glossy-shadow-inset), 0 8px 16px rgba(0,0,0,0.2); /* Fancier: Tieferer Schatten auf Hover */
+        }
+        @keyframes pulse {
+            0% { transform: translateY(-2px) scale(1); }
+            50% { transform: translateY(-2px) scale(1.05); }
+            100% { transform: translateY(-2px) scale(1); }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes wobble {
+            0%, 100% { transform: rotate(0); }
+            25% { transform: rotate(-15deg); }
+            75% { transform: rotate(15deg); }
+        }
+
+        .wobble {
+            animation: wobble 0.3s ease-in-out infinite;
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.4s ease-out forwards;
+        }
+        
+        .subject-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        .theme-toggle {
+            background: none;
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            padding: 8px 16px;
+            cursor: pointer;
+            color: var(--text-color);
+            transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
+            font-size: 14px;
+            border-radius: var(--border-radius-btn); /* Fancier: leicht abgerundet */
+            box-shadow: var(--button-base-shadow), var(--glossy-shadow-inset); /* Fancier: Glossy-Effekt */
+        }
+        .theme-toggle:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .theme-toggle.active {
+            transform: rotate(90deg);
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .subject-points-legend {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .subject-point-item {
+            font-size: 0.75em;
+            background: var(--card-bg);
+            padding: 4px 10px;
+            border-radius: var(--border-radius-card); /* Fancier: abgerundet */
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .grade-info {
+            text-align: center;
+            padding: 10px;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            border-radius: var(--border-radius-card); /* Fancier: abgerundet */
+            box-shadow: var(--card-base-shadow); /* Fancier: Tieferer Schatten */
+            font-size: 14px;
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius-card); /* Fancier: abgerundet */
+            background-image: var(--glossy-highlight); /* Fancier: Glossy-Effekt */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-color);
+            opacity: 0.8;
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .nav-tab {
+            padding: 10px 20px;
+            border: none;
+            background: none;
+            background-image: var(--glossy-highlight); /* Fancier: Glossy-Effekt */
+            color: var(--text-color);
+            cursor: pointer;
+            border-radius: var(--border-radius-btn) var(--border-radius-btn) 0 0; /* Fancier: abgerundet oben */
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+        .nav-tab:hover {
+            background: var(--card-bg);
+        }
+        .nav-tab.active {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Achievement Styles */
+        .mastery-glow {
+            box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+            border: 2px solid var(--warning) !important;
+            background: linear-gradient(145deg, var(--card-bg), rgba(245, 158, 11, 0.05));
+        }
+        .badge-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            opacity: 0.4;
+            filter: grayscale(1);
+            transition: all 0.5s ease; /* Fancier: Sanfterer Übergang */
+            border-radius: var(--border-radius-card); /* Fancier: abgerundet */
+        }
+        .badge-item.unlocked {
+            opacity: 1;
+            filter: grayscale(0);
+            border-color: var(--warning);
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .badge-emoji {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        .badge-name {
+            font-weight: bold;
+            font-size: 0.9em;
+            color: var(--text-color);
+        }
+
+        /* Panels */
+        .panel {
+            display: none;
+        }
+
+        .panel.active {
+            display: block;
+        }
+
+        /* Dashboard */
+        .mode-selector {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .mode-btn {
+            padding: 10px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            background: var(--card-bg);
+            color: var(--text-color);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .mode-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        #category-grid, #learn-category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .tense-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .tense-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .vocab-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .tense-card h3 {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .tense-desc {
+            font-size: 0.85em;
+            color: var(--text-color);
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+
+        .progress-section {
+            margin-top: 10px;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8em;
+            margin-bottom: 5px;
+        }
+
+        .progress-bar {
+            height: 6px;
+            background: var(--border-color);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            border-radius: 3px;
+            transition: width 0.3s;
+        }
+
+        .progress-fill.low { background: var(--error); }
+        .progress-fill.mid { background: var(--warning); }
+        .progress-fill.high { background: var(--success); }
+
+        .tense-stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            font-size: 0.85em;
+        }
+
+        .tense-badge {
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.75em;
+        }
+
+        .tense-badge.neutral { background: var(--border-color); }
+        .tense-badge.practice { background: var(--warning); color: white; }
+        .tense-badge.mastered { background: var(--success); color: white; }
+
+        /* Quiz Container */
+        .quiz-container {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #question-tag {
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+
+        .session-progress-container {
+            width: 120px;
+            height: 8px;
+            background: var(--border-color);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .session-progress-fill {
+            height: 100%;
+            width: 0%;
+            background: var(--primary-color);
+            transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .question {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .hint-container {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: help;
+            width: fit-content;
+        }
+
+        .hint-icon {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .hint-text {
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-style: italic;
+            font-size: 0.9em;
+            pointer-events: none;
+        }
+
+        .hint-container:hover .hint-text {
+            opacity: 0.8;
+        }
+
+        .hint-container:hover .hint-icon {
+            background: var(--warning);
+            border-color: var(--warning);
+            transform: scale(1.1);
+        }
+
+        #options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .option-btn {
+            padding: 15px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .option-btn:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            border-color: var(--secondary-color);
+        }
+
+        .option-btn.correct {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .option-btn.wrong {
+            background-color: var(--error);
+            color: white;
+            border-color: var(--error);
+        }
+
+        .option-btn.disabled {
+            pointer-events: none;
+            opacity: 0.6;
+        }
+
+        .feedback-area {
+            display: none;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .feedback-area.show {
+            display: block;
+        }
+
+        .feedback-area.correct {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid var(--success);
+        }
+
+        .feedback-area.wrong {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid var(--error);
+        }
+
+        #feedback-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .next-btn, .end-btn {
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+
+        .next-btn:hover, .end-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Difficulty Distribution */
+        .dist-container {
+            margin-top: 20px;
+            background: var(--bg-color);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .dist-bar {
+            display: flex;
+            height: 24px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: var(--border-color);
+            margin-bottom: 10px;
+        }
+
+        .dist-segment {
+            height: 100%;
+            transition: width 0.5s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .dist-segment:hover {
+            filter: brightness(1.2);
+        }
+
+        .dist-segment.hard { background-color: var(--error); }
+        .dist-segment.medium { background-color: var(--warning); }
+        .dist-segment.easy { background-color: var(--success); }
+        .dist-segment.unplayed { background-color: #94a3b8; }
+
+        .dist-legend {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            font-size: 0.8em;
+            text-align: left;
+        }
+
+        .dist-legend-item { display: flex; align-items: center; gap: 5px; }
+        .dot { width: 8px; height: 8px; border-radius: 50%; }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Settings */
+        .settings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .toggle-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .toggle-btn {
+            width: 50px;
+            height: 26px;
+            background: var(--border-color);
+            border-radius: 13px;
+            position: relative;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .toggle-btn.active {
+            background: var(--primary-color);
+        }
+
+        .toggle-btn::after {
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            background: white;
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+
+        .toggle-btn.active::after {
+            transform: translateX(24px);
+        }
+
+        /* Dropdown Styles */
+        .dropdown-wrapper {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 10px);
+            right: 0;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            width: 280px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            z-index: 2000;
+            padding: 15px;
+            display: none; /* Standardmäßig versteckt */
+        }
+
+        .dropdown-menu.show {
+            display: block; /* Nur sichtbar mit der .show Klasse */
+            animation: fadeInUp 0.2s ease-out;
+        }
+
+        .dropdown-menu .toggle-item {
+            border: none;
+            padding: 10px 5px;
+            background: none;
+        }
+
+        /* Confetti */
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            top: -10px;
+            animation: confetti-fall 3s linear forwards;
+            z-index: 1000;
+        }
+
+        @keyframes confetti-fall {
+            to {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #category-grid, #learn-category-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-bar {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .nav-tabs {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="app-title">🎓 LernApp</h1>
+            <div id="subject-selector"></div>
+            <div style="display: flex; gap: 8px; position: relative;">
+                <div class="dropdown-wrapper">
+                    <button class="theme-toggle" onclick="toggleSettingsDropdown(event)" title="Einstellungen">⚙️</button>
+                    <div id="settings-dropdown" class="dropdown-menu">
+                        <div style="padding: 10px; font-weight: bold; border-bottom: 1px solid var(--border-color); margin-bottom: 5px;">⚙️ Einstellungen</div>
+                        <div class="settings-grid" style="display: block;">
+                            <div class="toggle-item">
+                                <span style="font-size: 0.9em;">🧠 Smart Mode</span>
+                                <div class="toggle-btn active" id="toggle-smart" onclick="toggleSmart()"></div>
+                            </div>
+                            <div class="toggle-item">
+                                <span style="font-size: 0.9em;">🎉 Konfetti</span>
+                                <div class="toggle-btn active" id="toggle-confetti" onclick="toggleConfetti()"></div>
+                            </div>
+                            <div class="toggle-item">
+                                <span style="font-size: 0.9em;">⏭️ Skip-Button</span>
+                                <div class="toggle-btn active" id="toggle-skip" onclick="toggleSkipButton()"></div>
+                            </div>
+                        </div>
+                        <button class="end-btn" onclick="exportProgress()" style="background: var(--secondary-color); width: 100%; margin-top: 10px; padding: 8px; font-size: 14px;">⬇️ Fortschritt exportieren</button>
+                        <button class="end-btn" onclick="document.getElementById('importFileInput').click()" style="background: var(--secondary-color); width: 100%; margin-top: 5px; padding: 8px; font-size: 14px;">⬆️ Fortschritt importieren</button>
+                        <input type="file" id="importFileInput" accept=".json" style="display: none;" onchange="importProgress(event)">
+                        <button class="end-btn" onclick="resetProgress()" style="background: var(--error); width: 100%; margin-top: 10px; padding: 8px; font-size: 14px;">🗑️ Aktuelles Fach zurücksetzen</button>
+                    </div>
+                </div>
+                <button class="theme-toggle" id="theme-btn" onclick="toggleTheme()">🌙</button>
+            </div>
+        </header>
+
+        <div id="subject-points-legend" class="subject-points-legend"></div>
+
+        <div class="grade-info" style="display: flex; flex-direction: column; gap: 10px; align-items: center; padding: 15px;">
+            <span style="font-weight: bold; opacity: 0.7;">Klassenstufe wählen:</span>
+            <div style="display: flex; gap: 10px;">
+                <button class="subject-btn" id="grade-6r" onclick="changeGrade('6r')">6. Klasse Realschule</button>
+                <button class="subject-btn" id="grade-8g" onclick="changeGrade('8g')">8. Klasse Gymnasium</button>
+            </div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat">
+                <div class="stat-value" id="stat-points">0</div>
+                <div class="stat-label">Punkte</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="stat-streak">0</div>
+                <div class="stat-label">Streak</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="stat-accuracy">0%</div>
+                <div class="stat-label">Quote</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="stat-level">1</div>
+                <div class="stat-label">Level</div>
+            </div>
+        </div>
+
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showPanel('dashboard')">📊 Dashboard</button>
+            <button class="nav-tab" onclick="showPanel('stats')">📈 Statistik</button>
+        </div>
+
+        <!-- Dashboard Panel -->
+        <div class="panel active" id="dashboard">
+            <h3 style="margin-bottom: 15px;">Deine Lernfortschritte</h3>
+            <div id="category-grid"></div>
+        </div>
+
+        <!-- Quiz Area (Immer vorhanden, aber standardmäßig versteckt) -->
+        <div id="learn-active" class="panel">
+            <div class="quiz-container">
+                <div class="question-header">
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <span id="question-tag">Kategorie</span>
+                        <div class="session-progress-container" title="Sitzungsfortschritt">
+                            <div id="session-progress-fill" class="session-progress-fill"></div>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <button class="next-btn hidden" id="next-btn" onclick="nextQuestion()">Weiter →</button>
+                        <button class="end-btn" id="skip-btn" style="background: var(--secondary-color);" onclick="skipQuestion()">⏭️ Überspringen</button>
+                        <button class="end-btn" onclick="endSession()">✕ Beenden</button>
+                    </div>
+                </div>
+                <div class="question" id="question-text">Frage</div>
+                <div id="question-context" class="hint-container"></div>
+                <div id="options-grid"></div>
+                <div class="feedback-area" id="feedback-area">
+                    <div id="feedback-title"></div>
+                    <div id="feedback-text"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Panel -->
+        <div class="panel" id="stats">
+            <div class="quiz-container">
+                <div id="stats-content">
+                    <p style="text-align: center; opacity: 0.7;">Noch keine Statistiken verfügbar.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Subject Scripts -->
+    <script src="subjects/english_6r.js"></script>
+    <script src="subjects/math_6r.js"></script>
+    <script src="subjects/german_6r.js"></script>
+    <script src="subjects/history_6r.js"></script>
+    <script src="subjects/geography_6r.js"></script>
+    <script src="subjects/minecraft_6r.js"></script>
+    <script src="subjects/phys_8g.js"></script>
+    <script src="subjects/eng_8g.js"></script>
+    <script src="subjects/math_8g.js"></script>
+    <script src="subjects/bio_8g.js"></script>
+    <script src="subjects/lat_8g.js"></script>
+    
+    <!-- Main App -->
+    <script src="app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(() => console.log("LernApp: Offline-Modus aktiv"))
+                .catch(err => console.log("LernApp SW Fehler:", err));
+        }
+    </script>
+</body>
+</html>
