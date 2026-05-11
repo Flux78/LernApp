@@ -1,13 +1,11 @@
 // ============================================
 // DEUTSCH - LernApp Daten (6. Klasse Realschule Bayern)
 // ============================================
-
 const german6rData = {
     name: "Deutsch",
     icon: "📚",
     color: "#ec4899",
     description: "Deutsch üben mit Grammatik und Rechtschreibung",
-    
     categories: {
         grammatik: {
             name: "Grammatik",
@@ -40,11 +38,9 @@ const german6rData = {
             desc: "Metaphern, Vergleiche, Personifikation"
         }
     },
-
     // Fragen nach Kategorien
     questions: {
-        grammatik: [
-            { question: "Was ist ein Synonym für 'schön'?", answers: ["Hässlich", "Hübsch", "Groß", "Klein"], correct: 1, hint: "Ähnliche Bedeutung", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        grammatik: [ { question: "Was ist ein Synonym für 'schön'?", answers: ["Hässlich", "Hübsch", "Groß", "Klein"], correct: 1, hint: "Ähnliche Bedeutung", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welches Wort ist ein Verb?", answers: ["Tisch", "Laufen", "Rot", "Schnell"], correct: 1, hint: "Tun-Wort", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Bestimme das Subjekt: 'Mein kleiner Bruder schläft.'", answers: ["Mein kleiner Bruder", "schläft", "Bruder", "kleiner"], correct: 0, hint: "Wer oder was?", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welche Zeitform ist 'er lachte'?", answers: ["Präsens", "Präteritum", "Perfekt", "Plusquamperfekt"], correct: 1, hint: "Einfache Vergangenheit", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -95,10 +91,12 @@ const german6rData = {
             { question: "Bestimme das Prädikat: 'Ich räume mein Zimmer auf.'", answers: ["Ich", "räume auf", "Zimmer", "mein"], correct: 1, hint: "Satzklammer beachten", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welche Zeitform ist 'ich werde gelernt haben'?", answers: ["Futur I", "Futur II", "Perfekt", "Plusquamperfekt"], correct: 1, hint: "Abgeschlossen in Zukunft", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist eine 'Kopula'?", answers: ["Vollverb", "Hilfsverb wie 'sein' oder 'werden'", "Nomen", "Adjektiv"], correct: 1, hint: "Verbindungsverb", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Bestimme das Dativobjekt: 'Wir folgen dem Pfad.'", answers: ["Wir", "folgen", "dem Pfad", "Pfad"], correct: 2, hint: "Wem folgen wir?", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Bestimme das Dativobjekt: 'Wir folgen dem Pfad.'", answers: ["Wir", "folgen", "dem Pfad", "Pfad"], correct: 2, hint: "Wem folgen wir?", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist das Subjekt im Satz: 'Der Hund bellt laut'?", answers: ["Der Hund", "bellt", "laut", "Keines"], correct: 0, hint: "Wer oder was?", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Welche Zeitform ist: 'Ich bin gelaufen'?", answers: ["Präsens", "Perfekt", "Präteritum", "Futur"], correct: 1, hint: "Vorgehensweise", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist die Mehrzahl von 'Tisch'?", answers: ["Tischs", "Tische", "Tischern", "Tischin"], correct: 1, hint: "Pluralbildung", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        rechtschreibung: [
-            { question: "Wie schreibt man 'Fahrrad' richtig?", answers: ["Farad", "Fahrrad", "Fahrad", "Farrad"], correct: 1, hint: "Fahren + Rad", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        rechtschreibung: [ { question: "Wie schreibt man 'Fahrrad' richtig?", answers: ["Farad", "Fahrrad", "Fahrad", "Farrad"], correct: 1, hint: "Fahren + Rad", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wann schreibt man 'ss'?", answers: ["Nach langem Vokal", "Nach kurzem Vokal", "Immer am Ende", "Nie"], correct: 1, hint: "Fluss, Schloss", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welches Wort schreibt man groß?", answers: ["heute", "laufen", "morgen (der Tag)", "schnell"], correct: 2, hint: "Nomen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie heißt die Regel für 'das' oder 'dass'?", answers: ["Immer dass", "Dieses, jenes, welches = das", "Nach Komma immer dass", "Es gibt keine Regel"], correct: 1, hint: "Ersatzprobe", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -147,10 +145,12 @@ const german6rData = {
             { question: "Welches Wort ist richtig?", answers: ["Packet", "Paket", "Packett", "Pakeet"], correct: 1, hint: "ohne c", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie schreibt man 'Brillant'?", answers: ["Brilliant", "Brillant", "Briliant", "Briljant"], correct: 1, hint: "ohne i nach dem l", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist die Schreibung von 'Müsli'?", answers: ["Mühsli", "Müesli", "Müsli", "Müssli"], correct: 2, hint: "mit ü", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Wie schreibt man 'Adresse'?", answers: ["Adresse", "Addresse", "Addresse", "Adreße"], correct: 0, hint: "ein d", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Wie schreibt man 'Adresse'?", answers: ["Adresse", "Addresse", "Addresse", "Adreße"], correct: 0, hint: "ein d", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Welches Wort ist richtig geschrieben?", answers: ["Hausaufgabe", "Hauzaufgabe", "Hausaufgaube", "Hauzaufgaube"], correct: 0, hint: "Sollte man machen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wo schreibt man 'ss'?", answers: ["Fußball", "Fluss", "Maß", "Groß"], correct: 1, hint: "Nach kurzem Vokal", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Welches Wort ist ein Nomen?", answers: ["schnell", "laufen", "Haus", "und"], correct: 2, hint: "Großschreibung", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        wortarten: [
-            { question: "Welche Wortart ist 'Haus'?", answers: ["Verb", "Nomen", "Adjektiv", "Artikel"], correct: 1, hint: "Namenwort", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        wortarten: [ { question: "Welche Wortart ist 'Haus'?", answers: ["Verb", "Nomen", "Adjektiv", "Artikel"], correct: 1, hint: "Namenwort", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welche Wortart ist 'rennen'?", answers: ["Nomen", "Verb", "Adjektiv", "Pronomen"], correct: 1, hint: "Tunwort", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welche Wortart ist 'grün'?", answers: ["Nomen", "Verb", "Adjektiv", "Präposition"], correct: 2, hint: "Eigenschaftswort", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welche Wortart ist 'ich'?", answers: ["Artikel", "Verb", "Personalpronomen", "Konjunktion"], correct: 2, hint: "Fürwort", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -199,10 +199,12 @@ const german6rData = {
             { question: "Welche Wortart ist 'morgen' (Zeitpunkt)?", answers: ["Nomen", "Adverb", "Adjektiv", "Verb"], correct: 1, hint: "Temporaladverb", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welche Wortart ist 'erstens'?", answers: ["Ordinalzahl", "Adverb", "Numerale", "Konjunktion"], correct: 1, hint: "Ordnungsadverb", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welche Wortart ist 'beide'?", answers: ["Numerale", "Adjektiv", "Nomen", "Pronomen"], correct: 0, hint: "Zahlwort", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was ist 'Flexion'?", answers: ["Wortbildung", "Beugung von Wörtern", "Satzbau", "Rechtschreibung"], correct: 1, hint: "Überbegriff für Dekl. & Konj.", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was ist 'Flexion'?", answers: ["Wortbildung", "Beugung von Wörtern", "Satzbau", "Rechtschreibung"], correct: 1, hint: "Überbegriff für Dekl. & Konj.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist ein Verb?", answers: ["Tunwort", "Namenwort", "Wiewort", "Zahlwort"], correct: 0, hint: "etwas tun", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist ein Adjektiv?", answers: ["Tunwort", "Namenwort", "Wiewort", "Zahlwort"], correct: 2, hint: "Wie ist etwas?", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist ein Nomen?", answers: ["Tunwort", "Namenwort", "Wiewort", "Zahlwort"], correct: 1, hint: "Großschreibung", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        satzzeichen: [
-            { question: "Wo setzt man ein Komma?", answers: ["Vor 'und'", "Bei Aufzählungen", "Am Satzanfang", "Nach jedem Wort"], correct: 1, hint: "Äpfel, Birnen...", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        satzzeichen: [ { question: "Wo setzt man ein Komma?", answers: ["Vor 'und'", "Bei Aufzählungen", "Am Satzanfang", "Nach jedem Wort"], correct: 1, hint: "Äpfel, Birnen...", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welches Zeichen steht vor der wörtlichen Rede?", answers: ["Punkt", "Ausrufezeichen", "Doppelpunkt", "Fragezeichen"], correct: 2, hint: "Er sagte: ...", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welches Satzzeichen beendet einen Fragesatz?", answers: [".", "!", "?", ","], correct: 2, hint: "Interrogativzeichen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wann setzt man ein Komma bei 'und'?", answers: ["Immer", "Nie", "Bei einem neuen Hauptsatz (optional)", "Nur bei Nomen"], correct: 2, hint: "Satzreihe", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -221,10 +223,12 @@ const german6rData = {
             { question: "Welches Zeichen trennt Telefonvorwahl und Nummer oft?", answers: ["/", "-", ".", ":"], correct: 1, hint: "Bindestrich", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Setzt man ein Komma bei 'sowohl ... als auch'?", answers: ["Ja", "Nein", "Nur bei Nomen", "Immer"], correct: 1, hint: "Mehrteilige Konjunktion", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Setzt man ein Komma bei 'entweder ... oder'?", answers: ["Ja", "Nein", "Nur bei Verben", "Immer"], correct: 1, hint: "Alternative ohne Komma", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was steht nach dem Begleitsatz 'Er fragte:'?", answers: ["Anführungszeichen oben", "Anführungszeichen unten", "Kein Zeichen", "Punkt"], correct: 1, hint: "Beginn der Rede", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was steht nach dem Begleitsatz 'Er fragte:'?", answers: ["Anführungszeichen oben", "Anführungszeichen unten", "Kein Zeichen", "Punkt"], correct: 1, hint: "Beginn der Rede", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wann setzt man ein Komma?", answers: ["Immer", "Bei Aufzählungen", "Nie", "Nur am Anfang"], correct: 1, hint: "Satzbau", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was beendet einen normalen Aussagesatz?", answers: ["Fragezeichen", "Ausrufezeichen", "Punkt", "Komma"], correct: 2, hint: "Satzende", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was beendet eine Aufforderung?", answers: ["Punkt", "Fragezeichen", "Ausrufezeichen", "Komma"], correct: 2, hint: "Betonung", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        stilmittel: [
-            { question: "Was ist eine 'Metapher'?", answers: ["Bildhafter Vergleich ohne 'wie'", "Wortwiederholung", "Vermenschlichung", "Gegensatz"], correct: 0, hint: "Rabeneltern, Mauer des Schweigens", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        stilmittel: [ { question: "Was ist eine 'Metapher'?", answers: ["Bildhafter Vergleich ohne 'wie'", "Wortwiederholung", "Vermenschlichung", "Gegensatz"], correct: 0, hint: "Rabeneltern, Mauer des Schweigens", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist ein 'Vergleich'?", answers: ["Wortwiederholung", "Verknüpfung mit 'wie' oder 'als'", "Übertreibung", "Satzende"], correct: 1, hint: "Stark wie ein Löwe", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist eine 'Personifikation'?", answers: ["Ein Mensch wird zum Tier", "Sachen/Tiere handeln wie Menschen", "Ein Reim", "Eine Frage"], correct: 1, hint: "Die Sonne lacht", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist eine 'Alliteration'?", answers: ["Gleicher Anlaut benachbarter Wörter", "Gleicher Endreim", "Gleicher Rhythmus", "Gleiche Wortart"], correct: 0, hint: "Milch macht müde Männer munter", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -233,7 +237,10 @@ const german6rData = {
             { question: "Was ist ein 'Lautmalerei' (Onomatopoesie)?", answers: ["Musik im Text", "Nachahmung von Geräuschen", "Bunte Buchstaben", "Reime"], correct: 1, hint: "Kuckuck, rums, zisch", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist eine 'Anapher'?", answers: ["Wiederholung am Satzanfang", "Wiederholung am Satzende", "Gegensatz", "Frage"], correct: 0, hint: "Wiederholung", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist eine 'rhetorische Frage'?", answers: ["Frage ohne erwartete Antwort", "Sehr schwere Frage", "Höfliche Frage", "Wissenschaftliche Frage"], correct: 0, hint: "Wer glaubt das schon?", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was ist ein 'Ironie'?", answers: ["Lüge", "Gegenteil des Gemeinten sagen", "Witz", "Ernsthafte Aussage"], correct: 1, hint: "Das hast du ja toll gemacht! (wenn etwas kaputt ist)", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was ist ein 'Ironie'?", answers: ["Lüge", "Gegenteil des Gemeinten sagen", "Witz", "Ernsthafte Aussage"], correct: 1, hint: "Das hast du ja toll gemacht! (wenn etwas kaputt ist)", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist ein Vergleich?", answers: ["Ein Wort wie 'so...wie'", "Ein Nomen", "Ein Verb", "Ein Punkt"], correct: 0, hint: "Gegenüberstellung", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist eine Metapher?", answers: ["Ein Sprachbild", "Ein Fragezeichen", "Ein Wiewort", "Ein Zeitwort"], correct: 0, hint: "Bildhafter Vergleich ohne 'wie'", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist eine Alliteration?", answers: ["Gleicher Anfangsbuchstabe", "Gleiches Satzende", "Gleiches Wort", "Gleiche Zeitform"], correct: 0, hint: "Klangfigur", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
         bedeutung: [
             { question: "Was ist ein 'Antonym'?", answers: ["Gleiches Wort", "Gegenteil", "Ähnliches Wort", "Zusammengesetztes Wort"], correct: 1, hint: "groß - klein", stats: { correct: 0, total: 0, difficulty: 1.0 } },

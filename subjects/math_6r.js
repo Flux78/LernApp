@@ -1,13 +1,11 @@
 // ============================================
 // MATHEMATIK - LernApp Daten
 // ============================================
-
 const math6rData = {
     name: "Mathematik",
     icon: "🔢",
     color: "#3b82f6",
     description: "Mathematik üben mit verschiedenen Themen",
-    
     categories: {
         grundrechenarten: {
             name: "Grundrechenarten",
@@ -58,11 +56,9 @@ const math6rData = {
             desc: "Lerne, Textaufgaben richtig zu verstehen & zu lösen"
         }
     },
-
     // Fragen nach Kategorien
     questions: {
-        grundrechenarten: [
-            { question: "Was ist 12 × 8?", answers: ["96", "108", "88", "72"], correct: 0, hint: "Multiplikation", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        grundrechenarten: [ { question: "Was ist 12 × 8?", answers: ["96", "108", "88", "72"], correct: 0, hint: "Multiplikation", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist 100 - 7 × 8?", answers: ["744", "44", "56", "36"], correct: 1, hint: "Punkt vor Strich", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist 2³ (2 hoch 3)?", answers: ["6", "8", "9", "16"], correct: 1, hint: "2 × 2 × 2", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie berechnet man den Mittelwert von 10, 20 und 30?", answers: ["(10+20+30) × 3", "(10+20+30) ÷ 3", "10+20+30", "(10×20×30) ÷ 3"], correct: 1, hint: "Summe ÷ Anzahl", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -116,10 +112,12 @@ const math6rData = {
             { question: "Was ist 0,2 × 0,2?", answers: ["0,4", "0,04", "0,004", "4"], correct: 1, hint: "2*2=4, zwei Nachkommastellen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist die Hälfte von 0,6?", answers: ["0,3", "0,2", "0,4", "0,25"], correct: 0, hint: "60 / 2", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Berechne: 2 × 2 × 2 × 2", answers: ["8", "16", "32", "64"], correct: 1, hint: "Multiplikationskette", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was ist 600 ÷ 30?", answers: ["2", "20", "200", "10"], correct: 1, hint: "Nullen kürzen", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was ist 600 ÷ 30?", answers: ["2", "20", "200", "10"], correct: 1, hint: "Nullen kürzen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 15 + 27?", answers: ["32", "42", "45", "38"], correct: 1, hint: "Addition", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 100 - 34?", answers: ["66", "74", "56", "64"], correct: 0, hint: "Subtraktion", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 8 * 7?", answers: ["54", "56", "48", "63"], correct: 1, hint: "Einmaleins", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        brueche: [
-            { question: "Wie viel Prozent sind 3/4?", answers: ["25%", "50%", "75%", "80%"], correct: 2, hint: "3 ÷ 4 = 0,75", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        brueche: [ { question: "Wie viel Prozent sind 3/4?", answers: ["25%", "50%", "75%", "80%"], correct: 2, hint: "3 ÷ 4 = 0,75", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie schreibt man 0,25 als Bruch?", answers: ["1/2", "1/3", "1/4", "1/5"], correct: 2, hint: "0,25 = 25/100", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie schreibt man 5/8 als Dezimalzahl?", answers: ["0,58", "0,625", "0,8", "0,85"], correct: 1, hint: "5 ÷ 8", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist 1/2 + 1/4?", answers: ["1/6", "2/6", "3/4", "1"], correct: 2, hint: "Gleicher Nenner: 2/4 + 1/4", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -138,10 +136,12 @@ const math6rData = {
             { question: "Wandle 1 1/2 in einen unechten Bruch um.", answers: ["1/2", "2/2", "3/2", "4/2"], correct: 2, hint: "Ein Ganzes sind zwei Halbe", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist 10% als Bruch?", answers: ["1/10", "1/100", "10/1", "1/2"], correct: 0, hint: "10 von 100", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Berechne: 1/4 + 1/4", answers: ["1/8", "2/8", "1/2", "1"], correct: 2, hint: "2/4 = 1/2", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was ist 0,75 - 0,25?", answers: ["0,25", "0,5", "0,55", "1,0"], correct: 1, hint: "75 Cent - 25 Cent", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was ist 0,75 - 0,25?", answers: ["0,25", "0,5", "0,55", "1,0"], correct: 1, hint: "75 Cent - 25 Cent", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 1/2 + 1/4?", answers: ["2/4", "3/4", "1/6", "2/6"], correct: 1, hint: "Gleichnamig machen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was sind 50% von 200?", answers: ["50", "100", "150", "20"], correct: 1, hint: "Die Hälfte", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Welche Zahl ist der Kehrwert von 3/4?", answers: ["3/4", "4/3", "1/3", "4/1"], correct: 1, hint: "Tauschen", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        prozente: [
-            { question: "Was ist 20% von 150?", answers: ["20", "30", "40", "50"], correct: 1, hint: "150 × 0,20", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        prozente: [ { question: "Was ist 20% von 150?", answers: ["20", "30", "40", "50"], correct: 1, hint: "150 × 0,20", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist 50% von 80?", answers: ["30", "40", "50", "60"], correct: 1, hint: "Die Hälfte", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist 10% von 200?", answers: ["10", "20", "30", "40"], correct: 1, hint: "Eine Zehntel", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Ein Preis von 100€ wird um 20% reduziert. Wie viel kostet er jetzt?", answers: ["70€", "75€", "80€", "85€"], correct: 2, hint: "100€ - 20€", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -155,10 +155,12 @@ const math6rData = {
             { question: "Ein Rabatt von 50% bedeutet...", answers: ["Preis verdoppelt", "Preis bleibt gleich", "Preis halbiert", "10€ gespart"], correct: 2, hint: "Hälfte", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wandle 0,45 in Prozent um.", answers: ["4,5%", "45%", "0,45%", "450%"], correct: 1, hint: "Mal 100 nehmen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist mehr: 1/2 oder 40%?", answers: ["1/2", "40%", "Beide gleich", "Kann man nicht sagen"], correct: 0, hint: "1/2 = 50%", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Berechne 200% von 5.", answers: ["5", "10", "15", "20"], correct: 1, hint: "Das Doppelte", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Berechne 200% von 5.", answers: ["5", "10", "15", "20"], correct: 1, hint: "Das Doppelte", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was sind 25% als Bruch?", answers: ["1/2", "1/3", "1/4", "3/4"], correct: 2, hint: "Viertel", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie rechnet man 10% von 500 aus?", answers: ["50", "10", "100", "5"], correct: 0, hint: "Durch 10 teilen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was sind 75% von 40?", answers: ["20", "25", "30", "35"], correct: 2, hint: "Drei Viertel", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        geometrie: [
-            { question: "Wie heißt ein Dreieck mit drei gleich langen Seiten?", answers: ["Gleichschenklig", "Gleichseitig", "Rechtwinklig", "Ungleichseitig"], correct: 1, hint: "Alle Seiten gleich", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        geometrie: [ { question: "Wie heißt ein Dreieck mit drei gleich langen Seiten?", answers: ["Gleichschenklig", "Gleichseitig", "Rechtwinklig", "Ungleichseitig"], correct: 1, hint: "Alle Seiten gleich", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie berechnet man den Flächeninhalt eines Rechtecks?", answers: ["Länge + Breite", "Länge × Breite", "2 × (Länge + Breite)", "Länge ÷ Breite"], correct: 1, hint: "Länge mal Breite", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist die Summe der Innenwinkel eines Dreiecks?", answers: ["90°", "180°", "270°", "360°"], correct: 1, hint: "Halbkreis", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie viele Ecken hat ein Würfel?", answers: ["6", "8", "12", "16"], correct: 1, hint: "3D-Objekt", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -173,10 +175,12 @@ const math6rData = {
             { question: "Welche Form hat die Grundfläche eines Zylinders?", answers: ["Quadrat", "Dreieck", "Kreis", "Trapez"], correct: 2, hint: "Wie eine Konservendose", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie viele Kanten hat ein Quader?", answers: ["6", "8", "10", "12"], correct: 3, hint: "4 oben, 4 unten, 4 stehend", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist ein 'stumpfer Winkel'?", answers: ["< 90°", "Genau 90°", "> 90° und < 180°", "180°"], correct: 2, hint: "Größer als der rechte Winkel", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Wie berechnet man den Umfang eines Rechtecks?", answers: ["a * b", "2*a + 2*b", "a + b", "a² + b²"], correct: 1, hint: "Alle vier Seiten zusammen", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Wie berechnet man den Umfang eines Rechtecks?", answers: ["a * b", "2*a + 2*b", "a + b", "a² + b²"], correct: 1, hint: "Alle vier Seiten zusammen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viele Ecken hat ein Dreieck?", answers: ["2", "3", "4", "5"], correct: 1, hint: "Form", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist die Summe der Innenwinkel in einem Viereck?", answers: ["180°", "360°", "90°", "270°"], correct: 1, hint: "Winkel", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie nennt man ein Viereck mit vier rechten Winkeln?", answers: ["Dreieck", "Rechteck", "Kreis", "Linie"], correct: 1, hint: "Besondere Form", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        einheiten: [
-            { question: "Wie viele Millimeter sind 3,5 Meter?", answers: ["35 mm", "350 mm", "3500 mm", "35000 mm"], correct: 2, hint: "1 m = 1000 mm", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        einheiten: [ { question: "Wie viele Millimeter sind 3,5 Meter?", answers: ["35 mm", "350 mm", "3500 mm", "35000 mm"], correct: 2, hint: "1 m = 1000 mm", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie viele Gramm sind 2,5 Kilogramm?", answers: ["25 g", "250 g", "2500 g", "25000 g"], correct: 2, hint: "1 kg = 1000 g", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie viele Sekunden sind 5 Minuten?", answers: ["60 s", "300 s", "360 s", "500 s"], correct: 1, hint: "1 min = 60 s", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie viele Minuten sind 1,5 Stunden?", answers: ["75 min", "90 min", "100 min", "120 min"], correct: 1, hint: "1 h = 60 min", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -187,10 +191,12 @@ const math6rData = {
             { question: "Wie viele Ar (a) sind ein Hektar (ha)?", answers: ["10", "100", "1000", "10000"], correct: 1, hint: "Hekto = 100", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie viel wiegt ein Milliliter Wasser ungefähr?", answers: ["1 mg", "1 g", "10 g", "1 kg"], correct: 1, hint: "1 l = 1 kg", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie viele Stunden hat eine Woche?", answers: ["144", "168", "120", "180"], correct: 1, hint: "7 * 24", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Wie viele m² sind 1 km²?", answers: ["1000", "10000", "100000", "1000000"], correct: 3, hint: "1000m * 1000m", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Wie viele m² sind 1 km²?", answers: ["1000", "10000", "100000", "1000000"], correct: 3, hint: "1000m * 1000m", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viele Millimeter sind 1 Zentimeter?", answers: ["5", "10", "100", "1000"], correct: 1, hint: "Maße", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viele Gramm sind 1 Kilogramm?", answers: ["10", "100", "1000", "10000"], correct: 2, hint: "Gewicht", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viele Minuten haben 2 Stunden?", answers: ["60", "100", "120", "180"], correct: 2, hint: "Zeit", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        zahlen: [
-            { question: "Was ist der kleinste gemeinsame Teiler von 12 und 18?", answers: ["2", "3", "6", "9"], correct: 2, hint: "KGV", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        zahlen: [ { question: "Was ist der kleinste gemeinsame Teiler von 12 und 18?", answers: ["2", "3", "6", "9"], correct: 2, hint: "KGV", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist die nächste Primzahl nach 7?", answers: ["9", "10", "11", "13"], correct: 2, hint: "Nur durch 1 und sich selbst teilbar", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welche Zahl ist größer: -3 oder -5?", answers: ["-3", "-5", "Beide gleich", "Kommt darauf an"], correct: 0, hint: "Minus-Zahlen: Je näher bei 0, desto größer", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist |-5|?", answers: ["-5", "0", "5", "10"], correct: 2, hint: "Betrag = Abstand von 0", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -205,10 +211,12 @@ const math6rData = {
             { question: "Woran erkennt man Zahlen, die durch 5 teilbar sind?", answers: ["Enden auf 0 oder 5", "Enden auf 5", "Quersumme ist 5", "Sind ungerade"], correct: 0, hint: "5er-Reihe", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie viele Nullen hat eine Million?", answers: ["3", "6", "9", "12"], correct: 1, hint: "Tausend mal Tausend", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist das Ergebnis von 5 - (-3)?", answers: ["2", "8", "-2", "-8"], correct: 1, hint: "Minus und Minus wird Plus", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Runde 4,567 auf zwei Dezimalstellen.", answers: ["4,56", "4,57", "4,60", "5,00"], correct: 1, hint: "Dritte Stelle ist 7 -> aufrunden", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Runde 4,567 auf zwei Dezimalstellen.", answers: ["4,56", "4,57", "4,60", "5,00"], correct: 1, hint: "Dritte Stelle ist 7 -> aufrunden", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist der Vorgänger von 999?", answers: ["998", "900", "990", "997"], correct: 0, hint: "Minus eins", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist die größte dreistellige Zahl?", answers: ["1000", "999", "900", "998"], correct: 1, hint: "Höchster Wert", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie schreibt man die Zahl 'fünftausenddreihundert'?", answers: ["5030", "5300", "5003", "530"], correct: 1, hint: "Zahlenschreibung", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        gleichungen: [
-            { question: "Löse: x + 5 = 12", answers: ["5", "6", "7", "8"], correct: 2, hint: "x = 12 - 5", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        gleichungen: [ { question: "Löse: x + 5 = 12", answers: ["5", "6", "7", "8"], correct: 2, hint: "x = 12 - 5", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Löse: 2x = 10", answers: ["4", "5", "6", "8"], correct: 1, hint: "x = 10 ÷ 2", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Löse: x - 3 = 7", answers: ["4", "8", "9", "10"], correct: 3, hint: "x = 7 + 3", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Löse: x/4 = 3", answers: ["7", "10", "12", "16"], correct: 2, hint: "x = 3 × 4", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -223,10 +231,12 @@ const math6rData = {
             { question: "Was muss man bei x - 100 = 200 auf beiden Seiten tun?", answers: ["100 abziehen", "100 addieren", "Durch 100 teilen", "Mal 100 nehmen"], correct: 1, hint: "Gegenteil von minus", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Löse: 3x - 1 = 20", answers: ["6", "7", "8", "21"], correct: 1, hint: "3x = 21", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Löse: x/2 + 5 = 10", answers: ["5", "10", "15", "20"], correct: 1, hint: "x/2 = 5", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Welcher Wert für x ist eine Lösung von x² = 25?", answers: ["2,5", "5", "12,5", "50"], correct: 1, hint: "5 * 5", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Welcher Wert für x ist eine Lösung von x² = 25?", answers: ["2,5", "5", "12,5", "50"], correct: 1, hint: "5 * 5", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist x in: x + 5 = 10?", answers: ["3", "4", "5", "6"], correct: 2, hint: "Gegenoperation", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist x in: 2 * x = 8?", answers: ["3", "4", "5", "6"], correct: 1, hint: "Geteilt rechnen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist x in: x - 3 = 7?", answers: ["8", "9", "10", "11"], correct: 2, hint: "Plus rechnen", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        textaufgaben_verstehen: [
-            { mode: "text_surgeon", question: "❌ ABLENKUNG erkennen!", fullText: "Anna hat 50€ dabei. Sie kauft eine Jacke für 35€. Die Jacke ist blau und der Verkäufer trägt einen Hut.", secondaryQuestion: "Welche Info ist für 'Wie viel Geld bleibt ihr?' völlig egal?", answers: ["Der Startbetrag (50€)", "Der Preis (35€)", "Die Farbe der Jacke", "Die Rechenart (Minus)"], correct: 2, hint: "Was nicht in der Rechnung landet, ist eine Ablenkung.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        textaufgaben_verstehen: [ { mode: "text_surgeon", question: "❌ ABLENKUNG erkennen!", fullText: "Anna hat 50€ dabei. Sie kauft eine Jacke für 35€. Die Jacke ist blau und der Verkäufer trägt einen Hut.", secondaryQuestion: "Welche Info ist für 'Wie viel Geld bleibt ihr?' völlig egal?", answers: ["Der Startbetrag (50€)", "Der Preis (35€)", "Die Farbe der Jacke", "Die Rechenart (Minus)"], correct: 2, hint: "Was nicht in der Rechnung landet, ist eine Ablenkung.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { mode: "question_hunter", question: "🔍 FRAGE erkennen!", fullText: "Ein Kinoticket kostet 8€. Popcorn kostet 5€. Du hast 20€ dabei. Deine Freunde sind auch da.", possibleQuestions: ["Wie viel Geld hast du am Ende noch?", "Wann beginnt der Film?", "Welche Farbe hat das Popcorn?"], answers: ["Wie viel Geld hast du am Ende noch?", "Wann beginnt der Film?", "Welche Farbe hat das Popcorn?"], correct: 0, hint: "Eine gute Mathefrage nutzt die vorhandenen Zahlen.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { mode: "info_jigsaw", question: "🧩 WICHTIGE Sätze wählen!", fullText: "Satz 1: Ein Heft kostet 2€. | Satz 2: Ein Stift kostet 1€. | Satz 3: Die Sonne scheint. | Satz 4: Tom kauft 3 Hefte. | Frage: Wie viel bezahlt Tom?", possibleAnswers: ["Sätze 1 und 4", "Sätze 1 und 2", "Alle Sätze", "Nur Satz 4"], answers: ["Sätze 1 und 4", "Sätze 1 und 2", "Alle Sätze", "Nur Satz 4"], correct: 0, hint: "Du brauchst nur den Preis für Hefte und die Anzahl der Hefte.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { mode: "units_detective", question: "📏 EINHEITEN kontrollieren!", fullText: "Ein Auto fährt 60 km in 120 Minuten. Wie viele km fährt es in einer Stunde?", unitInfo: "Wichtig: 60 Minuten = 1 Stunde", answers: ["60 km/h", "30 km/h", "120 km/h", "0,5 km/h"], correct: 1, hint: "120 Minuten sind 2 Stunden. Also: 60 km / 2 h.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -240,7 +250,10 @@ const math6rData = {
             { mode: "question_hunter", question: "🔍 FRAGE erkennen!", fullText: "Ein Auto fährt mit 80 km/h. Die Strecke ist 160 km lang. Das Auto ist rot.", possibleQuestions: ["Wie lange braucht das Auto?", "Welche Farbe hat das Auto?", "Wie viele Reifen hat es?"], answers: ["Wie lange braucht das Auto?", "Welche Farbe hat das Auto?", "Wie viele Reifen hat es?"], correct: 0, hint: "Zeit = Strecke / Geschwindigkeit.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { mode: "info_jigsaw", question: "🧩 WICHTIGE Sätze wählen!", fullText: "Satz 1: Ein Rechteck hat Seiten von 4m und 6m. | Satz 2: Die Farbe ist weiß. | Satz 3: Der Preis pro m² Bodenbelag beträgt 10€. | Satz 4: Der Raum ist 3m hoch. | Frage: Was kosten die Fliesen für den Boden?", possibleAnswers: ["Sätze 1 und 3", "Sätze 1 und 2", "Sätze 2 und 3", "Alle Sätze"], answers: ["Sätze 1 und 3", "Sätze 1 und 2", "Sätze 2 und 3", "Alle Sätze"], correct: 0, hint: "Fläche * Preis. Höhe und Farbe sind egal.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { mode: "units_detective", question: "📏 EINHEITEN kontrollieren!", fullText: "Ein Weg ist 0,5 km lang. Du läufst 5 m pro Sekunde. Wie lange brauchst du?", unitInfo: "Tipp: 0,5 km = 500 m", answers: ["100 Sekunden", "50 Sekunden", "250 Sekunden", "10 Sekunden"], correct: 0, hint: "500m / 5m/s", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { mode: "question_clarity", question: "📋 FRAGE vereinfachen!", fullText: "Ein Zug fährt 4 Stunden lang mit durchschnittlich 120 km/h. Welche Distanz hat er nach dieser Zeit zurückgelegt?", simplifiedVersions: ["Was ist 4 * 120?", "Wie schwer ist der Zug?", "Wie lange fährt er?"], answers: ["Was ist 4 * 120?", "Wie schwer ist der Zug?", "Wie lange fährt er?"], correct: 0, hint: "Distanz = Geschwindigkeit * Zeit.", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { mode: "question_clarity", question: "📋 FRAGE vereinfachen!", fullText: "Ein Zug fährt 4 Stunden lang mit durchschnittlich 120 km/h. Welche Distanz hat er nach dieser Zeit zurückgelegt?", simplifiedVersions: ["Was ist 4 * 120?", "Wie schwer ist der Zug?", "Wie lange fährt er?"], answers: ["Was ist 4 * 120?", "Wie schwer ist der Zug?", "Wie lange fährt er?"], correct: 0, hint: "Distanz = Geschwindigkeit * Zeit.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Ein Bauer hat 10 Äpfel. Er verkauft 4. Wie viele bleiben?", answers: ["4", "5", "6", "10"], correct: 2, hint: "Subtraktion", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Ein Auto fährt 50 km/h. Wie weit kommt es in 2 Stunden?", answers: ["50 km", "100 km", "150 km", "25 km"], correct: 1, hint: "Weg = Geschw. * Zeit", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "In einer Klasse sind 24 Kinder. Davon sind 12 Jungs. Wie viele Mädchen sind da?", answers: ["10", "12", "14", "24"], correct: 1, hint: "Differenz bilden", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ]
     }
 };

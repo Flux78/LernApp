@@ -1,23 +1,19 @@
 // ============================================
 // ENGLISCH - LernApp Daten (8. Klasse Gymnasium Bayern)
 // ============================================
-
 const eng8gData = {
     name: "Englisch (8G)",
     icon: "🇺🇸",
     color: "#ef4444",
     description: "English 8th Grade - USA, Grammar and Vocabulary",
-    
     categories: {
         grammar: { name: "Grammar", icon: "📝", color: "#3b82f6", desc: "Gerunds, Participles, Passive & Conditionals" },
         usa: { name: "USA", icon: "🏙️", color: "#f59e0b", desc: "American History, Geography and Culture" },
         vocabulary: { name: "Vocabulary", icon: "📖", color: "#10b981", desc: "Advanced Word Power & Phrasal Verbs" },
         media: { name: "Media & Tech", icon: "📱", color: "#8b5cf6", desc: "Digital Life and Technology" }
     },
-
     questions: {
-        grammar: [
-            { question: "Which form is a gerund?", answers: ["to swim", "swimming", "swam", "swims"], correct: 1, hint: "Verb acting as a noun", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        grammar: [ { question: "Which form is a gerund?", answers: ["to swim", "swimming", "swam", "swims"], correct: 1, hint: "Verb acting as a noun", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Which participle is used for the passive voice?", answers: ["Present Participle", "Past Participle", "Gerund", "Infinitive"], correct: 1, hint: "3rd column", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Complete: If I ___ rich, I would buy a boat.", answers: ["am", "will be", "were", "have been"], correct: 2, hint: "Conditional II (Hypothetical)", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "The book ___ in 1990.", answers: ["wrote", "was written", "writes", "is written"], correct: 1, hint: "Passive voice (past simple)", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -46,10 +42,12 @@ const eng8gData = {
             { question: "She is the girl ___ I met yesterday.", answers: ["who", "which", "whose", "who's"], correct: 0, hint: "Relative pronoun for people", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "I look forward to ___ (meet) you.", answers: ["meet", "to meet", "meeting", "met"], correct: 2, hint: "Gerund after certain expressions", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "If I ___ (be) you, I wouldn't do that.", answers: ["was", "were", "am", "will be"], correct: 1, hint: "Subjunctive 'were' in Conditional II", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "The house ___ (clean) every day.", answers: ["is cleaned", "was cleaned", "cleans", "is cleaning"], correct: 0, hint: "Present simple passive", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "The house ___ (clean) every day.", answers: ["is cleaned", "was cleaned", "cleans", "is cleaning"], correct: 0, hint: "Present simple passive", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the correct form: 'If she ___ (study) hard, she will pass.'?", answers: ["studies", "will study", "studied", "study"], correct: 0, hint: "Conditional I", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Which sentence is in the Passive Voice?", answers: ["He eats an apple.", "The apple is eaten by him.", "He is eating an apple.", "He ate an apple."], correct: 1, hint: "be + past participle", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the correct relative pronoun for a person?", answers: ["which", "who", "where", "whose"], correct: 1, hint: "Person", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        usa: [
-            { question: "Who was the first US President?", answers: ["Abraham Lincoln", "George Washington", "Thomas Jefferson", "John F. Kennedy"], correct: 1, hint: "On the 1-dollar bill", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        usa: [ { question: "Who was the first US President?", answers: ["Abraham Lincoln", "George Washington", "Thomas Jefferson", "John F. Kennedy"], correct: 1, hint: "On the 1-dollar bill", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "In which city is the 'Big Apple'?", answers: ["Los Angeles", "Chicago", "New York City", "San Francisco"], correct: 2, hint: "Statue of Liberty", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "What is the capital of the USA?", answers: ["New York", "Washington D.C.", "Chicago", "Philadelphia"], correct: 1, hint: "White House location", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "When is Independence Day?", answers: ["May 1st", "July 4th", "Oct 31st", "Dec 25th"], correct: 1, hint: "Summer holiday", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -73,10 +71,12 @@ const eng8gData = {
             { question: "What is the 'Statue of Liberty' holding?", answers: ["A torch", "A sword", "A flag", "A baby"], correct: 0, hint: "Symbol of enlightenment", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Which city is known as 'Windy City'?", answers: ["New York", "Chicago", "Miami", "Seattle"], correct: 1, hint: "On Lake Michigan", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "What is 'Thanksgiving'?", answers: ["A race", "A harvest festival", "A winter holiday", "A birthday"], correct: 1, hint: "Turkey dinner", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "What is the 'Ghetto' usually associated with in US history?", answers: ["Parks", "Poor city areas", "Farms", "Schools"], correct: 1, hint: "Urban segregation", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "What is the 'Ghetto' usually associated with in US history?", answers: ["Parks", "Poor city areas", "Farms", "Schools"], correct: 1, hint: "Urban segregation", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the capital of the USA?", answers: ["New York", "Washington, D.C.", "Los Angeles", "Chicago"], correct: 1, hint: "Seat of government", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "How many states does the USA have?", answers: ["48", "50", "52", "45"], correct: 1, hint: "Stars on the flag", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the Statue of Liberty a symbol of?", answers: ["freedom", "war", "wealth", "nature"], correct: 0, hint: "Gift from France", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        vocabulary: [
-            { question: "What is the opposite of 'polite'?", answers: ["nice", "rude", "friendly", "quiet"], correct: 1, hint: "Bad manners", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        vocabulary: [ { question: "What is the opposite of 'polite'?", answers: ["nice", "rude", "friendly", "quiet"], correct: 1, hint: "Bad manners", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Another word for 'huge'?", answers: ["small", "gigantic", "tiny", "average"], correct: 1, hint: "Very big", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "What is 'garbage' in British English?", answers: ["trash", "rubbish", "sweets", "flat"], correct: 1, hint: "Waste", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Meaning of 'to survive'?", answers: ["to die", "to live through", "to sleep", "to eat"], correct: 1, hint: "Stay alive", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -100,10 +100,12 @@ const eng8gData = {
             { question: "Meaning of 'significant'?", answers: ["small", "important/meaningful", "boring", "red"], correct: 1, hint: "Having a great effect", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Meaning of 'to disappear'?", answers: ["to arrive", "to vanish", "to stay", "to grow"], correct: 1, hint: "Cannot be seen anymore", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "What is a 'vacation' in BE?", answers: ["trip", "holiday", "break", "weekend"], correct: 1, hint: "Time off from work/school", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Meaning of 'to be interested in'?", answers: ["to ignore", "to like finding out about", "to hate", "to know"], correct: 1, hint: "Show curiosity", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Meaning of 'to be interested in'?", answers: ["to ignore", "to like finding out about", "to hate", "to know"], correct: 1, hint: "Show curiosity", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the synonym of 'fast'?", answers: ["slow", "quick", "happy", "long"], correct: 1, hint: "Speed", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the antonym of 'hard'?", answers: ["difficult", "soft", "easy", "long"], correct: 1, hint: "Opposite of hard", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "How to say 'einfach' in English?", answers: ["easy", "hard", "fast", "slow"], correct: 0, hint: "Not difficult", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        media: [
-            { question: "What is 'social media'?", answers: ["TV", "Online platforms for networking", "Newspapers", "Radio"], correct: 1, hint: "Instagram, TikTok, etc.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        media: [ { question: "What is 'social media'?", answers: ["TV", "Online platforms for networking", "Newspapers", "Radio"], correct: 1, hint: "Instagram, TikTok, etc.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Meaning of 'to post'?", answers: ["to send a letter", "to publish online", "to read", "to call"], correct: 1, hint: "Upload content", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "What is 'cyberbullying'?", answers: ["Gaming", "Harassing others online", "Coding", "Shopping"], correct: 1, hint: "Mean behavior on the web", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Meaning of 'viral'?", answers: ["sick", "spreading quickly online", "slow", "old"], correct: 1, hint: "Getting many views very fast", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -127,7 +129,10 @@ const eng8gData = {
             { question: "Meaning of 'global'?", answers: ["local", "worldwide", "small", "near"], correct: 1, hint: "Around the world", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "What is a 'blog'?", answers: ["A brick", "An online journal", "Software", "A virus"], correct: 1, hint: "Short for weblog", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Meaning of 'to search'?", answers: ["to find", "to look for info", "to lose", "to buy"], correct: 1, hint: "Google something", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "What is 'broadband'?", answers: ["Radio", "High-speed internet", "TV", "Cable"], correct: 1, hint: "Fast connection", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "What is 'broadband'?", answers: ["Radio", "High-speed internet", "TV", "Cable"], correct: 1, hint: "Fast connection", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is social media?", answers: ["a type of food", "electronic platforms for communication", "a kind of sport", "a school subject"], correct: 1, hint: "Platform", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is a 'fake news'?", answers: ["real reports", "misleading information", "a movie", "a song"], correct: 1, hint: "Falsehood", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What does 'to upload' mean?", answers: ["to delete", "to transfer data to a network", "to download", "to watch"], correct: 1, hint: "Sending data", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ]
     }
 };

@@ -1,7 +1,6 @@
 // ============================================
 // PHYSIK - LernApp Daten (8. Klasse Gymnasium Bayern)
 // ============================================
-
 const phys8gData = {
     name: "Physik (8G)",
     icon: "⚛️",
@@ -15,8 +14,7 @@ const phys8gData = {
         textaufgaben_verstehen: { name: "Textaufgaben verstehen", icon: "🧠", color: "#ff6b6b", desc: "Lerne, Physik-Textaufgaben richtig zu verstehen" }
     },
     questions: {
-        mechanik: [
-            { question: "In welcher Einheit wird die Kraft gemessen?", answers: ["Joule", "Watt", "Newton", "Pascal"], correct: 2, hint: "Sir Isaac...", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        mechanik: [ { question: "In welcher Einheit wird die Kraft gemessen?", answers: ["Joule", "Watt", "Newton", "Pascal"], correct: 2, hint: "Sir Isaac...", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist das Formelzeichen für die Masse?", answers: ["F", "m", "a", "s"], correct: 1, hint: "Mass", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie berechnet man den Druck p?", answers: ["p = F/A", "p = m*g", "p = m/V", "p = W/t"], correct: 0, hint: "Kraft pro Fläche", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was besagt das Trägheitsgesetz?", answers: ["Körper wollen in Ruhe bleiben", "Körper fallen immer nach unten", "Kraft gleich Gegenkraft", "Energie bleibt erhalten"], correct: 0, hint: "Newton I", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -40,7 +38,10 @@ const phys8gData = {
             { question: "Was ist eine schiefe Ebene physikalisch?", answers: ["Ein Hindernis", "Ein Kraftwandler", "Ein Wellentyp", "Ein Teilchen"], correct: 1, hint: "Längerer Weg, weniger Kraft", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was misst man mit einer Balkenwaage?", answers: ["Gewichtskraft", "Masse", "Volumen", "Dichte"], correct: 1, hint: "Vergleich mit Urgewichten", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Warum sinkt ein Stein im Wasser?", answers: ["F_Auftrieb > F_Gewicht", "F_Gewicht > F_Auftrieb", "Er ist nass", "Wasser hat keine Kraft"], correct: 1, hint: "Kräftevergleich", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Wie berechnet man mechanische Arbeit?", answers: ["F / s", "F * s", "P * t", "m * g"], correct: 1, hint: "Kraft längs eines Weges", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Wie berechnet man mechanische Arbeit?", answers: ["F / s", "F * s", "P * t", "m * g"], correct: 1, hint: "Kraft längs eines Weges", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was beschreibt der Begriff 'Kraft' in der Mechanik?", answers: ["Eine Energie", "Ein Maß für die Stärke einer Einwirkung", "Eine Geschwindigkeit", "Eine Zeitdauer"], correct: 1, hint: "F = m * a", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist die Einheit der Kraft?", answers: ["Joule", "Watt", "Newton", "Pascal"], correct: 2, hint: "N", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was besagt das Trägheitsgesetz?", answers: ["Jeder Körper behält seinen Bewegungszustand bei, wenn keine Kraft wirkt.", "Kraft = Masse * Beschleunigung", "Energie kann nicht erzeugt werden.", "Gegenkraft ist gleich."], correct: 0, hint: "Newton", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
         energie: [
             { question: "Was ist die Einheit der Energie?", answers: ["Newton", "Joule", "Watt", "Volt"], correct: 1, hint: "Abkürzung J", stats: { correct: 0, total: 0, difficulty: 1.0 } },

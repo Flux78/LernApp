@@ -1,7 +1,6 @@
 // ============================================
 // GESCHICHTE - LernApp Daten
 // ============================================
-
 const history_6rData = {
     "name": "Geschichte",
     "icon": "🏺",

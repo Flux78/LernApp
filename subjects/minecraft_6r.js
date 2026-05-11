@@ -1,13 +1,11 @@
 // ============================================
 // MINECRAFT - LernApp Daten (6. Klasse Spezial)
 // ============================================
-
 const minecraft6rData = {
     name: "Minecraft",
     icon: "⛏️",
     color: "#4e7d1d",
     description: "Alles über Minecraft: Blöcke, Crafting, Kreaturen, Technik und Biome",
-    
     categories: {
         blocks: { name: "Blöcke & Erze", icon: "🧱", color: "#8b4513", desc: "Materialien und Erze" },
         crafting: { name: "Crafting", icon: "⚒️", color: "#f59e0b", desc: "Rezepte und Werkzeuge" },
@@ -17,10 +15,8 @@ const minecraft6rData = {
         biomes: { name: "Welt & Biome", icon: "🌳", color: "#22c55e", desc: "Strukturen und Natur" },
         items: { name: "Items", icon: "🍎", color: "#3b82f6", desc: "Ausrüstung und Essen" }
     },
-
     questions: {
-        blocks: [
-            { question: "Aus welchem Erz gewinnt man Diamanten?", answers: ["Eisen", "Gold", "Diamanterz", "Kohle"], correct: 2, hint: "Es leuchtet blau", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        blocks: [ { question: "Aus welchem Erz gewinnt man Diamanten?", answers: ["Eisen", "Gold", "Diamanterz", "Kohle"], correct: 2, hint: "Es leuchtet blau", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welcher Block ist am schwierigsten abzubauen?", answers: ["Stein", "Holz", "Obsidian", "Erde"], correct: 2, hint: "Man braucht eine Diamantspitzhacke", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Woraus gewinnt man Glas?", answers: ["Kies", "Sand", "Erde", "Stein"], correct: 1, hint: "Schmelzen im Ofen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welcher Block fällt nach unten, wenn nichts darunter ist?", answers: ["Holz", "Stein", "Kies", "Wolle"], correct: 2, hint: "Hat Schwerkraft", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -49,10 +45,12 @@ const minecraft6rData = {
             { question: "Wie heißt der Block, den man aus 4 Amethystsplittern macht?", answers: ["Amethystblock", "Kristall", "Glas", "Lichtblock"], correct: 0, hint: "Dekorativer Block", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welcher Block schützt vor Creeper-Explosionen am besten?", answers: ["Glas", "Erde", "Obsidian", "Sandstein"], correct: 2, hint: "Sehr hohe Explosionsresistenz", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was passiert mit Sand, wenn man ihn schmilzt?", answers: ["Er wird zu Stein", "Er wird zu Glas", "Er wird zu Ton", "Er verschwindet"], correct: 1, hint: "Durchsichtig", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Welcher Block gibt Licht ab und wächst unter Wasser?", answers: ["Fackel", "Seelaterne", "Meeresgurke", "Glowstone"], correct: 2, hint: "Kann bis zu 4 pro Block sein", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Welcher Block gibt Licht ab und wächst unter Wasser?", answers: ["Fackel", "Seelaterne", "Meeresgurke", "Glowstone"], correct: 2, hint: "Kann bis zu 4 pro Block sein", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist der Hauptbaustein in Minecraft?", answers: ["Holz", "Block", "Stein", "Wasser"], correct: 1, hint: "Alles besteht daraus", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist die Währung in Minecraft?", answers: ["Gold", "Diamanten", "Eisen", "Kohle"], correct: 1, hint: "Selten und wertvoll", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie lautet das Rezept für eine Werkbank?", answers: ["4 Holzbretter", "2 Holzbretter", "3 Holzbretter", "1 Holzbrett"], correct: 0, hint: "Anfang", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        crafting: [
-            { question: "Wie viele Holzbretter braucht man für eine Werkbank?", answers: ["2", "3", "4", "6"], correct: 2, hint: "Ein volles kleines Quadrat", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        crafting: [ { question: "Wie viele Holzbretter braucht man für eine Werkbank?", answers: ["2", "3", "4", "6"], correct: 2, hint: "Ein volles kleines Quadrat", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was braucht man neben einem Stock für eine Fackel?", answers: ["Eisen", "Kohle", "Gold", "Lava"], correct: 1, hint: "Brennt gut", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Woraus craftet man Papier?", answers: ["Holz", "Blätter", "Zuckerrohr", "Stöcke"], correct: 2, hint: "Wächst am Wasser", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie viele Weizen braucht man für ein Brot?", answers: ["1", "2", "3", "4"], correct: 2, hint: "In einer Reihe", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -81,10 +79,12 @@ const minecraft6rData = {
             { question: "Woraus macht man ein Lagerfeuer?", answers: ["Stöcke, Kohle, Stämme", "Bretter und Kohle", "Steine und Stöcke", "Wolle und Holz"], correct: 0, hint: "3 Stöcke, 1 Kohle, 3 Stämme", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was braucht man für eine Lore (Minecart)?", answers: ["5 Eisenbarren", "5 Holzbretter", "5 Goldbarren", "5 Stein"], correct: 0, hint: "U-Form", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie stellt man einen klebrigen Kolben her?", answers: ["Kolben + Honig", "Kolben + Schleimball", "Kolben + Faden", "Kolben + Wolle"], correct: 1, hint: "Vom Slime", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Woraus besteht ein Feuerwerk?", answers: ["Papier und Schwarzpulver", "Papier und Redstone", "Schwarzpulver und Sand", "Glas und Gold"], correct: 0, hint: "Zum Fliegen mit Elytren", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Woraus besteht ein Feuerwerk?", answers: ["Papier und Schwarzpulver", "Papier und Redstone", "Schwarzpulver und Sand", "Glas und Gold"], correct: 0, hint: "Zum Fliegen mit Elytren", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist der Hauptbaustein in Minecraft?", answers: ["Holz", "Block", "Stein", "Wasser"], correct: 1, hint: "Alles besteht daraus", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist die Währung in Minecraft?", answers: ["Gold", "Diamanten", "Eisen", "Kohle"], correct: 1, hint: "Selten und wertvoll", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie lautet das Rezept für eine Werkbank?", answers: ["4 Holzbretter", "2 Holzbretter", "3 Holzbretter", "1 Holzbrett"], correct: 0, hint: "Anfang", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        mobs: [
-            { question: "Welches Tier gibt Wolle?", answers: ["Schwein", "Kuh", "Schaf", "Huhn"], correct: 2, hint: "Mäh!", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        mobs: [ { question: "Welches Tier gibt Wolle?", answers: ["Schwein", "Kuh", "Schaf", "Huhn"], correct: 2, hint: "Mäh!", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wer explodiert, wenn er dir zu nahe kommt?", answers: ["Zombie", "Skelett", "Creeper", "Spinne"], correct: 2, hint: "Er ist grün und zischt", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wer verbrennt bei Sonnenlicht?", answers: ["Zombie & Skelett", "Creeper & Spinne", "Enderman & Slime", "Schwein & Kuh"], correct: 0, hint: "Untote", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welcher Mob kann sich teleportieren?", answers: ["Ghast", "Enderman", "Wither", "Lohe"], correct: 1, hint: "Ist sehr groß und schwarz", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -113,10 +113,12 @@ const minecraft6rData = {
             { question: "Was lässt eine Hexe oft fallen?", answers: ["Bücher", "Tränke", "Essen", "Rüstung"], correct: 1, hint: "Chemische Flaschen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie viele Köpfe braucht man, um einen Wither zu beschwören?", answers: ["1", "2", "3", "4"], correct: 2, hint: "Wither-Skelett-Schädel", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welches Tier hilft beim Suchen von Schätzen im Ozean?", answers: ["Delfin", "Schildkröte", "Hai", "Wal"], correct: 0, hint: "Gib ihm Fisch", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Wer schießt mit Armbrüsten während eines Überfalls?", answers: ["Zombies", "Plünderer", "Endermen", "Skelette"], correct: 1, hint: "Illager-Gruppe", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Wer schießt mit Armbrüsten während eines Überfalls?", answers: ["Zombies", "Plünderer", "Endermen", "Skelette"], correct: 1, hint: "Illager-Gruppe", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was passiert bei Berührung mit einem Creeper?", answers: ["Er haut ab", "Er explodiert", "Er schenkt dir Items", "Er führt dich"], correct: 1, hint: "Boom!", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Welches Tier lässt sich reiten?", answers: ["Schaf", "Schwein", "Huhn", "Wolf"], correct: 1, hint: "Sattel nötig", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie nennt man die 'bösen' gelben Wesen im Nether?", answers: ["Zombies", "Piglins", "Endermen", "Skelette"], correct: 1, hint: "Nether", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        dimensions: [
-            { question: "Wie heißt die Dimension, in der der Enderdrache lebt?", answers: ["Nether", "Das Ende", "Oberwelt", "Aether"], correct: 1, hint: "Dort gibt es Endermen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        dimensions: [ { question: "Wie heißt die Dimension, in der der Enderdrache lebt?", answers: ["Nether", "Das Ende", "Oberwelt", "Aether"], correct: 1, hint: "Dort gibt es Endermen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Woraus baut man das Portal zum Nether?", answers: ["Stein", "Eisen", "Obsidian", "Gold"], correct: 2, hint: "Dunkler Block", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie heißt der rote Stein, aus dem der Nether-Boden besteht?", answers: ["Netherrack", "Basalt", "Seelensand", "Magma"], correct: 0, hint: "Brennt ewig", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Womit aktiviert man ein Netherportal?", answers: ["Fackel", "Feuerzeug", "Redstone", "Lava"], correct: 1, hint: "Eisen + Feuerstein", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -140,10 +142,12 @@ const minecraft6rData = {
             { question: "Wie groß ist der Nether im Vergleich zur Oberwelt?", answers: ["1:1", "1:4", "1:8", "1:10"], correct: 2, hint: "Wichtig für schnelles Reisen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was passiert beim Schlafen im Ende?", answers: ["Man wacht in der Oberwelt auf", "Das Bett explodiert", "Man regeneriert Leben", "Nichts"], correct: 1, hint: "Gleicher Effekt wie im Nether", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Womit fängt man den Atem des Drachen ein?", answers: ["Eimer", "Glasflasche", "Schüssel", "Netherit-Flasche"], correct: 1, hint: "Für Tränke", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Welcher Block ist der Hauptbestandteil der Ende-Inseln?", answers: ["Sandstein", "Endstein", "Quarz", "Weißer Stein"], correct: 1, hint: "Hellgelb", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Welcher Block ist der Hauptbestandteil der Ende-Inseln?", answers: ["Sandstein", "Endstein", "Quarz", "Weißer Stein"], correct: 1, hint: "Hellgelb", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Welche Dimension muss man besuchen, um das Ender-Ei zu bekommen?", answers: ["Nether", "End", "Overworld", "Höhle"], correct: 1, hint: "Endboss", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie reist man zwischen Welten?", answers: ["Per Zug", "Portal", "Boot", "Laufen"], correct: 1, hint: "Magisch", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was braucht man, um ein Netherportal zu zünden?", answers: ["Holz", "Feuerzeug", "Diamant", "Wasser"], correct: 1, hint: "Feuer", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        redstone: [
-            { question: "Woraus gewinnt man Redstone?", answers: ["Kohle", "Redstone-Erz", "Eisen", "Holz"], correct: 1, hint: "Gibt rotes Pulver", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        redstone: [ { question: "Woraus gewinnt man Redstone?", answers: ["Kohle", "Redstone-Erz", "Eisen", "Holz"], correct: 1, hint: "Gibt rotes Pulver", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie weit leitet Redstone-Staub ein Signal ohne Verstärker?", answers: ["10 Blöcke", "15 Blöcke", "20 Blöcke", "Unendlich"], correct: 1, hint: "Danach wird es zu schwach", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welches Item verstärkt ein Redstone-Signal?", answers: ["Fackel", "Verstärker (Repeater)", "Kolben", "Hebel"], correct: 1, hint: "Setzt die Signalstärke auf 15 zurück", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welcher Block sendet ein Signal aus, wenn er eine Veränderung bemerkt?", answers: ["Hebel", "Beobachter (Observer)", "Knopf", "Trichter"], correct: 1, hint: "Hat ein 'Gesicht'", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -157,10 +161,12 @@ const minecraft6rData = {
             { question: "Welche Druckplatte reagiert nur auf Spieler?", answers: ["Holz", "Stein", "Gold", "Eisen"], correct: 1, hint: "Graue Farbe", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Womit kann man Licht automatisch einschalten, wenn es dunkel wird?", answers: ["Hebel", "Tageslichtsensor", "Knopf", "Fackel"], correct: 1, hint: "Kann invertiert werden", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist eine 'Clock' in Redstone?", answers: ["Eine echte Uhr", "Ein sich wiederholendes Signal", "Ein Zeitmesser", "Ein kaputtes Kabel"], correct: 1, hint: "Blinkendes Signal", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was passiert, wenn ein Werfer (Dispenser) mit einem Wassereimer aktiviert wird?", answers: ["Er wirft den Eimer aus", "Er platziert eine Wasserquelle", "Er explodiert", "Nichts"], correct: 1, hint: "Er 'benutzt' das Item im Inneren", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was passiert, wenn ein Werfer (Dispenser) mit einem Wassereimer aktiviert wird?", answers: ["Er wirft den Eimer aus", "Er platziert eine Wasserquelle", "Er explodiert", "Nichts"], correct: 1, hint: "Er 'benutzt' das Item im Inneren", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was leitet Redstone-Signale?", answers: ["Holz", "Stein", "Redstone-Staub", "Glas"], correct: 2, hint: "Leitender Block", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was erzeugt ein Redstone-Signal?", answers: ["Redstone-Lampe", "Hebel", "Block", "Glas"], correct: 1, hint: "Aktivierung", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was macht ein Redstone-Verstärker?", answers: ["Verdoppeln", "Signal verlängern/verstärken", "Block bauen", "Item zerstören"], correct: 1, hint: "Signal", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        biomes: [
-            { question: "In welchem Biom findet man Kakteen?", answers: ["Wald", "Wüste", "Dschungel", "Eiswüste"], correct: 1, hint: "Heiß und trocken", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        biomes: [ { question: "In welchem Biom findet man Kakteen?", answers: ["Wald", "Wüste", "Dschungel", "Eiswüste"], correct: 1, hint: "Heiß und trocken", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "In welchem Biom wachsen Chorusfrüchte?", answers: ["Nether", "Ende", "Oberwelt", "Ozean"], correct: 1, hint: "Lila Pflanzen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welche Struktur findet man im Dschungel?", answers: ["Wüstentempel", "Dschungeltempel", "Bastion", "Dorf"], correct: 1, hint: "Aus Pflasterstein und Moos", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wo findet man Eisbären?", answers: ["Dschungel", "Eisbiome", "Wüste", "Savanne"], correct: 1, hint: "Wo es kalt ist", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -174,10 +180,12 @@ const minecraft6rData = {
             { question: "Wo findet man Korallenriffe?", answers: ["Tiefer Ozean", "Warmer Ozean", "Eismeer", "Flüsse"], correct: 1, hint: "Sehr bunte Blöcke", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie heißt die Struktur im Dorf, in der der Schmied arbeitet?", answers: ["Kirche", "Schmiede", "Bibliothek", "Haus"], correct: 1, hint: "Hat oft eine Kiste mit Loot", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welches Biom hat die höchsten Bäume?", answers: ["Wald", "Birkenwald", "Dschungel", "Schwarzeichenwald"], correct: 2, hint: "Tropisches Klima", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Wo spawnen Schleime am häufigsten an der Oberfläche?", answers: ["Wüste", "Sumpf", "Eiswüste", "Berge"], correct: 1, hint: "Besonders bei Vollmond", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Wo spawnen Schleime am häufigsten an der Oberfläche?", answers: ["Wüste", "Sumpf", "Eiswüste", "Berge"], correct: 1, hint: "Besonders bei Vollmond", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist ein Wüstenbiom?", answers: ["Viel Wasser", "Sand, kaum Regen", "Viel Schnee", "Dichter Wald"], correct: 1, hint: "Sand", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was wächst in einem Waldbiom?", answers: ["Kaktus", "Bäume", "Pilze", "Gras"], correct: 1, hint: "Holz", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was gibt es im Ozeanbiom?", answers: ["Lava", "Viel Wasser", "Viel Sand", "Bäume"], correct: 1, hint: "Tief", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        items: [
-            { question: "Welches Item lässt dich fliegen?", answers: ["Mantel", "Elytren", "Umhang", "Flügel"], correct: 1, hint: "Findet man in Endschiffen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        items: [ { question: "Welches Item lässt dich fliegen?", answers: ["Mantel", "Elytren", "Umhang", "Flügel"], correct: 1, hint: "Findet man in Endschiffen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Womit kann man Werkzeuge reparieren?", answers: ["Amboss", "Werkbank", "Ofen", "Truhe"], correct: 0, hint: "Braucht Erfahrungspunkte", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welches Item rettet dich vor dem Tod?", answers: ["Goldapfel", "Totem der Unsterblichkeit", "Diamant", "Schild"], correct: 1, hint: "Man muss es in der Hand halten", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Womit kann man Blöcke aus der Ferne abbauen?", answers: ["Bogen", "Spitzhacke", "Gibt es nicht", "TNT"], correct: 2, hint: "Abbauen geht nur nah", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -191,7 +199,10 @@ const minecraft6rData = {
             { question: "Welches Item erhält man von einer Lohe (Blaze)?", answers: ["Feuerball", "Lohenrute", "Netherstern", "Glowstone"], correct: 1, hint: "Wichtig für Braustände", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Womit kann man Items benennen?", answers: ["Werkbank", "Amboss", "Schild", "Buch"], correct: 1, hint: "Kostet Level", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welches Item braucht man für ein Endportal?", answers: ["Enderperle", "Enderauge", "Feuerauge", "Magierkugel"], correct: 1, hint: "Muss in den Rahmen gesetzt werden", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Womit kann man Fische fangen?", answers: ["Eimer", "Angel", "Netz", "Beide (A und B)"], correct: 3, hint: "Angel oder Eimer für Lebendfische", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Womit kann man Fische fangen?", answers: ["Eimer", "Angel", "Netz", "Beide (A und B)"], correct: 3, hint: "Angel oder Eimer für Lebendfische", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist der seltenste Block in Minecraft?", answers: ["Stein", "Erde", "Diamanterz", "Holz"], correct: 2, hint: "Wertvoll", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wofür braucht man Eisen?", answers: ["Um zu essen", "Für Rüstung und Werkzeug", "Um zu fliegen", "Für Musik"], correct: 1, hint: "Metall", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist eine Fackel?", answers: ["Eine Waffe", "Ein Lichtblock", "Ein Tier", "Ein Fluggerät"], correct: 1, hint: "Leuchtet", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ]
     }
 };

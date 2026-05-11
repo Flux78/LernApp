@@ -2,6 +2,8 @@
 .vscode/
 *.code-workspace
 
+scripts/
+
 # OS spezifisch
 thumbs.db
 .DS_Store

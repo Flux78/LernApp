@@ -1,7 +1,6 @@
 // ============================================
 // GEOGRAPHIE - LernApp Daten
 // ============================================
-
 const geographyData = {
     "name": "Geographie",
     "icon": "🌍",

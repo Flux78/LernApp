@@ -1,23 +1,19 @@
 // ============================================
 // LATEIN - LernApp Daten (8. Klasse Gymnasium Bayern)
 // ============================================
-
 const lat8gData = {
     name: "Latein (8G)",
     icon: "🏛️",
     color: "#8b5cf6",
     description: "Latein 8. Klasse Gymnasium - Grammatik, Vokabeln und römische Kultur",
-    
     categories: {
         grammatik: { name: "Grammatik", icon: "📜", color: "#f59e0b", desc: "AcI, PC, AblAbs und Konjunktive" },
         vokabeln: { name: "Vokabeln", icon: "📖", color: "#3b82f6", desc: "Wortschatz Erweiterung" },
         geschichte: { name: "Röm. Geschichte", icon: "⚔️", color: "#ef4444", desc: "Von Hannibal bis Augustus" },
         kultur: { name: "Alltag & Staat", icon: "🏛️", color: "#8b5cf6", desc: "Ämter, Sklaven und Götter" }
     },
-
     questions: {
-        grammatik: [
-            { question: "Was bedeutet 'AcI'?", answers: ["Akkusativ mit Infinitiv", "Ablativ mit Infinitiv", "Akkusativ mit Imperativ", "Adverb mit Infinitiv"], correct: 0, hint: "Subjektsakkusativ", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        grammatik: [ { question: "Was bedeutet 'AcI'?", answers: ["Akkusativ mit Infinitiv", "Ablativ mit Infinitiv", "Akkusativ mit Imperativ", "Adverb mit Infinitiv"], correct: 0, hint: "Subjektsakkusativ", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welche Endung hat ein PPP im Nominativ Maskulin?", answers: ["-ans", "-us", "-ur", "-um"], correct: 1, hint: "Partizip Perfekt Passiv", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie übersetzt man einen AcI oft im Deutschen?", answers: ["Mit einem 'dass'-Satz", "Mit 'weil'", "Gar nicht", "Mit einem Relativsatz"], correct: 0, hint: "Audio Marcum venire - Ich höre, dass...", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist ein PC (Participium Coniunctum)?", answers: ["Computer von Caesar", "Verbundenes Partizip", "Passiv-Zukunft", "Ein Fall"], correct: 1, hint: "Bezieht sich auf ein Substantiv", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -66,10 +62,12 @@ const lat8gData = {
             { question: "Was ist das Kennzeichen des Konjunktiv Präsens bei der a-Konjugation?", answers: ["-a-", "-e-", "-i-", "-u-"], correct: 1, hint: "am-e-m", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'velle'?", answers: ["nicht wollen", "lieber wollen", "wollen", "können"], correct: 2, hint: "unregelmäßig", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie heißt der Genitiv von 'is' (er)?", answers: ["eum", "ei", "eius", "eo"], correct: 2, hint: "dessen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was bedeutet 'interea'?", answers: ["inzwischen", "unterdessen", "beides ist richtig", "vorher"], correct: 2, hint: "Adverb der Zeit", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was bedeutet 'interea'?", answers: ["inzwischen", "unterdessen", "beides ist richtig", "vorher"], correct: 2, hint: "Adverb der Zeit", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist der Nominativ Singular von 'amicus'?", answers: ["amici", "amicum", "amicus", "amico"], correct: 2, hint: "Grundform", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Welche Konjugation hat 'amare'?", answers: ["a-Konjugation", "e-Konjugation", "i-Konjugation", "konsonantische Konjugation"], correct: 0, hint: "Endet auf -are", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie heißt 'sein' auf Latein?", answers: ["esse", "amare", "habere", "videre"], correct: 0, hint: "Wichtigstes Verb", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        vokabeln: [
-            { question: "Was bedeutet 'amicus'?", answers: ["Feind", "Bruder", "Freund", "Vater"], correct: 2, hint: "Gegenteil von inimicus", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        vokabeln: [ { question: "Was bedeutet 'amicus'?", answers: ["Feind", "Bruder", "Freund", "Vater"], correct: 2, hint: "Gegenteil von inimicus", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'bellum'?", answers: ["schön", "Krieg", "Glocke", "Hund"], correct: 1, hint: "Gegenteil von pax", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'pax'?", answers: ["Packung", "Friede", "Krieg", "Stadt"], correct: 1, hint: "Pax Romana", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'urbs'?", answers: ["Dorf", "Land", "Stadt (Rom)", "Welt"], correct: 2, hint: "urban", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -98,10 +96,12 @@ const lat8gData = {
             { question: "Was bedeutet 'fieri'?", answers: ["machen", "gemacht werden / geschehen / werden", "fliehen", "vertrauen"], correct: 1, hint: "Passiv zu facere", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'vincire' (nicht vincere!)?", answers: ["siegen", "fesseln", "kommen", "leben"], correct: 1, hint: "i-Konjugation", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'gens'?", answers: ["Geist", "Volk / Stamm / Geschlecht", "Knie", "Garten"], correct: 1, hint: "Genitiv: gentis", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was bedeutet 'adhuc'?", answers: ["hierher", "bis jetzt / noch", "von dort", "damals"], correct: 1, hint: "Adverb", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was bedeutet 'adhuc'?", answers: ["hierher", "bis jetzt / noch", "von dort", "damals"], correct: 1, hint: "Adverb", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was heißt 'amicus' auf Deutsch?", answers: ["Feind", "Bruder", "Freund", "Vater"], correct: 2, hint: "Guter Kumpel", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was heißt 'puella' auf Deutsch?", answers: ["Junge", "Mädchen", "Frau", "Lehrerin"], correct: 1, hint: "Das Mädchen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was heißt 'pater' auf Deutsch?", answers: ["Mutter", "Sohn", "Bruder", "Vater"], correct: 3, hint: "Das Familienoberhaupt", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        geschichte: [
-            { question: "Wer gründete Rom laut Sage?", answers: ["Caesar", "Romulus & Remus", "Augustus", "Nero"], correct: 1, hint: "Wölfin", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        geschichte: [ { question: "Wer gründete Rom laut Sage?", answers: ["Caesar", "Romulus & Remus", "Augustus", "Nero"], correct: 1, hint: "Wölfin", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wann wurde Rom angeblich gegründet?", answers: ["500 v. Chr.", "753 v. Chr.", "100 n. Chr.", "476 n. Chr."], correct: 1, hint: "7-5-3 Rom schlüpft aus dem Ei", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Gegen wen kämpfte Rom in den Punischen Kriegen?", answers: ["Griechen", "Karthager (Hannibal)", "Gallier", "Ägypter"], correct: 1, hint: "Elefanten über die Alpen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'SPQR'?", answers: ["Rom ist super", "Senat und Volk von Rom", "Caesar ist König", "Gesetz des Staates"], correct: 1, hint: "Senatus Populusque Romanus", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -125,10 +125,12 @@ const lat8gData = {
             { question: "Wie hieß die Provinz, die Caesar eroberte?", answers: ["Britannien", "Gallien (heute Frankreich)", "Ägypten", "Griechenland"], correct: 1, hint: "Asterix...", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was war eine 'Legion'?", answers: ["Ein Schiff", "Eine militärische Einheit (ca. 5000 Mann)", "Ein Festessen", "Ein Tempelbau"], correct: 1, hint: "Römisches Heer", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist ein Veto?", answers: ["Ein Segen", "'Ich verbiete' (Einspruchsrecht)", "Ein Opfer", "Ein Tanz"], correct: 1, hint: "Recht der Volkstribune", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was war das 'Zwölftafelgesetz'?", answers: ["Ein Kochbuch", "Erste schriftliche Gesetze Roms", "Ein Menü", "Ein Kalender"], correct: 1, hint: "Rechtssicherheit", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was war das 'Zwölftafelgesetz'?", answers: ["Ein Kochbuch", "Erste schriftliche Gesetze Roms", "Ein Menü", "Ein Kalender"], correct: 1, hint: "Rechtssicherheit", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wer war der erste Kaiser von Rom?", answers: ["Augustus", "Caesar", "Nero", "Trajan"], correct: 0, hint: "Adoptivsohn Caesars", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was war der 'Senat'?", answers: ["Ein Theater", "Die Volksversammlung", "Die römische Ratsversammlung", "Ein Tempel"], correct: 2, hint: "Politische Versammlung", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wer war Julius Caesar?", answers: ["Ein Gott", "Ein römischer Feldherr", "Ein griechischer Philosoph", "Ein Kaufmann"], correct: 1, hint: "Berühmter Herrscher", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        kultur: [
-            { question: "Wer ist der höchste Gott der Römer?", answers: ["Merkur", "Jupiter", "Mars", "Neptun"], correct: 1, hint: "Gott des Blitzes (Zeus)", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        kultur: [ { question: "Wer ist der höchste Gott der Römer?", answers: ["Merkur", "Jupiter", "Mars", "Neptun"], correct: 1, hint: "Gott des Blitzes (Zeus)", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wer ist die Göttin der Liebe?", answers: ["Juno", "Minerva", "Venus", "Diana"], correct: 2, hint: "Griechisch Aphrodite", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was sind 'Thermen'?", answers: ["Schulen", "Öffentliche Badeanlagen", "Kasernen", "Bibliotheken"], correct: 1, hint: "Wellness der Antike", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welche Sprache sprachen die Römer?", answers: ["Italienisch", "Griechisch", "Latein", "Gallisch"], correct: 2, hint: "Lingua Latina", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -152,7 +154,10 @@ const lat8gData = {
             { question: "Was war ein 'Tutor'?", answers: ["Ein Lehrer/Vormund", "Ein Sklave", "Ein Gott", "Ein Soldat"], correct: 0, hint: "Schutzherr", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist das 'Pantheon'?", answers: ["Ein Grab", "Tempel für alle Götter", "Ein Theater", "Ein Bad"], correct: 1, hint: "Kuppelbau in Rom", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wer war der Gott des Weines?", answers: ["Mars", "Bacchus", "Neptun", "Pluto"], correct: 1, hint: "Dionysos", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was ist eine 'Zenturie'?", answers: ["10 Jahre", "Militärische Einheit von ca. 80-100 Mann", "Ein Tempel", "Ein Schiff"], correct: 1, hint: "Befehlshaber Zenturio", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was ist eine 'Zenturie'?", answers: ["10 Jahre", "Militärische Einheit von ca. 80-100 Mann", "Ein Tempel", "Ein Schiff"], correct: 1, hint: "Befehlshaber Zenturio", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was war das Colosseum?", answers: ["Ein Tempel", "Ein Amphitheater", "Ein Badehaus", "Ein Palast"], correct: 1, hint: "Gladiatorenkämpfe", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was trugen römische Bürger meistens?", answers: ["Hose", "Toga", "Jacke", "Rock"], correct: 1, hint: "Wickelgewand", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was war ein 'Thermopolium'?", answers: ["Eine Schule", "Eine Garküche", "Ein Marktplatz", "Eine Bibliothek"], correct: 1, hint: "Fast food der Römer", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ]
     }
 };

@@ -1,13 +1,11 @@
 // ============================================
 // ENGLISCH - LernApp Daten (6. Klasse Realschule Bayern)
 // ============================================
-
 const english6rData = {
     name: "Englisch",
     icon: "🇬🇧",
     color: "#6366f1",
     description: "Englisch lernen mit Vokabeln und Grammatik - 6. Klasse Realschule",
-    
     categories: {
         everyday: { name: "Alltagswörter", icon: "🏠", color: "#10b981", desc: "Wörter für den täglichen Gebrauch" },
         school: { name: "Schule", icon: "📚", color: "#3b82f6", desc: "Schulfächer und Unterricht" },
@@ -27,10 +25,8 @@ const english6rData = {
         prepositions: { name: "Präpositionen", icon: "📍", color: "#22c55e", desc: "Ort und Richtung" },
         pronouns: { name: "Pronomen", icon: "👤", color: "#6366f1", desc: "Fürwörter" }
     },
-
     questions: {
-        everyday: [
-            { question: "Was bedeutet 'house'?", answers: ["Haus", "Tür", "Fenster", "Zimmer"], correct: 0, hint: "Wohnort", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        everyday: [ { question: "Was bedeutet 'house'?", answers: ["Haus", "Tür", "Fenster", "Zimmer"], correct: 0, hint: "Wohnort", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'door'?", answers: ["Haus", "Tür", "Fenster", "Tisch"], correct: 1, hint: "Eingang", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'window'?", answers: ["Tür", "Dach", "Fenster", "Wand"], correct: 2, hint: "Lichtquelle", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'table'?", answers: ["Stuhl", "Tisch", "Schrank", "Bett"], correct: 1, hint: "Möbelstück", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -59,10 +55,12 @@ const english6rData = {
             { question: "Was bedeutet 'money'?", answers: ["Zeit", "Geld", "Arbeit", "Glück"], correct: 1, hint: "Bezahlen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'key'?", answers: ["Schloss", "Schlüssel", "Tür", "Kiste"], correct: 1, hint: "Öffnet Türen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'living room'?", answers: ["Küche", "Wohnzimmer", "Bad", "Keller"], correct: 1, hint: "Sofa und TV", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was bedeutet 'garage'?", answers: ["Garten", "Garage", "Dachboden", "Flur"], correct: 1, hint: "Für das Auto", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was bedeutet 'garage'?", answers: ["Garten", "Garage", "Dachboden", "Flur"], correct: 1, hint: "Für das Auto", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was bedeutet 'Hello' auf Deutsch?", answers: ["Hallo", "Tschüss", "Danke", "Bitte"], correct: 0, hint: "Begrüßung", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Welches Wort bedeutet 'Danke'?", answers: ["Goodbye", "Sorry", "Thank you", "Please"], correct: 2, hint: "Höflichkeit", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist die deutsche Entsprechung für 'See you later'?", answers: ["Guten Morgen", "Bis später", "Gute Nacht", "Hallo"], correct: 1, hint: "Abschied", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        school: [
-            { question: "Was bedeutet 'school'?", answers: ["Schule", "Klasse", "Lehrer", "Schüler"], correct: 0, hint: "Lernort", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        school: [ { question: "Was bedeutet 'school'?", answers: ["Schule", "Klasse", "Lehrer", "Schüler"], correct: 0, hint: "Lernort", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'teacher'?", answers: ["Schüler", "Lehrer", "Direktor", "Eltern"], correct: 1, hint: "Unterrichtender", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'student'?", answers: ["Lehrer", "Schüler", "Professor", "Dozent"], correct: 1, hint: "Lernender", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'classroom'?", answers: ["Schule", "Klassenzimmer", "Lehrerzimmer", "Bibliothek"], correct: 1, hint: "Unterrichtsraum", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -91,10 +89,12 @@ const english6rData = {
             { question: "Was bedeutet 'playground'?", answers: ["Sportplatz", "Schulhof", "Wiese", "Park"], correct: 1, hint: "Draußen spielen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'PE' (Physical Education)?", answers: ["Physik", "Sport", "Erdkunde", "Kunst"], correct: 1, hint: "Bewegung", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'ICT'?", answers: ["Mathe", "Deutsch", "Informatik", "Musik"], correct: 2, hint: "Computer", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was bedeutet 'dictionary'?", answers: ["Atlas", "Wörterbuch", "Kalender", "Heft"], correct: 1, hint: "Zum Nachschlagen", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was bedeutet 'dictionary'?", answers: ["Atlas", "Wörterbuch", "Kalender", "Heft"], correct: 1, hint: "Zum Nachschlagen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the German word for 'blackboard'?", answers: ["Tafel", "Stift", "Buch", "Tisch"], correct: 0, hint: "Schreiben", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is 'homework' in German?", answers: ["Hausaufgabe", "Schule", "Klasse", "Test"], correct: 0, hint: "Aufgabe von der Schule", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "How do you say 'Pause' in English?", answers: ["break", "school", "teacher", "subject"], correct: 0, hint: "Freizeit", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        family: [
-            { question: "Was bedeutet 'mother'?", answers: ["Mutter", "Vater", "Schwester", "Oma"], correct: 0, hint: "weibliches Elternteil", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        family: [ { question: "Was bedeutet 'mother'?", answers: ["Mutter", "Vater", "Schwester", "Oma"], correct: 0, hint: "weibliches Elternteil", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'father'?", answers: ["Mutter", "Vater", "Bruder", "Opa"], correct: 1, hint: "männliches Elternteil", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'sister'?", answers: ["Bruder", "Schwester", "Cousin", "Freundin"], correct: 1, hint: "weibliches Geschwister", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'brother'?", answers: ["Schwester", "Bruder", "Cousin", "Freund"], correct: 1, hint: "männliches Geschwister", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -113,10 +113,12 @@ const english6rData = {
             { question: "Was bedeutet 'best friend'?", answers: ["Bekannter", "Bester Freund", "Klassenkamerad", "Nachbar"], correct: 1, hint: "Wichtigste Person", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'stepmother'?", answers: ["Stiefmutter", "Schwiegermutter", "Patin", "Tante"], correct: 0, hint: "Neue Frau des Vaters", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'twins'?", answers: ["Brüder", "Schwestern", "Zwillinge", "Paar"], correct: 2, hint: "Zwei gleichzeitig", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was bedeutet 'only child'?", answers: ["Lieblingskind", "Einzelkind", "Waisenkind", "Kleinkind"], correct: 1, hint: "Keine Geschwister", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was bedeutet 'only child'?", answers: ["Lieblingskind", "Einzelkind", "Waisenkind", "Kleinkind"], correct: 1, hint: "Keine Geschwister", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Who is the mother of the father?", answers: ["grandmother", "aunt", "sister", "mother"], correct: 0, hint: "Parent's parent", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the sister of the father?", answers: ["mother", "aunt", "grandmother", "sister"], correct: 1, hint: "Relative", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What do we call the parents of our parents?", answers: ["cousins", "grandparents", "aunts", "siblings"], correct: 1, hint: "Oldest generation", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        food: [
-            { question: "Was bedeutet 'apple'?", answers: ["Banane", "Apfel", "Orange", "Traube"], correct: 1, hint: "Obst", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        food: [ { question: "Was bedeutet 'apple'?", answers: ["Banane", "Apfel", "Orange", "Traube"], correct: 1, hint: "Obst", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'bread'?", answers: ["Kuchen", "Brot", "Brötchen", "Keks"], correct: 1, hint: "Grundnahrungsmittel", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'water'?", answers: ["Saft", "Wasser", "Milch", "Tee"], correct: 1, hint: "Getränk", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'milk'?", answers: ["Wasser", "Saft", "Milch", "Kaffee"], correct: 2, hint: "Getränk", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -140,10 +142,12 @@ const english6rData = {
             { question: "Was bedeutet 'salt'?", answers: ["Zucker", "Salz", "Essig", "Öl"], correct: 1, hint: "Weiß und würzig", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'honey'?", answers: ["Marmelade", "Honig", "Sirup", "Zucker"], correct: 1, hint: "Von Bienen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'fruit'?", answers: ["Gemüse", "Obst", "Fleisch", "Brot"], correct: 1, hint: "Äpfel, Birnen etc.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was bedeutet 'chips' (BE)?", answers: ["Chips", "Pommes", "Kekse", "Nüsse"], correct: 1, hint: "Fish and ...", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was bedeutet 'chips' (BE)?", answers: ["Chips", "Pommes", "Kekse", "Nüsse"], correct: 1, hint: "Fish and ...", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is 'Gemüse' in English?", answers: ["fruit", "meat", "vegetables", "sausage"], correct: 2, hint: "Healthy plant food", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is 'Käse' in English?", answers: ["tea", "cheese", "milk", "butter"], correct: 1, hint: "Dairy product", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is 'Kartoffel' in English?", answers: ["potato", "tomato", "apple", "carrot"], correct: 0, hint: "Often used for fries", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        body: [
-            { question: "Was bedeutet 'head'?", answers: ["Hand", "Kopf", "Fuß", "Bein"], correct: 1, hint: "Ganz oben", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        body: [ { question: "Was bedeutet 'head'?", answers: ["Hand", "Kopf", "Fuß", "Bein"], correct: 1, hint: "Ganz oben", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'arm'?", answers: ["Bein", "Arm", "Hand", "Finger"], correct: 1, hint: "Obere Extremität", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'leg'?", answers: ["Arm", "Fuß", "Bein", "Kopf"], correct: 2, hint: "Zum Laufen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'hand'?", answers: ["Fuß", "Finger", "Hand", "Arm"], correct: 2, hint: "Hat fünf Finger", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -162,10 +166,12 @@ const english6rData = {
             { question: "Was bedeutet 'hair'?", answers: ["Haut", "Haare", "Zähne", "Augen"], correct: 1, hint: "Auf dem Kopf", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'face'?", answers: ["Kopf", "Gesicht", "Hals", "Stirn"], correct: 1, hint: "Vorderseite Kopf", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'neck'?", answers: ["Hals", "Nacken", "Kehle", "Alle"], correct: 3, hint: "Verbindung Kopf-Körper", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was bedeutet 'body'?", answers: ["Geist", "Seele", "Körper", "Haut"], correct: 2, hint: "Alles zusammen", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was bedeutet 'body'?", answers: ["Geist", "Seele", "Körper", "Haut"], correct: 2, hint: "Alles zusammen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Where is the 'stomach'?", answers: ["in the leg", "in the arm", "in the belly", "in the head"], correct: 2, hint: "Digestive organ", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "How many fingers does a human hand have?", answers: ["4", "5", "6", "3"], correct: 1, hint: "Count them", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is on top of your head?", answers: ["eyes", "hair", "ears", "a nose"], correct: 1, hint: "Grows there", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        clothes: [
-            { question: "Was bedeutet 'shirt'?", answers: ["Hose", "Hemd", "Jacke", "Hut"], correct: 1, hint: "Oberteil", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        clothes: [ { question: "Was bedeutet 'shirt'?", answers: ["Hose", "Hemd", "Jacke", "Hut"], correct: 1, hint: "Oberteil", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'trousers'?", answers: ["Rock", "Hose", "Kleid", "Schal"], correct: 1, hint: "An den Beinen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'shoes'?", answers: ["Socken", "Stiefel", "Schuhe", "Handschuhe"], correct: 2, hint: "An den Füßen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'hat'?", answers: ["Mütze", "Hut", "Helm", "Kappe"], correct: 1, hint: "Auf dem Kopf", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -184,10 +190,12 @@ const english6rData = {
             { question: "Was bedeutet 'pyjamas'?", answers: ["Anzug", "Schlafanzug", "Unterwäsche", "Kleid"], correct: 1, hint: "Zum Schlafen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'shorts'?", answers: ["Hose", "Kurze Hose", "Rock", "Badehose"], correct: 1, hint: "Für den Sommer", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'blouse'?", answers: ["Hemd", "T-Shirt", "Bluse", "Top"], correct: 2, hint: "Damenoberteil", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was bedeutet 'tie'?", answers: ["Gürtel", "Schal", "Krawatte", "Fliege"], correct: 2, hint: "Zum Anzug", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was bedeutet 'tie'?", answers: ["Gürtel", "Schal", "Krawatte", "Fliege"], correct: 2, hint: "Zum Anzug", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What do you wear on your hands in winter?", answers: ["shoes", "gloves", "socks", "trousers"], correct: 1, hint: "Warm hands", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is a 'blouse'?", answers: ["a skirt", "a dress", "a shirt for women", "a pair of jeans"], correct: 2, hint: "Clothes", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What do you call 'Kurze Hose' in English?", answers: ["trousers", "jeans", "shorts", "skirt"], correct: 2, hint: "Summer wear", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        animals: [
-            { question: "Was bedeutet 'dog'?", answers: ["Katze", "Hund", "Maus", "Vogel"], correct: 1, hint: "Haustier", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        animals: [ { question: "Was bedeutet 'dog'?", answers: ["Katze", "Hund", "Maus", "Vogel"], correct: 1, hint: "Haustier", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'cat'?", answers: ["Hund", "Katze", "Hamster", "Kaninchen"], correct: 1, hint: "Haustier", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'bird'?", answers: ["Fisch", "Vogel", "Schmetterling", "Biene"], correct: 1, hint: "fliegt", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'fish'?", answers: ["Hai", "Fisch", "Wal", "Delfin"], correct: 1, hint: "schwimmt", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -206,10 +214,12 @@ const english6rData = {
             { question: "Was bedeutet 'chicken'?", answers: ["Hahn", "Henne", "Huhn", "Vogel"], correct: 2, hint: "Gibt Eier", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'mouse' (Plural: mice)?", answers: ["Ratte", "Maus", "Hamster", "Eichhörnchen"], correct: 1, hint: "Klienes Nagetier", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'duck'?", answers: ["Gans", "Ente", "Schwan", "Vogel"], correct: 1, hint: "Schwimmt auf dem Teich", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was bedeutet 'spider'?", answers: ["Wurm", "Spinne", "Käfer", "Fliege"], correct: 1, hint: "Hat acht Beine", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was bedeutet 'spider'?", answers: ["Wurm", "Spinne", "Käfer", "Fliege"], correct: 1, hint: "Hat acht Beine", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "How many legs does a spider have?", answers: ["6", "8", "4", "2"], correct: 1, hint: "More than an insect", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Which animal is known as 'king of the animals'?", answers: ["tiger", "elephant", "lion", "bear"], correct: 2, hint: "Roars loud", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the English word for 'Schwein'?", answers: ["sheep", "cow", "pig", "duck"], correct: 2, hint: "Pink farm animal", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        nature: [
-            { question: "Was bedeutet 'tree'?", answers: ["Blume", "Baum", "Strauch", "Pflanze"], correct: 1, hint: "wächst im Wald", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        nature: [ { question: "Was bedeutet 'tree'?", answers: ["Blume", "Baum", "Strauch", "Pflanze"], correct: 1, hint: "wächst im Wald", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'flower'?", answers: ["Baum", "Blume", "Gras", "Blatt"], correct: 1, hint: "blüht", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'sun'?", answers: ["Mond", "Sonne", "Stern", "Wolke"], correct: 1, hint: "scheint am Tag", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'moon'?", answers: ["Sonne", "Mond", "Stern", "Planet"], correct: 1, hint: "scheint in der Nacht", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -228,10 +238,12 @@ const english6rData = {
             { question: "Was bedeutet 'sunny'?", answers: ["schön", "warm", "sonnig", "hell"], correct: 2, hint: "Viel Sonne", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'storm'?", answers: ["Regen", "Wind", "Sturm", "Gewitter"], correct: 2, hint: "Heftiges Wetter", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'island'?", answers: ["Land", "Insel", "Kontinent", "Küste"], correct: 1, hint: "Land im Wasser", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was bedeutet 'lake'?", answers: ["Meer", "Fluss", "Bach", "See"], correct: 3, hint: "Stehendes Wasser", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was bedeutet 'lake'?", answers: ["Meer", "Fluss", "Bach", "See"], correct: 3, hint: "Stehendes Wasser", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is 'Regen' in English?", answers: ["sun", "wind", "rain", "snow"], correct: 2, hint: "Water from above", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Which of these is a body of water?", answers: ["mountain", "forest", "lake", "tree"], correct: 2, hint: "Not land", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the opposite of 'hot'?", answers: ["cold", "warm", "sunny", "windy"], correct: 0, hint: "Freezing", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        hobbies: [
-            { question: "Was bedeutet 'play football'?", answers: ["Fußball spielen", "Basketball spielen", "Tennis spielen", "Handball spielen"], correct: 0, hint: "Sport", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        hobbies: [ { question: "Was bedeutet 'play football'?", answers: ["Fußball spielen", "Basketball spielen", "Tennis spielen", "Handball spielen"], correct: 0, hint: "Sport", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'read'?", answers: ["schreiben", "lesen", "malen", "zeichnen"], correct: 1, hint: "Bücher", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'make music'?", answers: ["singen", "musizieren", "tanzen", "spielen"], correct: 1, hint: "Instrument", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'swim'?", answers: ["laufen", "schwimmen", "radfahren", "wandern"], correct: 1, hint: "im Wasser", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -250,10 +262,12 @@ const english6rData = {
             { question: "Was bedeutet 'jog'?", answers: ["schnell gehen", "joggen/laufen", "rennen", "stehen"], correct: 1, hint: "Langsames Rennen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'take photos'?", answers: ["malen", "zeichnen", "fotografieren", "filmen"], correct: 2, hint: "Kamera nutzen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'listen to music'?", answers: ["Musik machen", "Musik hören", "Musik kaufen", "Musik tanzen"], correct: 1, hint: "Mit den Ohren", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was bedeutet 'collect'?", answers: ["geben", "tauschen", "sammeln", "verkaufen"], correct: 2, hint: "Zusammenbringen", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was bedeutet 'collect'?", answers: ["geben", "tauschen", "sammeln", "verkaufen"], correct: 2, hint: "Zusammenbringen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is 'kochen' in English?", answers: ["read", "dance", "cook", "paint"], correct: 2, hint: "Kitchen activity", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What do you do with a camera?", answers: ["take photos", "swim", "jog", "hike"], correct: 0, hint: "Capturing moments", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is 'wandern' in English?", answers: ["cycle", "hike", "climb", "jog"], correct: 1, hint: "Nature activity", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        travel: [
-            { question: "Was bedeutet 'plane'?", answers: ["Zug", "Flugzeug", "Auto", "Schiff"], correct: 1, hint: "fliegt", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        travel: [ { question: "Was bedeutet 'plane'?", answers: ["Zug", "Flugzeug", "Auto", "Schiff"], correct: 1, hint: "fliegt", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'train'?", answers: ["Bus", "Zug", "Auto", "Fahrrad"], correct: 1, hint: "auf Schienen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'car'?", answers: ["Bus", "Zug", "Auto", "Schiff"], correct: 2, hint: "fährt", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'bus'?", answers: ["Zug", "Bus", "Auto", "Flugzeug"], correct: 1, hint: "öffentlich", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -272,10 +286,12 @@ const english6rData = {
             { question: "Was bedeutet 'visit'?", answers: ["sehen", "bleiben", "besuchen", "wohnen"], correct: 2, hint: "Jemanden aufsuchen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'flight'?", answers: ["Fahrt", "Reise", "Flug", "Gang"], correct: 2, hint: "In der Luft", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was bedeutet 'museum'?", answers: ["Kino", "Theater", "Museum", "Galerie"], correct: 2, hint: "Alte Dinge ansehen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was bedeutet 'souvenir'?", answers: ["Geschenk", "Essen", "Andenken", "Kleidung"], correct: 2, hint: "Mitbringsel", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was bedeutet 'souvenir'?", answers: ["Geschenk", "Essen", "Andenken", "Kleidung"], correct: 2, hint: "Mitbringsel", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What do you need to board a plane?", answers: ["a map", "a ticket", "a towel", "a friend"], correct: 1, hint: "Required document", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Where do you stay when on holiday?", answers: ["in a shop", "in a school", "in a hotel", "in a museum"], correct: 2, hint: "Accommodation", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is 'Flughafen' in English?", answers: ["station", "airport", "harbour", "beach"], correct: 1, hint: "Planes land there", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        present_simple: [
-            { question: "Wie lautet: 'Ich spiele Fußball.'?", answers: ["I play football.", "I plays football.", "I am play football.", "I played football."], correct: 0, hint: "Basisform für I", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        present_simple: [ { question: "Wie lautet: 'Ich spiele Fußball.'?", answers: ["I play football.", "I plays football.", "I am play football.", "I played football."], correct: 0, hint: "Basisform für I", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie lautet: 'Sie liest ein Buch.'?", answers: ["She read a book.", "She reads a book.", "She reading a book.", "She is reads a book."], correct: 1, hint: "He, she, it - das -s muss mit!", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie lautet: 'Wir gehen zur Schule.'?", answers: ["We goes to school.", "We going to school.", "We go to school.", "We gone to school."], correct: 2, hint: "Plural: Grundform", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie lautet: 'Er trinkt Wasser.'?", answers: ["He drink water.", "He drinks water.", "He drinking water.", "He is drink water."], correct: 1, hint: "3. Person Singular: -s", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -294,10 +310,12 @@ const english6rData = {
             { question: "Frage: 'When ___ the film start?'", answers: ["do", "is", "does", "starts"], correct: 2, hint: "The film = it", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welcher Satz ist eine Gewohnheit?", answers: ["I am eating now.", "I eat breakfast every day.", "I will eat later.", "I ate an apple."], correct: 1, hint: "Every day", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "He ___ (wash) his car every week.", answers: ["wash", "washs", "washes", "washing"], correct: 2, hint: "Besonderheit bei Endung -sh", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "She ___ (try) very hard.", answers: ["trys", "tryes", "tries", "try"], correct: 2, hint: "y wird zu ie", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "She ___ (try) very hard.", answers: ["trys", "tryes", "tries", "try"], correct: 2, hint: "y wird zu ie", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "He ___ (go) to school every day.", answers: ["go", "goes", "going", "gone"], correct: 1, hint: "3rd person singular", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Verneinung von 'They play football'?", answers: ["They not play", "They don't play", "They doesn't play", "They are not play"], correct: 1, hint: "Don't", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Frage: ___ you like apples?", answers: ["Do", "Does", "Are", "Is"], correct: 0, hint: "Question start", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        past_simple: [
-            { question: "Wie lautet: 'Ich spielte gestern Fußball.'?", answers: ["I play football yesterday.", "I played football yesterday.", "I playing football yesterday.", "I plays football yesterday."], correct: 1, hint: "Regelmäßig: -ed", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        past_simple: [ { question: "Wie lautet: 'Ich spielte gestern Fußball.'?", answers: ["I play football yesterday.", "I played football yesterday.", "I playing football yesterday.", "I plays football yesterday."], correct: 1, hint: "Regelmäßig: -ed", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie lautet: 'Sie ging nach Hause.' (go)?", answers: ["She goed home.", "She went home.", "She going home.", "She goes home."], correct: 1, hint: "Unregelmäßig: go - went", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie lautet: 'Wir waren im Kino.'?", answers: ["We are at the cinema.", "We were at the cinema.", "We was at the cinema.", "We being at the cinema."], correct: 1, hint: "to be im Plural", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Verneinung: 'I ___ (not watch) TV.'", answers: ["not watched", "didn't watch", "didn't watched", "don't watched"], correct: 1, hint: "didn't + Grundform", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -316,10 +334,12 @@ const english6rData = {
             { question: "Past von 'do'?", answers: ["doed", "done", "did", "does"], correct: 2, hint: "Unregelmäßig", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Past von 'have'?", answers: ["haved", "has", "had", "haves"], correct: 2, hint: "Unregelmäßig", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Past von 'run'?", answers: ["runned", "ran", "runs", "run"], correct: 1, hint: "Unregelmäßig", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Past von 'come'?", answers: ["comed", "came", "comes", "come"], correct: 1, hint: "Unregelmäßig", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Past von 'come'?", answers: ["comed", "came", "comes", "come"], correct: 1, hint: "Unregelmäßig", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "He ___ (watch) TV yesterday.", answers: ["watch", "watched", "watching", "watches"], correct: 1, hint: "Regular past", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the past of 'go'?", answers: ["goed", "goes", "went", "gone"], correct: 2, hint: "Irregular verb", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Verneinung: 'I ___ (not finish) my homework.'", answers: ["don't finished", "didn't finish", "didn't finished", "not finished"], correct: 1, hint: "Didn't + infinitive", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        present_continuous: [
-            { question: "Wie lautet: 'Ich spiele gerade Fußball.'?", answers: ["I play football.", "I am playing football.", "I playing football.", "I plays football."], correct: 1, hint: "am + -ing", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        present_continuous: [ { question: "Wie lautet: 'Ich spiele gerade Fußball.'?", answers: ["I play football.", "I am playing football.", "I playing football.", "I plays football."], correct: 1, hint: "am + -ing", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie lautet: 'Sie liest gerade ein Buch.'?", answers: ["She reads a book.", "She is reading a book.", "She reading a book.", "She are reading a book."], correct: 1, hint: "is + -ing", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie lautet: 'Wir gehen gerade zur Schule.'?", answers: ["We go to school.", "We are going to school.", "We going to school.", "We is going to school."], correct: 1, hint: "are + -ing", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Verneinung: 'I ___ (not sleep).'", answers: ["not sleeping", "don't sleeping", "am not sleeping", "doesn't sleep"], correct: 2, hint: "am + not + -ing", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -338,10 +358,12 @@ const english6rData = {
             { question: "Welche Form ist korrekt?", answers: ["Listen! Someone sings.", "Listen! Someone is singing.", "Listen! Someone is sing.", "Listen! Someone singing."], correct: 1, hint: "Gerade jetzt", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welche Form ist korrekt?", answers: ["I am doing my homework now.", "I do my homework now.", "I doing my homework now.", "I does my homework now."], correct: 0, hint: "Gerade jetzt", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Verneinung: 'We ___ (not use) the computer.'", answers: ["aren't use", "isn't using", "aren't using", "not using"], correct: 2, hint: "Mehrzahl", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was passt: 'Be quiet! The baby ___.'", answers: ["sleeps", "sleeping", "is sleeping", "is sleeps"], correct: 2, hint: "Gerade in diesem Moment", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was passt: 'Be quiet! The baby ___.'", answers: ["sleeps", "sleeping", "is sleeping", "is sleeps"], correct: 2, hint: "Gerade in diesem Moment", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "She ___ (read) the book at the moment.", answers: ["reads", "is reading", "reading", "read"], correct: 1, hint: "At the moment", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What ___ they doing now?", answers: ["are", "is", "do", "does"], correct: 0, hint: "Plural present continuous", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Verneinung: 'I ___ (not sleep) right now.'", answers: ["don't sleeping", "am not sleeping", "not sleeping", "isn't sleeping"], correct: 1, hint: "Am not", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        going_to: [
-            { question: "Wie lautet: 'Ich werde Fußball spielen.'?", answers: ["I play football.", "I am going to play football.", "I going to play football.", "I will playing football."], correct: 1, hint: "Absicht", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        going_to: [ { question: "Wie lautet: 'Ich werde Fußball spielen.'?", answers: ["I play football.", "I am going to play football.", "I going to play football.", "I will playing football."], correct: 1, hint: "Absicht", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie lautet: 'Sie wird ein Buch lesen.'?", answers: ["She reads a book.", "She is going to read a book.", "She going to read a book.", "She will reads a book."], correct: 1, hint: "Plan", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wie lautet: 'Wir werden zur Schule gehen.'?", answers: ["We go to school.", "We are going to go to school.", "We going to go to school.", "We will going to school."], correct: 1, hint: "Mehrzahl", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Verneinung: 'I ___ (not buy) that.'", answers: ["not going to buy", "am not going to buy", "don't going to buy", "won't going to buy"], correct: 1, hint: "am not going to", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -350,10 +372,15 @@ const english6rData = {
             { question: "Frage: '___ she going to call you?'", answers: ["Is", "Are", "Does", "Will"], correct: 0, hint: "Is + going to", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welche Form ist eine Vorhersage?", answers: ["Look! It is going to rain.", "It rains every day.", "It rained yesterday.", "It rain."], correct: 0, hint: "Anzeichen vorhanden", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Frage: 'When ___ they going to arrive?'", answers: ["is", "do", "are", "will"], correct: 2, hint: "Mehrzahl", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Welcher Satz ist eine Absicht?", answers: ["I play tennis.", "I am going to play tennis.", "I am playing tennis.", "I played tennis."], correct: 1, hint: "Absicht", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Welcher Satz ist eine Absicht?", answers: ["I play tennis.", "I am going to play tennis.", "I am playing tennis.", "I played tennis."], correct: 1, hint: "Absicht", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "How do you form the going-to future?", answers: ["am/is/are + going to + verb", "going + to + verb", "will + verb", "do + going to + verb"], correct: 0, hint: "Form", stats: {"correct": 0, "total": 0, "difficulty": 1.0}},
+            { question: "What is the correct sentence?", answers: ["I am going to swim.", "I going to swim.", "I am go to swim.", "I will going to swim."], correct: 0, hint: "Correct form", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What does a going-to future express?", answers: ["A habit", "An intention or plan", "A fact", "A past event"], correct: 1, hint: "Function", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the structure for the 'going to' future?", answers: ["will + infinitive", "am/is/are + going to + infinitive", "infinitive + -ing", "past + -ed"], correct: 1, hint: "Form", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "I ___ (buy) a new bike next week.", answers: ["go to buy", "am going to buy", "will buy", "bought"], correct: 1, hint: "Intention", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Frage: ___ they going to help us?", answers: ["Do", "Are", "Will", "Is"], correct: 1, hint: "Plural question", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        comparatives: [
-            { question: "Steigerung von 'tall'?", answers: ["more tall", "taller", "tallest", "taler"], correct: 1, hint: "kurzes Wort: -er", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        comparatives: [ { question: "Steigerung von 'tall'?", answers: ["more tall", "taller", "tallest", "taler"], correct: 1, hint: "kurzes Wort: -er", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Steigerung von 'big'?", answers: ["biger", "bigger", "more big", "bigest"], correct: 1, hint: "kurzer Vokal: Konsonant verdoppeln", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Steigerung von 'interesting'?", answers: ["interestinger", "more interesting", "most interesting", "more interestinger"], correct: 1, hint: "langes Wort: more", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Steigerung von 'good'?", answers: ["gooder", "better", "best", "more good"], correct: 1, hint: "Unregelmäßig!", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -362,10 +389,15 @@ const english6rData = {
             { question: "Steigerung von 'difficult'?", answers: ["difficulter", "more difficult", "most difficult", "more difficulter"], correct: 1, hint: "more", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Vergleich: 'She is older ___ me.'", answers: ["as", "then", "than", "so"], correct: 2, hint: "als", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Steigerung von 'nice'?", answers: ["nicer", "more nice", "nicest", "niceer"], correct: 0, hint: "Nur ein r anhängen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Steigerung von 'happy'?", answers: ["happyer", "more happy", "happier", "happyer"], correct: 2, hint: "y wird zu i", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Steigerung von 'happy'?", answers: ["happyer", "more happy", "happier", "happyer"], correct: 2, hint: "y wird zu i", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Steigerung von 'easy'?", answers: ["easier", "more easy", "easiest", "easyer"], correct: 0, hint: "y wird zu i", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Steigerung von 'expensive'?", answers: ["expensiveer", "more expensive", "expensiver", "most expensive"], correct: 1, hint: "lang", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Steigerung von 'hot'?", answers: ["hoter", "hotter", "more hot", "hottest"], correct: 1, hint: "kurzer Vokal, Konsonant verdoppeln", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the comparative of 'small'?", answers: ["more small", "smaller", "smallest", "smaler"], correct: 1, hint: "Short word", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the comparative of 'dangerous'?", answers: ["dangerouser", "more dangerous", "most dangerous", "more danger"], correct: 1, hint: "Long word", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the comparative of 'good'?", answers: ["gooder", "better", "best", "more good"], correct: 1, hint: "Irregular", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        prepositions: [
-            { question: "Wo ist 'in'?", answers: ["auf", "unter", "in/im", "neben"], correct: 2, hint: "Drinnen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        prepositions: [ { question: "Wo ist 'in'?", answers: ["auf", "unter", "in/im", "neben"], correct: 2, hint: "Drinnen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wo ist 'on'?", answers: ["in", "auf", "hinter", "zwischen"], correct: 1, hint: "Oben drauf", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wo ist 'under'?", answers: ["über", "neben", "vor", "unter"], correct: 3, hint: "Unten drunter", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Wo ist 'behind'?", answers: ["hinter", "vor", "neben", "an"], correct: 0, hint: "Rückseite", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -374,10 +406,12 @@ const english6rData = {
             { question: "Wo ist 'between'?", answers: ["an", "neben", "zwischen", "hinter"], correct: 2, hint: "In der Mitte von zwei", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Präposition: 'The book is ___ the table.'", answers: ["in", "on", "at", "behind"], correct: 1, hint: "auf dem Tisch", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Präposition: 'I am ___ school.'", answers: ["at", "on", "under", "between"], correct: 0, hint: "an der Schule (Ort)", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Präposition: 'The cat is ___ the chair.'", answers: ["under", "between", "at", "in"], correct: 0, hint: "unter dem Stuhl", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Präposition: 'The cat is ___ the chair.'", answers: ["under", "between", "at", "in"], correct: 0, hint: "unter dem Stuhl", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "How do you say 'zwischen' in English?", answers: ["next to", "between", "under", "in"], correct: 1, hint: "Among two things", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Where is something 'on' a table?", answers: ["in", "under", "on top of", "next to"], correct: 2, hint: "Position", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the opposite of 'in front of'?", answers: ["behind", "next to", "between", "under"], correct: 0, hint: "Direction", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
-        pronouns: [
-            { question: "Objektpronomen von 'I'?", answers: ["my", "mine", "me", "myself"], correct: 2, hint: "Give ___ the book.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+        pronouns: [ { question: "Objektpronomen von 'I'?", answers: ["my", "mine", "me", "myself"], correct: 2, hint: "Give ___ the book.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Objektpronomen von 'he'?", answers: ["his", "him", "he", "himself"], correct: 1, hint: "I see ___.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Objektpronomen von 'she'?", answers: ["her", "hers", "she", "herself"], correct: 0, hint: "Listen to ___.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Besitzanzeigendes Pronomen (my/your...) von 'we'?", answers: ["our", "ours", "us", "we"], correct: 0, hint: "This is ___ house.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -386,7 +420,10 @@ const english6rData = {
             { question: "Objektpronomen von 'they'?", answers: ["their", "them", "they", "theirs"], correct: 1, hint: "I like ___.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was passt: '___ am a student.'", answers: ["Me", "My", "I", "Mine"], correct: 2, hint: "Subjektpronomen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was passt: 'This is ___ pen.' (mein)", answers: ["me", "my", "mine", "I"], correct: 1, hint: "Possessivbegleiter", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was passt: 'He is talking to ___.' (dir)", answers: ["you", "your", "yours", "yourselves"], correct: 0, hint: "Objektpronomen", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was passt: 'He is talking to ___.' (dir)", answers: ["you", "your", "yours", "yourselves"], correct: 0, hint: "Objektpronomen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the object pronoun for 'he'?", answers: ["his", "him", "he", "himself"], correct: 1, hint: "Give it to ___", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "How do you say 'mein' in English (as in 'my pen')?", answers: ["me", "mine", "my", "myself"], correct: 2, hint: "Possessive determiner", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the object pronoun for 'we'?", answers: ["our", "us", "we", "ours"], correct: 1, hint: "Help ___", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ]
     }
 };
