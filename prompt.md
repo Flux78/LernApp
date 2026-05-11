@@ -55,10 +55,18 @@ Der State wird pro Fach im `localStorage` unter `lernapp_[subjectKey]` gespeiche
 
 ## 5. Lehrplan-Inhalte (Bayern)
 
+### Fächerübergreifend: Textaufgaben-Verstehen 🧠
+Ein spezieller Modus, der in allen mathematisch-naturwissenschaftlichen Fächern integriert ist. Er trainiert die Lesekompetenz durch fünf spezialisierte Aufgaben-Typen:
+- **Text Surgeon**: Unnötige Ablenkungen im Text identifizieren.
+- **Question Hunter**: Die einzig mathematisch sinnvolle Fragestellung finden.
+- **Info Jigsaw**: Die notwendigen Puzzleteile (Sätze) für die Lösung auswählen.
+- **Units Detective**: Einheiten-Fehler finden oder korrekt umrechnen.
+- **Question Clarity**: Komplexe Sätze in einfache mathematische Terme übersetzen.
+
 ### 6. Klasse Realschule (6r)
 - **Fächer**: Englisch, Mathematik, Deutsch, Geschichte, Geographie, Minecraft.
-- **Fokus**: Grundrechenarten, Bruchrechnung, Grammatik-Basics, Antike Welt.
+- **Fokus**: Grundrechenarten, Bruchrechnung, Grammatik-Basics, Antike Welt, Textverständnis.
 
 ### 8. Klasse Gymnasium (8g)
 - **Fächer**: Physik, Englisch, Mathematik, Biologie, Latein.
-- **Fokus**: Mechanik/Energie, USA-Landeskunde, Lineare Funktionen, Zellbiologie, AcI/PC-Grammatik.
+- **Fokus**: Mechanik/Energie, USA-Landeskunde, Lineare Funktionen, Zellbiologie, AcI/PC-Grammatik, komplexe Textanalyse.

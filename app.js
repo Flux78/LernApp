@@ -354,7 +354,10 @@ function updateSubjectUI() {
     document.body.classList.toggle('minecraft-mode', currentSubject === 'minecraft');
 
     // Titel aktualisieren
-    document.getElementById('app-title').textContent = `🎓 ${currentSubjectData.name} Master`;
+    // Entferne (8G) oder (6R) aus dem Namen, falls vorhanden, und füge nur das Label hinzu
+    const cleanName = currentSubjectData.name.replace(/\s*\(\d+[a-zA-Z]\)/, '');
+    const gradeLabel = state.grade === '6r' ? '6R' : '8G';
+    document.getElementById('app-title').textContent = `🎓 ${cleanName} ${gradeLabel} Master`;
     
     // Fach-Selektor aktualisieren
     document.querySelectorAll('.subject-btn').forEach(btn => {
@@ -535,7 +538,7 @@ function renderDashboard() {
     
     // 1. Gemischter Modus Karte erstellen und voranstellen
     const mixedCard = document.createElement('div');
-    mixedCard.className = 'tense-card';
+    mixedCard.className = 'tense-card prominent-card';
     mixedCard.style.borderLeft = `4px solid var(--primary-color)`;
     mixedCard.style.background = `rgba(var(--primary-rgb), 0.05)`; // Subtiler Highlight
     mixedCard.innerHTML = `
@@ -554,9 +557,62 @@ function renderDashboard() {
     mixedCard.onclick = () => startMixedSession();
     grid.appendChild(mixedCard);
 
-    // 2. Kategorien hinzufügen
+        // 2. Textaufgaben-Verstehen Karte (als prominente 2. Kachel)
+        if (currentSubjectData.categories.textaufgaben_verstehen) {
+            const textAufgabenData = currentSubjectData.categories.textaufgaben_verstehen;
+            const textStats = state.categories.textaufgaben_verstehen || { correct: 0, total: 0 };
+            const textRate = textStats.total > 0 ? Math.round(textStats.correct / textStats.total * 100) : 0;
+            
+            // Berechne Fragenanzahl
+            const textQList = currentSubjectData.questions ? currentSubjectData.questions.textaufgaben_verstehen : null;
+            const textTotalAvail = textQList ? textQList.length : 0;
+
+            let textAccuracyClass = 'low';
+            let textBadgeClass = 'neutral';
+            let textBadgeText = 'Neu';
+            
+            if (textStats.total >= 5) {
+                if (textRate >= 80) { textAccuracyClass = 'high'; textBadgeClass = 'mastered'; textBadgeText = 'Meister!'; }
+                else if (textRate >= 60) { textAccuracyClass = 'mid'; textBadgeClass = 'neutral'; textBadgeText = 'OK'; }
+                else { textAccuracyClass = 'low'; textBadgeClass = 'practice'; textBadgeText = 'Üben!'; }
+            }
+
+            const textCard = document.createElement('div');
+            textCard.className = 'tense-card prominent-card';
+            textCard.style.borderLeft = `4px solid ${textAufgabenData.color}`;
+            textCard.innerHTML = `
+            <div class="vocab-icon" style="font-size: 1.8em;">${textAufgabenData.icon}</div>
+            <h3>[${subjectAbbr}] ${textAufgabenData.name}</h3>
+            <div class="tense-desc">${textAufgabenData.desc}</div>
+            <div class="progress-section">
+                <div class="progress-header">
+                    <span>Genauigkeit</span>
+                    <span>${textRate}%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill ${textAccuracyClass}" style="width: ${textRate}%"></div>
+                </div>
+            </div>
+            <div class="tense-stats" style="margin-top: 10px;">
+                <div class="tense-accuracy ${textAccuracyClass}">${textStats.correct}/${textStats.total} (${textTotalAvail})</div>
+                <div class="tense-badge ${textBadgeClass}">${textBadgeText}</div>
+            </div>
+        `;
+        textCard.onclick = () => startCategorySession('textaufgaben_verstehen');
+        grid.appendChild(textCard);
+    }
+
+    // 3. Kategorien hinzufügen
     Object.entries(currentSubjectData.categories).forEach(([key, category]) => {
+        // Überspringe textaufgaben_verstehen, da bereits als 2. Karte angezeigt
+        if (key === 'textaufgaben_verstehen') return;
+
         const stats = state.categories[key] || { correct: 0, total: 0 };
+        
+        // Finde Fragen für diese Kategorie
+        const qList = currentSubjectData.questions ? currentSubjectData.questions[key] : null;
+        const totalAvail = qList ? qList.length : 0;
+        
         const rate = stats.total > 0 ? Math.round(stats.correct / stats.total * 100) : 0;
         
         let accuracyClass = 'low';
@@ -603,7 +659,7 @@ function renderDashboard() {
                 </div>
             </div>
             <div class="tense-stats" style="margin-top: 10px;">
-                <div class="tense-accuracy ${accuracyClass}">${stats.correct}/${stats.total}</div>
+                <div class="tense-accuracy ${accuracyClass}">${stats.correct}/${stats.total} (${totalAvail})</div>
                 <div class="tense-badge ${badgeClass}">${badgeText}</div>
             </div>
         `;
@@ -760,14 +816,87 @@ function renderQuestion() {
         progressFill.style.width = `${percent}%`;
     }
 
-    document.getElementById('question-text').textContent = data.question || data.de || 'Frage';
+    // Spezielle Rendering-Logik für verschiedene Modi (textaufgaben_verstehen)
+    if (data.mode) {
+        renderQuestionByMode(data, data.mode);
+    } else {
+        // Standard-Rendering für normale Fragen
+        document.getElementById('question-text').textContent = data.question || data.de || 'Frage';
+        
+        const contextEl = document.getElementById('question-context');
+        if (data.hint) {
+            contextEl.innerHTML = `<div class="hint-icon" title="Hinweis anzeigen">💡</div><div class="hint-text">${data.hint}</div>`;
+            contextEl.classList.remove('hidden');
+
+            // Timer starten: Nach 10 Sekunden wackeln
+            hintTimer = setTimeout(() => {
+                const icon = contextEl.querySelector('.hint-icon');
+                if (icon) icon.classList.add('wobble');
+            }, 10000);
+        } else {
+            contextEl.classList.add('hidden');
+        }
+        
+        // Antwortmöglichkeiten
+        const options = data.answers || [data.en];
+        const correct = data.correct !== undefined ? data.answers[data.correct] : data.en;
+        
+        const grid = document.getElementById('options-grid');
+        grid.innerHTML = '';
+        
+        options.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            btn.textContent = opt;
+            btn.onclick = () => checkAnswer(btn, opt, correct);
+            grid.appendChild(btn);
+        });
+    }
+}
+
+function renderQuestionByMode(data, mode) {
+    let questionText = '';
+    let answerOptions = data.answers || [];
     
+    switch(mode) {
+        case 'text_surgeon':
+            questionText = `${data.question}\n\n📝 ${data.fullText}`;
+            if (data.secondaryQuestion) {
+                questionText += `\n\n❓ ${data.secondaryQuestion}`;
+            }
+            break;
+        case 'question_hunter':
+            questionText = `${data.question}\n\n📝 ${data.fullText || data.text}\n\nWelche Frage ergibt Sinn?`;
+            answerOptions = data.possibleQuestions || data.answers;
+            break;
+        case 'info_jigsaw':
+            questionText = `${data.question}\n\n📝 ${data.fullText}`;
+            answerOptions = data.possibleAnswers || data.answers;
+            break;
+        case 'units_detective':
+            questionText = `${data.question}\n\n📝 ${data.fullText}\n\n📏 ${data.unitInfo || ''}`;
+            break;
+        case 'question_clarity':
+            questionText = `${data.question}\n\n📝 ${data.fullText}\n\nWelche Vereinfachung ist am besten?`;
+            answerOptions = data.simplifiedVersions || data.answers;
+            break;
+        default:
+            questionText = data.question;
+    }
+    
+    // Frage anzeigen
+    // Ersetze | durch einen Zeilenumbruch mit kleinem Margin
+    const formattedQuestion = questionText
+        .replace(/\n\n/g, '<div style="margin-bottom: 8px;"></div>')
+        .replace(/ \| /g, '<div style="margin-bottom: 4px;"></div>');
+    document.getElementById('question-text').innerHTML = formattedQuestion;
+    
+    // Hinweis
     const contextEl = document.getElementById('question-context');
     if (data.hint) {
         contextEl.innerHTML = `<div class="hint-icon" title="Hinweis anzeigen">💡</div><div class="hint-text">${data.hint}</div>`;
         contextEl.classList.remove('hidden');
 
-        // Timer starten: Nach 10 Sekunden wackeln
         hintTimer = setTimeout(() => {
             const icon = contextEl.querySelector('.hint-icon');
             if (icon) icon.classList.add('wobble');
@@ -777,13 +906,12 @@ function renderQuestion() {
     }
     
     // Antwortmöglichkeiten
-    const options = data.answers || [data.en];
-    const correct = data.correct !== undefined ? data.answers[data.correct] : data.en;
+    const correct = data.correct !== undefined ? answerOptions[data.correct] : answerOptions[0];
     
     const grid = document.getElementById('options-grid');
     grid.innerHTML = '';
     
-    options.forEach(opt => {
+    answerOptions.forEach(opt => {
         const btn = document.createElement('button');
         btn.className = 'option-btn';
         btn.textContent = opt;
@@ -1177,13 +1305,13 @@ function renderStats() {
         
         html += `
             <div style="background: var(--card-hover); padding: 15px; border-radius: 12px; margin-bottom: 12px; border-left: 4px solid ${category.color}">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
                     <div>
                         <strong>${category.name}</strong>
                     </div>
                     <span style="color: ${category.color}; font-weight: bold;">${cRate}%</span>
                 </div>
-                <div style="font-size: 0.85em; color: var(--text-light);">${stats.correct}/${stats.total} richtig</div>
+                <div style="font-size: 0.85em; color: var(--text-light);">${stats.correct}/${stats.total} von ${totalQuestions} verfügbar</div>
             </div>
         `;
     });

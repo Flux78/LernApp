@@ -50,6 +50,12 @@ const math6rData = {
             icon: "⚖️",
             color: "#22c55e",
             desc: "Einfache Gleichungen lösen"
+        },
+        textaufgaben_verstehen: {
+            name: "Textaufgaben verstehen",
+            icon: "🧠",
+            color: "#ff6b6b",
+            desc: "Lerne, Textaufgaben richtig zu verstehen & zu lösen"
         }
     },
 
@@ -83,7 +89,34 @@ const math6rData = {
             { question: "Was ist die Hälfte von 0,7?", answers: ["0,3", "0,35", "0,4", "0,45"], correct: 1, hint: "70 ÷ 2", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Berechne: 2 × 3 × 4 × 5", answers: ["24", "60", "120", "240"], correct: 2, hint: "Multiplikationskette", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Was ist 900 ÷ 20?", answers: ["4,5", "45", "90", "450"], correct: 1, hint: "Nullen kürzen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
-            { question: "Was ist 10³?", answers: ["30", "100", "1000", "10000"], correct: 2, hint: "Eine Eins mit drei Nullen", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+            { question: "Was ist 10³?", answers: ["30", "100", "1000", "10000"], correct: 2, hint: "Eine Eins mit drei Nullen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 14 × 7?", answers: ["98", "108", "88", "78"], correct: 0, hint: "Multiplikation", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 200 - 8 × 9?", answers: ["128", "108", "118", "18"], correct: 0, hint: "Punkt vor Strich", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 4³?", answers: ["16", "32", "64", "12"], correct: 2, hint: "4 × 4 × 4", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Mittelwert von 10, 40, 70?", answers: ["30", "40", "50", "60"], correct: 1, hint: "Summe ÷ Anzahl", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 169 ÷ 13?", answers: ["11", "12", "13", "14"], correct: 2, hint: "Division", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 8² + 2²?", answers: ["68", "100", "64", "4"], correct: 0, hint: "64 + 4", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 500 + 200 ÷ 2?", answers: ["350", "600", "700", "400"], correct: 1, hint: "Punkt vor Strich", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 12 × 13?", answers: ["146", "156", "166", "176"], correct: 1, hint: "Multiplikation", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Berechne: (20 + 10) × 2", answers: ["40", "50", "60", "70"], correct: 2, hint: "Klammer zuerst", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viel ist 2000 ÷ 8?", answers: ["250", "200", "300", "400"], correct: 0, hint: "Division", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 0,5 × 40?", answers: ["10", "20", "30", "40"], correct: 1, hint: "Die Hälfte", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 2,4 + 0,6?", answers: ["2,0", "3,0", "2,5", "1,0"], correct: 1, hint: "Addition", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 6,3 ÷ 9?", answers: ["0,7", "0,07", "7", "63"], correct: 0, hint: "Division", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 2² × 4²?", answers: ["64", "32", "16", "8"], correct: 0, hint: "4 × 16", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Berechne: 4 × (10 - 2) + 1", answers: ["33", "32", "27", "29"], correct: 0, hint: "Klammer, Punkt, Strich", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist die Wurzel aus 100?", answers: ["8", "9", "10", "11"], correct: 2, hint: "x × x = 100", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Berechne: 15,5 × 4", answers: ["60", "62", "64", "58"], correct: 1, hint: "Multiplikation", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 1000 - 450?", answers: ["550", "650", "450", "500"], correct: 0, hint: "Subtraktion", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 2,5 ÷ 0,5?", answers: ["5", "0,5", "4", "2"], correct: 0, hint: "Wie oft ist 0.5 in 2.5?", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Berechne: 5 × 7 + 5 × 7", answers: ["35", "70", "105", "140"], correct: 1, hint: "Zwei gleiche Produkte", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 2⁵?", answers: ["16", "32", "64", "128"], correct: 1, hint: "2*2*2*2*2", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 25 × 25?", answers: ["525", "625", "725", "550"], correct: 1, hint: "Quadratzahl", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Berechne: (30 + 10) ÷ (10 - 2)", answers: ["5", "8", "10", "4"], correct: 0, hint: "Klammern zuerst", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 0,2 × 0,2?", answers: ["0,4", "0,04", "0,004", "4"], correct: 1, hint: "2*2=4, zwei Nachkommastellen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist die Hälfte von 0,6?", answers: ["0,3", "0,2", "0,4", "0,25"], correct: 0, hint: "60 / 2", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Berechne: 2 × 2 × 2 × 2", answers: ["8", "16", "32", "64"], correct: 1, hint: "Multiplikationskette", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist 600 ÷ 30?", answers: ["2", "20", "200", "10"], correct: 1, hint: "Nullen kürzen", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ],
         brueche: [
             { question: "Wie viel Prozent sind 3/4?", answers: ["25%", "50%", "75%", "80%"], correct: 2, hint: "3 ÷ 4 = 0,75", stats: { correct: 0, total: 0, difficulty: 1.0 } },
@@ -191,6 +224,23 @@ const math6rData = {
             { question: "Löse: 3x - 1 = 20", answers: ["6", "7", "8", "21"], correct: 1, hint: "3x = 21", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Löse: x/2 + 5 = 10", answers: ["5", "10", "15", "20"], correct: 1, hint: "x/2 = 5", stats: { correct: 0, total: 0, difficulty: 1.0 } },
             { question: "Welcher Wert für x ist eine Lösung von x² = 25?", answers: ["2,5", "5", "12,5", "50"], correct: 1, hint: "5 * 5", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+        ],
+        textaufgaben_verstehen: [
+            { mode: "text_surgeon", question: "❌ ABLENKUNG erkennen!", fullText: "Anna hat 50€ dabei. Sie kauft eine Jacke für 35€. Die Jacke ist blau und der Verkäufer trägt einen Hut.", secondaryQuestion: "Welche Info ist für 'Wie viel Geld bleibt ihr?' völlig egal?", answers: ["Der Startbetrag (50€)", "Der Preis (35€)", "Die Farbe der Jacke", "Die Rechenart (Minus)"], correct: 2, hint: "Was nicht in der Rechnung landet, ist eine Ablenkung.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { mode: "question_hunter", question: "🔍 FRAGE erkennen!", fullText: "Ein Kinoticket kostet 8€. Popcorn kostet 5€. Du hast 20€ dabei. Deine Freunde sind auch da.", possibleQuestions: ["Wie viel Geld hast du am Ende noch?", "Wann beginnt der Film?", "Welche Farbe hat das Popcorn?"], answers: ["Wie viel Geld hast du am Ende noch?", "Wann beginnt der Film?", "Welche Farbe hat das Popcorn?"], correct: 0, hint: "Eine gute Mathefrage nutzt die vorhandenen Zahlen.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { mode: "info_jigsaw", question: "🧩 WICHTIGE Sätze wählen!", fullText: "Satz 1: Ein Heft kostet 2€. | Satz 2: Ein Stift kostet 1€. | Satz 3: Die Sonne scheint. | Satz 4: Tom kauft 3 Hefte. | Frage: Wie viel bezahlt Tom?", possibleAnswers: ["Sätze 1 und 4", "Sätze 1 und 2", "Alle Sätze", "Nur Satz 4"], answers: ["Sätze 1 und 4", "Sätze 1 und 2", "Alle Sätze", "Nur Satz 4"], correct: 0, hint: "Du brauchst nur den Preis für Hefte und die Anzahl der Hefte.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { mode: "units_detective", question: "📏 EINHEITEN kontrollieren!", fullText: "Ein Auto fährt 60 km in 120 Minuten. Wie viele km fährt es in einer Stunde?", unitInfo: "Wichtig: 60 Minuten = 1 Stunde", answers: ["60 km/h", "30 km/h", "120 km/h", "0,5 km/h"], correct: 1, hint: "120 Minuten sind 2 Stunden. Also: 60 km / 2 h.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { mode: "question_clarity", question: "📋 FRAGE vereinfachen!", fullText: "Eine Pizza wird in 8 Stücke geschnitten. Du isst 2 Stücke. Dein Bruder isst 3 Stücke. Welcher Bruchteil bleibt übrig?", simplifiedVersions: ["8 - 2 - 3 = ?", "Wie viele Stücke bleiben?", "Was ist 1 - (2/8 + 3/8)?"], answers: ["8 - 2 - 3 = ?", "Wie viele Stücke bleiben?", "Was ist 1 - (2/8 + 3/8)?"], correct: 2, hint: "Die Frage verlangt nach einem Bruchteil (Teil von Ganzen).", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { mode: "text_surgeon", question: "❌ ABLENKUNG erkennen!", fullText: "Ein Buch hat 200 Seiten. Es wiegt 400 Gramm. Du liest jeden Tag 10 Seiten. Das Buch ist spannend.", secondaryQuestion: "Welche Info brauchst du für 'Wie viele Tage liest du?' NICHT?", answers: ["200 Seiten", "10 Seiten pro Tag", "Das Gewicht (400g)", "Die Seitenanzahl"], correct: 2, hint: "Gewicht und Spannung helfen nicht beim Rechnen.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { mode: "question_hunter", question: "🔍 FRAGE erkennen!", fullText: "Ein Rechteck ist 10 cm lang und 5 cm breit. Es ist aus Papier.", possibleQuestions: ["Wie groß ist der Umfang?", "Wie schwer ist das Papier?", "Wer hat das Rechteck gemalt?"], answers: ["Wie groß ist der Umfang?", "Wie schwer ist das Papier?", "Wer hat das Rechteck gemalt?"], correct: 0, hint: "Umfang und Fläche lassen sich berechnen.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { mode: "info_jigsaw", question: "🧩 WICHTIGE Sätze wählen!", fullText: "Satz 1: Ein Apfel wiegt 150g. | Satz 2: Ein Netz enthält 10 Äpfel. | Satz 3: Das Netz kostet 3€. | Satz 4: Das Netz ist rot. | Frage: Wie schwer ist das ganze Netz?", possibleAnswers: ["Sätze 1 und 2", "Sätze 2 und 3", "Sätze 1 und 3", "Alle Sätze"], answers: ["Sätze 1 und 2", "Sätze 2 und 3", "Sätze 1 und 3", "Alle Sätze"], correct: 0, hint: "Gewicht pro Stück mal Anzahl.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { mode: "units_detective", question: "📏 EINHEITEN kontrollieren!", fullText: "Ein Schwimmbecken fasst 5000 Liter. Pro Minute fließen 50 Liter hinein. Wie lange dauert es?", unitInfo: "5000 / 50 = ?", answers: ["10 Minuten", "100 Minuten", "500 Minuten", "1 Stunde"], correct: 1, hint: "Einfache Division.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { mode: "question_clarity", question: "📋 FRAGE vereinfachen!", fullText: "In einer Klasse sind 24 Kinder. 3/4 der Kinder spielen Fußball. Wie viele sind das?", simplifiedVersions: ["Was ist 24 * 0,75?", "Wie viel ist 3/4 von 24?", "Wie viele Kinder sind in der Klasse?"], answers: ["Was ist 24 * 0,75?", "Wie viel ist 3/4 von 24?", "Wie viele Kinder sind in der Klasse?"], correct: 1, hint: "Die zweite Version ist am nächsten am Text.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { mode: "text_surgeon", question: "❌ ABLENKUNG erkennen!", fullText: "Eine Flasche enthält 1,5 Liter Saft. Sie kostet 2 Euro. Im Regal stehen 10 Flaschen. Wie viel bezahlst du für 3 Flaschen?", secondaryQuestion: "Welche Info ist nicht relevant?", answers: ["Flascheninhalt (1,5L)", "Preis pro Flasche (2€)", "Anzahl im Regal (10)", "Anzahl Kauf (3)"], correct: 2, hint: "Nur Preis und Anzahl sind für die Gesamtkosten wichtig.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { mode: "question_hunter", question: "🔍 FRAGE erkennen!", fullText: "Ein Auto fährt mit 80 km/h. Die Strecke ist 160 km lang. Das Auto ist rot.", possibleQuestions: ["Wie lange braucht das Auto?", "Welche Farbe hat das Auto?", "Wie viele Reifen hat es?"], answers: ["Wie lange braucht das Auto?", "Welche Farbe hat das Auto?", "Wie viele Reifen hat es?"], correct: 0, hint: "Zeit = Strecke / Geschwindigkeit.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { mode: "info_jigsaw", question: "🧩 WICHTIGE Sätze wählen!", fullText: "Satz 1: Ein Rechteck hat Seiten von 4m und 6m. | Satz 2: Die Farbe ist weiß. | Satz 3: Der Preis pro m² Bodenbelag beträgt 10€. | Satz 4: Der Raum ist 3m hoch. | Frage: Was kosten die Fliesen für den Boden?", possibleAnswers: ["Sätze 1 und 3", "Sätze 1 und 2", "Sätze 2 und 3", "Alle Sätze"], answers: ["Sätze 1 und 3", "Sätze 1 und 2", "Sätze 2 und 3", "Alle Sätze"], correct: 0, hint: "Fläche * Preis. Höhe und Farbe sind egal.", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { mode: "units_detective", question: "📏 EINHEITEN kontrollieren!", fullText: "Ein Weg ist 0,5 km lang. Du läufst 5 m pro Sekunde. Wie lange brauchst du?", unitInfo: "Tipp: 0,5 km = 500 m", answers: ["100 Sekunden", "50 Sekunden", "250 Sekunden", "10 Sekunden"], correct: 0, hint: "500m / 5m/s", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { mode: "question_clarity", question: "📋 FRAGE vereinfachen!", fullText: "Ein Zug fährt 4 Stunden lang mit durchschnittlich 120 km/h. Welche Distanz hat er nach dieser Zeit zurückgelegt?", simplifiedVersions: ["Was ist 4 * 120?", "Wie schwer ist der Zug?", "Wie lange fährt er?"], answers: ["Was ist 4 * 120?", "Wie schwer ist der Zug?", "Wie lange fährt er?"], correct: 0, hint: "Distanz = Geschwindigkeit * Zeit.", stats: { correct: 0, total: 0, difficulty: 1.0 } }
         ]
     }
 };

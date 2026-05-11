@@ -89,6 +89,13 @@ flowchart TD
 - **Smart Mode:** Nutzt eine Gewichtungslogik (Gewicht 20 bei Rate < 50%, Gewicht 2 bei Rate > 80%), um ineffizientes Lernen zu vermeiden.
 - **Minecraft-Belohnung:** Ein fächerübergreifender Zähler schaltet im Verhältnis 10:1 neue Fragen im Minecraft-Katalog frei.
 - **Multi-Grade-Support:** Trennung der Logik und UI-Filter für Realschule (6r) und Gymnasium (8g).
+- **Textaufgaben-Mastery:** Ein dediziertes System zur Förderung der Lesekompetenz in MINT-Fächern. Es nutzt spezialisierte Sub-Modi:
+    - *Text Surgeon:* Filtert "Rauschen" (irrelevante Story-Infos) aus Aufgaben.
+    - *Question Hunter:* Trainiert das Erkennen der Zielsetzung.
+    - *Info Jigsaw:* Schult das logische Kombinieren von Fakten.
+    - *Units Detective:* Verhindert typische Einheiten-Fehler.
+    - *Question Clarity:* Übersetzt natürliche Sprache in mathematische Logik.
+
 
 ---
 *Erstellt von Gemini Code Assist*
