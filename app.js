@@ -2,6 +2,7 @@
 // LERNAPP - HAUPTANWENDUNG
 // ============================================
 
+
 // Fächer-Registrierung
 let subjectRegistry = {};
 // Aktuelles Fach
@@ -37,85 +38,94 @@ let hintTimer = null;
 
 // ======================= INITIALISIERUNG =======================
 
-function initializeState() {
-    // Dynamische Registrierung, um sicherzustellen, dass die Daten aus den externen Dateien verfügbar sind
-    subjectRegistry = {
-        english: { grade: '6r',
-            data: typeof english6rData !== 'undefined' ? english6rData : null, 
-            key: 'english', name: 'Englisch', abbr: 'EN',
-            bg: 'url("https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?q=80&w=1000&auto=format&fit=crop")' 
-        },
-        math: { grade: '6r',
-            data: typeof math6rData !== 'undefined' ? math6rData : null, 
-            key: 'math', name: 'Mathematik', abbr: 'MA',
-            bg: 'url("https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1000&auto=format&fit=crop")'
-        },
-        german: { grade: '6r',
-            data: typeof german6rData !== 'undefined' ? german6rData : null, 
-            key: 'german', name: 'Deutsch', abbr: 'DE',
-            bg: 'url("https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1000&auto=format&fit=crop")'
-        },
-        history: { grade: '6r',
-            data: typeof history6rData !== 'undefined' ? history6rData : null, 
-            key: 'history', name: 'Geschichte', abbr: 'HI',
-            bg: 'url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1000&auto=format&fit=crop")'
-        },
-        geography: { grade: '6r',
-            data: typeof geography6rData !== 'undefined' ? geography6rData : null, 
-            key: 'geography', name: 'Geographie', abbr: 'GE',
-            bg: 'url("https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1000&auto=format&fit=crop")'
-        },
-        minecraft: { grade: '6r',
-            data: typeof minecraft6rData !== 'undefined' ? minecraft6rData : null,
-            key: 'minecraft', name: 'Minecraft', abbr: 'MC',
-            bg: 'url("https://images.unsplash.com/photo-1622015663319-e97e697503ee?q=80&w=1000&auto=format&fit=crop")'
-        },
-        phys_8g: { grade: '8g',
-            data: typeof phys8gData !== 'undefined' ? phys8gData : null,
-            key: 'phys_8g', name: 'Physik', abbr: 'PH',
-            bg: 'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop")'
-        },
-        eng_8g: { grade: '8g',
-            data: typeof eng8gData !== 'undefined' ? eng8gData : null,
-            key: 'eng_8g', name: 'Englisch', abbr: 'EN',
-            bg: 'url("https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?q=80&w=1000&auto=format&fit=crop")'
-        },
-        math_8g: { grade: '8g',
-            data: typeof math8gData !== 'undefined' ? math8gData : null,
-            key: 'math_8g', name: 'Mathematik', abbr: 'MA',
-            bg: 'url("https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1000&auto=format&fit=crop")'
-        },
-        bio_8g: { grade: '8g',
-            data: typeof bio8gData !== 'undefined' ? bio8gData : null,
-            key: 'bio_8g', name: 'Biologie', abbr: 'BI',
-            bg: 'url("https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=1000&auto=format&fit=crop")'
-        },
-        lat_8g: { grade: '8g',
-            data: typeof lat8gData !== 'undefined' ? lat8gData : null,
-            key: 'lat_8g', name: 'Latein', abbr: 'LA',
-            bg: 'url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1000&auto=format&fit=crop")'
-        }
-    };
+// Fächer-Registrierung (statische Metadaten, Daten werden dynamisch geladen)
+subjectRegistry = {
+    english: { grade: '6r', key: 'english', name: 'Englisch', abbr: 'EN', path: 'english_6r', icon: '🇬🇧', color: '#3b82f6',
+        bg: 'url("https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    math: { grade: '6r', key: 'math', name: 'Mathematik', abbr: 'MA', path: 'math_6r', icon: '🔢', color: '#3b82f6',
+        bg: 'url("https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    german: { grade: '6r', key: 'german', name: 'Deutsch', abbr: 'DE', path: 'german_6r', icon: '📚', color: '#ec4899',
+        bg: 'url("https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    history: { grade: '6r', key: 'history', name: 'Geschichte', abbr: 'HI', path: 'history_6r', icon: '🏺', color: '#f59e0b',
+        bg: 'url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    geography: { grade: '6r', key: 'geography', name: 'Geographie', abbr: 'GE', path: 'geography_6r', icon: '🌍', color: '#22c55e',
+        bg: 'url("https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    allgemeinwissen: { grade: 'aw', key: 'allgemeinwissen', name: 'Allgemeinwissen', abbr: 'AW', path: 'allgemeinwissen', icon: '🧠', color: '#8b5cf6',
+        bg: 'url("https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {}, excludeFromStats: true, excludeFromMinecraft: true },
+    minecraft: { grade: '6r', key: 'minecraft', name: 'Minecraft', abbr: 'MC', path: 'minecraft_6r', icon: '⛏️', color: '#4e7d1d',
+        bg: 'url("https://images.unsplash.com/photo-1622015663319-e97e697503ee?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    phys_8g: { grade: '8g', key: 'phys_8g', name: 'Physik', abbr: 'PH', path: 'phys_8g', icon: '⚛️', color: '#6366f1',
+        bg: 'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    eng_8g: { grade: '8g', key: 'eng_8g', name: 'Englisch', abbr: 'EN', path: 'eng_8g', icon: '🇬🇧', color: '#3b82f6',
+        bg: 'url("https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    math_8g: { grade: '8g', key: 'math_8g', name: 'Mathematik', abbr: 'MA', path: 'math_8g', icon: '🔢', color: '#3b82f6',
+        bg: 'url("https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    bio_8g: { grade: '8g', key: 'bio_8g', name: 'Biologie', abbr: 'BI', path: 'bio_8g', icon: '🧬', color: '#10b981',
+        bg: 'url("https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    lat_8g: { grade: '8g', key: 'lat_8g', name: 'Latein', abbr: 'LA', path: 'lat_8g', icon: '🏛️', color: '#f59e0b',
+        bg: 'url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} }
+};
 
-    // Fehlerprüfung: Überprüfen, ob alle Fach-Skripte erfolgreich geladen wurden
-    Object.entries(subjectRegistry).forEach(([key, subject]) => {
-        if (!subject.data) {
-            console.warn(`[LernApp] Warnung: Das Daten-Skript für das Fach "${subject.name}" (${key}) konnte nicht geladen werden. Bitte Dateipfad und Syntax prüfen.`);
-        }
+// Laedt eine JS-Datei per dynamischem Script-Tag (funktioniert mit file:// Protokoll)
+function loadScript(src) {
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = src;
+        script.onload = () => resolve();
+        script.onerror = () => reject(new Error(`Script ${src} konnte nicht geladen werden`));
+        document.head.appendChild(script);
     });
+}
 
-    if (subjectRegistry[currentSubject]) {
-        currentSubjectData = subjectRegistry[currentSubject].data;
+async function initializeState() {
+    const registry = subjectRegistry[currentSubject];
+    if (!registry) {
+        console.error("[LernApp] Fach nicht in Registry:", currentSubject);
+        return;
     }
+
+    // Lade index.js dynamisch (Metadaten)
+    if (!registry.data) {
+        try {
+            const scriptPath = `./subjects/${registry.path}/index.js`;
+            const varName = `__subjectData_${registry.path}_index`;
+            await loadScript(scriptPath);
+            registry.data = window[varName];
+        } catch (e) {
+            console.error(`[LernApp] FEHLER beim Laden der Metadaten für "${registry.name}":`, e);
+            return;
+        }
+    }
+
+    currentSubjectData = registry.data;
 
     if (!currentSubjectData) {
         console.error("Daten für Fach konnten nicht geladen werden:", currentSubject);
         return;
     }
-    const data = currentSubjectData;
-    
+
+    // Bereinige alte Kategorien, die nicht mehr zu diesem Fach gehören
+    const validCategoryKeys = Object.keys(currentSubjectData.categories);
+    const categoriesToRemove = Object.keys(state.categories || {}).filter(k => !validCategoryKeys.includes(k));
+    categoriesToRemove.forEach(k => {
+        delete state.categories[k];
+        delete state.questionStats[k];
+    });
+
     // Initialisiere Kategorie-Stats
-    Object.keys(data.categories).forEach(catKey => {
+    Object.keys(currentSubjectData.categories).forEach(catKey => {
         if (!state.categories[catKey]) {
             state.categories[catKey] = { correct: 0, total: 0 };
         }
@@ -125,61 +135,108 @@ function initializeState() {
     });
 }
 
-function loadState() {
+async function loadState() {
     // Globaler DarkMode (unabhängig vom Fach-Speicherstand)
     const globalDarkMode = localStorage.getItem('lernapp_darkMode') === 'true';
+    const globalConfetti = localStorage.getItem('lernapp_confetti') !== 'false'; // Default true
+    const globalSmartMode = localStorage.getItem('lernapp_smartMode') !== 'false'; // Default true
+    const globalSkipButton = localStorage.getItem('lernapp_showSkipButton') !== 'false'; // Default true
     const globalGrade = localStorage.getItem('lernapp_grade') || '6r';
     const lastSubject = localStorage.getItem('lernapp_currentSubject');
     
     state.grade = globalGrade;
     state.darkMode = globalDarkMode;
+    state.confetti = globalConfetti;
+    state.smartMode = globalSmartMode;
+    state.showSkipButton = globalSkipButton;
     
     // Sicherstellen, dass das aktuelle Fach zur gewählten Klassenstufe passt
     if (lastSubject) {
         currentSubject = lastSubject;
+        if (subjectRegistry[currentSubject] && subjectRegistry[currentSubject].grade === 'aw') {
+            state.grade = 'aw';
+        }
     }
 
     const saved = localStorage.getItem(`lernapp_${currentSubject}`);
     if (saved) {
         const parsed = JSON.parse(saved);
-        // Falls das gespeicherte Fach eine andere Klasse hat als global gewählt, 
-        // überschreiben wir die Klassenstufe des Fachs NICHT global.
-        if (parsed.grade && parsed.grade !== state.grade) parsed.grade = state.grade;
-        const previousDarkMode = state.darkMode; // Darkmode vor dem Überschreiben bewahren
         Object.assign(state, parsed);
-        state.darkMode = previousDarkMode;
     }
+
+    // Globale Einstellungen erzwingen (Source of Truth ist der globale Storage)
+    state.darkMode = localStorage.getItem('lernapp_darkMode') === 'true';
+    state.confetti = localStorage.getItem('lernapp_confetti') !== 'false';
+    state.smartMode = localStorage.getItem('lernapp_smartMode') !== 'false';
+    state.showSkipButton = localStorage.getItem('lernapp_showSkipButton') !== 'false';
+    state.grade = localStorage.getItem('lernapp_grade') || state.grade;
     
-    initializeState();
+    await initializeState();
+    await preloadGradeIndexData(state.grade);
     
     // Falls das geladene Fach nicht zur Klassenstufe passt (z.B. nach Klassenwechsel),
     // erzwingen wir den Wechsel auf das erste Fach der korrekten Klasse.
     if (subjectRegistry[currentSubject] && subjectRegistry[currentSubject].grade !== state.grade) {
         const firstMatch = Object.keys(subjectRegistry).find(k => subjectRegistry[k].grade === state.grade);
-        if (firstMatch) switchSubject(firstMatch);
+        if (firstMatch) { await switchSubject(firstMatch); }
         return;
     }
 
     syncStatsToData();
-    
-    // Theme immer anwenden, unabhängig davon ob State existiert oder nicht
     applyTheme();
+}
+
+async function preloadGradeIndexData(grade) {
+    const subjectsToLoad = Object.entries(subjectRegistry).filter(([, subject]) => subject.grade === grade);
+    await Promise.all(subjectsToLoad.map(([key, subject]) => {
+        if (subject.data) return Promise.resolve();
+        const scriptPath = `./subjects/${subject.path}/index.js`;
+        const varName = `__subjectData_${subject.path}_index`;
+        return loadScript(scriptPath)
+            .then(() => { subject.data = window[varName]; })
+            .catch(e => {
+                console.warn(`[LernApp] Konnte Metadaten nicht laden: ${subject.path}`, e);
+            });
+    }));
 }
 
 function saveState() {
     syncStatsFromData();
     localStorage.setItem('lernapp_darkMode', state.darkMode);
+    localStorage.setItem('lernapp_confetti', state.confetti);
+    localStorage.setItem('lernapp_smartMode', state.smartMode);
+    localStorage.setItem('lernapp_showSkipButton', state.showSkipButton);
     localStorage.setItem('lernapp_grade', state.grade);
     localStorage.setItem('lernapp_currentSubject', currentSubject);
     localStorage.setItem(`lernapp_${currentSubject}`, JSON.stringify(state));
 }
 
+function getSubjectQuestionCount(subject) {
+    let count = 0;
+
+    const indexData = subject.data || (subject.path ? window['__subjectData_' + subject.path + '_index'] : null);
+    if (indexData && indexData.questionCounts) {
+        Object.values(indexData.questionCounts).forEach(num => {
+            if (typeof num === 'number' && num > 0) count += num;
+        });
+    }
+
+    if (count === 0 && subject.questionsCache) {
+        Object.values(subject.questionsCache).forEach(list => {
+            if (Array.isArray(list)) count += list.length;
+        });
+    }
+
+    return count;
+}
+
 function syncStatsToData() {
-    if (!currentSubjectData) return;
+    const registry = subjectRegistry[currentSubject];
+    if (!registry) return;
     
-    // Sync Frage-Stats zu Daten
+    // Sync Frage-Stats zu Daten im Cache
     Object.entries(state.questionStats).forEach(([catKey, questions]) => {
-        const categoryQuestions = currentSubjectData.questions?.[catKey];
+        const categoryQuestions = registry.questionsCache[catKey];
         if (categoryQuestions) {
             Object.entries(questions).forEach(([index, stats]) => {
                 const idx = parseInt(index);
@@ -192,11 +249,12 @@ function syncStatsToData() {
 }
 
 function syncStatsFromData() {
-    if (!currentSubjectData) return;
+    const registry = subjectRegistry[currentSubject];
+    if (!registry) return;
     
     state.questionStats = {};
     
-    Object.entries(currentSubjectData.questions || {}).forEach(([catKey, questions]) => {
+    Object.entries(registry.questionsCache || {}).forEach(([catKey, questions]) => {
         state.questionStats[catKey] = {};
         questions.forEach((q, idx) => {
             state.questionStats[catKey][idx] = { ...q.stats };
@@ -206,22 +264,22 @@ function syncStatsFromData() {
 
 // ======================= FACH-UMSCHALTUNG =======================
 
-function changeGrade(grade) {
+async function changeGrade(grade) {
     state.grade = grade;
     saveState();
     
     // Erstes verfügbares Fach der neuen Stufe wählen
-    const available = Object.entries(subjectRegistry).filter(([k, s]) => s.grade === grade && s.data);
+    const available = Object.entries(subjectRegistry).filter(([k, s]) => s.grade === grade);
     if (available.length > 0) {
-        switchSubject(available[0][0]);
+        await switchSubject(available[0][0]);
     }
     updateGradeUI();
 }
 
-function switchSubject(subjectKey) {
+async function switchSubject(subjectKey) {
     // Sicherheitsscheck: Existiert das Fach in der Registry?
-    if (!subjectRegistry[subjectKey] || !subjectRegistry[subjectKey].data) {
-        console.error("Fach-Daten nicht verfügbar:", subjectKey);
+    if (!subjectRegistry[subjectKey]) {
+        console.error("Fach nicht in Registry:", subjectKey);
         return;
     }
 
@@ -230,7 +288,7 @@ function switchSubject(subjectKey) {
 
     // Wechsle Fach
     currentSubject = subjectKey;
-    currentSubjectData = subjectRegistry[subjectKey].data;
+    currentSubjectData = null;
 
     // Im LocalStorage sofort aktualisieren
     localStorage.setItem('lernapp_currentSubject', currentSubject);
@@ -239,33 +297,51 @@ function switchSubject(subjectKey) {
     state = {
         grade: state.grade,
         points: 0, streak: 0, maxStreak: 0, total: 0, correct: 0,
-        smartMode: true, confetti: true, darkMode: state.darkMode,
+        smartMode: state.smartMode, confetti: state.confetti, darkMode: state.darkMode,
         currentMode: 'categories', currentCategory: null, difficultyFilter: null,
         showSkipButton: state.showSkipButton,
-        categories: {}, answers: [], questionStats: {}, subjectStats: {},
-        unlockedIndices: []
+        categories: {}, questionStats: {}, subjectStats: {},
     };
     
-    loadState();
+    await loadState();
     
     // UI aktualisieren
     renderSubjectSelector();
     updateSubjectUI();
     renderDashboard();
     updateStatsBar();
+    updateSettingsUI();
     
     // Zurück zum Dashboard
     showPanel('dashboard');
     
     // Aktiven Tab markieren
     document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-    document.querySelector('.nav-tab').classList.add('active');
+    const firstTab = document.querySelector('.nav-tab');
+    if (firstTab) firstTab.classList.add('active');
 }
 
 function updateGradeUI() {
     document.querySelectorAll('[id^="grade-"]').forEach(btn => {
         btn.classList.toggle('active', btn.id === `grade-${state.grade}`);
     });
+    updateTabVisibility();
+}
+
+function updateTabVisibility() {
+    const statsTab = document.getElementById('tab-stats');
+    if (!statsTab) return;
+
+    const showStats = state.grade !== 'aw';
+    statsTab.style.display = showStats ? '' : 'none';
+
+    if (!showStats) {
+        const statsPanel = document.getElementById('stats');
+        const dashboardPanel = document.getElementById('dashboard');
+        if (statsPanel && statsPanel.classList.contains('active')) {
+            showPanel('dashboard');
+        }
+    }
 }
 
 // ======================= REWARD SYSTEM (MINECRAFT UNLOCK) =======================
@@ -280,7 +356,7 @@ function getMinecraftStatus() {
     let totalPossibleOtherQuestions = 0;
 
     Object.entries(subjectRegistry).forEach(([key, subject]) => {
-        if (!subject.data || subject.grade !== '6r') return;
+        if (subject.grade !== '6r' || subject.excludeFromMinecraft) return;
         
         let sTotal = 0;
         if (key === currentSubject) {
@@ -295,9 +371,8 @@ function getMinecraftStatus() {
             }
         }
 
-        // Berechne die Gesamtanzahl der verfügbaren Fragen in diesem Fach
-        let subjectQuestionCount = 0;
-        Object.values(subject.data.questions).forEach(cat => subjectQuestionCount += cat.length);
+        // Berechne die Gesamtanzahl der verfügbaren Fragen
+        const subjectQuestionCount = getSubjectQuestionCount(subject);
 
         if (key === 'minecraft') {
             totalPossibleMinecraft = subjectQuestionCount;
@@ -309,19 +384,31 @@ function getMinecraftStatus() {
     });
 
     // Dynamisches Verhältnis: Wie viele normale Fragen ergeben eine Minecraft-Frage?
-    const questionsPerUnlock = totalPossibleMinecraft > 0 ? (totalPossibleOtherQuestions / totalPossibleMinecraft) : 10;
-    let unlockedCount = Math.floor(totalOtherAnswers / questionsPerUnlock);
+    const questionsPerUnlock = (totalPossibleMinecraft > 0 && totalPossibleOtherQuestions > 0)
+        ? (totalPossibleOtherQuestions / totalPossibleMinecraft)
+        : Infinity;
+    let unlockedCount = 0;
+    if (Number.isFinite(questionsPerUnlock) && questionsPerUnlock > 0) {
+        unlockedCount = Math.floor(totalOtherAnswers / questionsPerUnlock);
+    }
     // Deckelung auf die maximal verfügbaren Minecraft-Fragen
     unlockedCount = Math.min(unlockedCount, totalPossibleMinecraft);
     
     // NEU: Zufällige Zuordnung der freigeschalteten Fragen
     if (currentSubject === 'minecraft') {
         if (!state.unlockedIndices) state.unlockedIndices = [];
+
+        // Falls mehr Fragen gespeichert sind als aktuell freigeschaltet sein dürfen: zurückschneiden
+        if (state.unlockedIndices.length > unlockedCount) {
+            state.unlockedIndices = state.unlockedIndices.slice(0, unlockedCount);
+            saveState();
+        }
         
         // Wenn wir mehr Fragen verdient haben, als IDs gespeichert sind: neue würfeln
         if (state.unlockedIndices.length < unlockedCount) {
             let allPossibleKeys = [];
-            Object.entries(currentSubjectData.questions).forEach(([cat, list]) => {
+            const mcRegistry = subjectRegistry['minecraft'];
+            Object.entries(mcRegistry.questionsCache).forEach(([cat, list]) => {
                 list.forEach((_, idx) => allPossibleKeys.push(`${cat}:${idx}`));
             });
             
@@ -356,7 +443,7 @@ function updateSubjectUI() {
     // Titel aktualisieren
     // Entferne (8G) oder (6R) aus dem Namen, falls vorhanden, und füge nur das Label hinzu
     const cleanName = currentSubjectData.name.replace(/\s*\(\d+[a-zA-Z]\)/, '');
-    const gradeLabel = state.grade === '6r' ? '6R' : '8G';
+    const gradeLabel = state.grade === '6r' ? '6R' : state.grade === '8g' ? '8G' : 'AW';
     document.getElementById('app-title').textContent = `🎓 ${cleanName} ${gradeLabel} Master`;
     
     // Fach-Selektor aktualisieren
@@ -386,7 +473,7 @@ function renderSubjectSelector() {
     
     container.innerHTML = '';
     Object.entries(subjectRegistry).forEach(([key, subject]) => {
-        if (!subject.data || subject.grade !== state.grade) return; 
+        if (subject.grade !== state.grade) return;
         
         const status = getMinecraftStatus();
         const isLocked = key === 'minecraft' && !status.unlocked;
@@ -408,12 +495,12 @@ function renderSubjectSelector() {
         btn.dataset.subject = key;
         if (key === currentSubject) {
             btn.classList.add('active');
-            if (key !== 'minecraft') btn.style.backgroundColor = subject.data.color;
+            if (key !== 'minecraft') btn.style.backgroundColor = subject.color;
             btn.style.color = 'white';
         }
-        
-        btn.innerHTML = `${subject.data.icon} ${subject.data.name}`;
-        btn.style.borderColor = subject.data.color;
+
+        btn.innerHTML = `${subject.icon} ${subject.name}`;
+        btn.style.borderColor = subject.color;
         btn.onclick = () => switchSubject(key);
         container.appendChild(btn);
     });
@@ -529,7 +616,9 @@ function renderDashboard() {
                 <div class="progress-fill high" style="width: ${status.percent}%; background: #4e7d1d;"></div>
             </div>
             <div style="font-size: 0.85em; margin-top: 10px; opacity: 0.8;">
-                Du erhältst 1 neue Minecraft-Frage für je ${Math.floor(status.questionsPerUnlock)} beantwortete Fragen in den Schulfächern!<br>
+                ${Number.isFinite(status.questionsPerUnlock) && status.questionsPerUnlock > 0
+                    ? `Du erhältst 1 neue Minecraft-Frage für je ${Math.floor(status.questionsPerUnlock)} beantwortete Fragen in den Schulfächern!<br>`
+                    : 'Die benötigte Anzahl beantworteter Fragen wird berechnet, sobald die Schulfächer geladen sind.<br>'}
                 (Aktueller Bonus: +${status.unlockedCount} Fragen)
             </div>
         `;
@@ -563,9 +652,9 @@ function renderDashboard() {
             const textStats = state.categories.textaufgaben_verstehen || { correct: 0, total: 0 };
             const textRate = textStats.total > 0 ? Math.round(textStats.correct / textStats.total * 100) : 0;
             
-            // Berechne Fragenanzahl
-            const textQList = currentSubjectData.questions ? currentSubjectData.questions.textaufgaben_verstehen : null;
-            const textTotalAvail = textQList ? textQList.length : 0;
+            // Berechne Fragenanzahl aus questionCounts
+            const textTotalAvail = (currentSubjectData.questionCounts && currentSubjectData.questionCounts.textaufgaben_verstehen)
+                ? currentSubjectData.questionCounts.textaufgaben_verstehen : 0;
 
             let textAccuracyClass = 'low';
             let textBadgeClass = 'neutral';
@@ -609,9 +698,9 @@ function renderDashboard() {
 
         const stats = state.categories[key] || { correct: 0, total: 0 };
         
-        // Finde Fragen für diese Kategorie
-        const qList = currentSubjectData.questions ? currentSubjectData.questions[key] : null;
-        const totalAvail = qList ? qList.length : 0;
+        // Finde Fragenanzahl für diese Kategorie aus questionCounts
+        const totalAvail = (currentSubjectData.questionCounts && currentSubjectData.questionCounts[key])
+            ? currentSubjectData.questionCounts[key] : 0;
         
         const rate = stats.total > 0 ? Math.round(stats.correct / stats.total * 100) : 0;
         
@@ -639,8 +728,9 @@ function renderDashboard() {
 
         let unlockedDisplay = "";
         if (currentSubject === 'minecraft') {
+            const catQuestionCount = (currentSubjectData.questionCounts && currentSubjectData.questionCounts[key]) ? currentSubjectData.questionCounts[key] : 0;
             unlockedDisplay = `<div style="font-size: 0.85em; margin-bottom: 8px; font-weight: bold; color: ${isCategoryLocked ? 'var(--text-color)' : 'var(--success)'}">
-                ${isCategoryLocked ? '🔒 Noch gesperrt' : `🔓 Freigeschaltet: ${unlockedInThisCat} / ${currentSubjectData.questions[key].length}`}
+                ${isCategoryLocked ? '🔒 Noch gesperrt' : `🔓 Freigeschaltet: ${unlockedInThisCat} / ${catQuestionCount}`}
             </div>`;
         }
 
@@ -677,14 +767,52 @@ function renderDashboard() {
     updateStatsBar();
 }
 
-function startCategorySession(categoryKey) {
+async function startCategorySession(categoryKey) {
+    const registry = subjectRegistry[currentSubject];
+    
+    // Lade Fragen nur wenn noch nicht im Cache
+    if (!registry.questionsCache[categoryKey]) {
+        showQuestionLoading();
+        try {
+            const scriptPath = `./subjects/${registry.path}/${categoryKey}.js`;
+            const varName = `__subjectData_${registry.path}_${categoryKey}`;
+            await loadScript(scriptPath);
+            registry.questionsCache[categoryKey] = window[varName];
+        } catch (e) {
+            console.error(`Fehler beim Laden der Kategorie "${categoryKey}":`, e);
+            alert('Diese Kategorie konnte nicht geladen werden.');
+            return;
+        }
+    }
+
     state.currentCategory = categoryKey;
     state.sessionCount = 0;
     showPanel('learn-active');
     nextQuestion();
 }
 
-function startMixedSession() {
+async function startMixedSession() {
+    const registry = subjectRegistry[currentSubject];
+    const categoryKeys = Object.keys(registry.data.categories);
+
+    // Paralleles Laden aller noch nicht gecachten Kategorie-Dateien
+    const missingCategories = categoryKeys.filter(k => !registry.questionsCache[k]);
+    
+    if (missingCategories.length > 0) {
+        showQuestionLoading();
+        try {
+            await Promise.all(missingCategories.map(catKey => {
+                const varName = `__subjectData_${registry.path}_${catKey}`;
+                return loadScript(`./subjects/${registry.path}/${catKey}.js`)
+                    .then(() => { registry.questionsCache[catKey] = window[varName]; });
+            }));
+        } catch (e) {
+            console.error('Fehler beim Laden der Kategorien für gemischten Modus:', e);
+            alert('Einige Kategorien konnten nicht geladen werden.');
+            return;
+        }
+    }
+
     state.currentCategory = null;
     state.sessionCount = 0;
     showPanel('learn-active');
@@ -716,27 +844,29 @@ function nextQuestion() {
     
     // Sitzungs-Zähler erhöhen
     state.sessionCount++;
+
+    const registry = subjectRegistry[currentSubject];
     
     // Validierung: Prüfe ob Daten existieren
-    if (!currentSubjectData || !currentSubjectData.questions) {
+    if (!currentSubjectData || !registry.questionsCache || Object.keys(registry.questionsCache).length === 0) {
         console.error('Keine Fragen gefunden für:', currentSubject);
         document.getElementById('question-text').textContent = 'Fehler: Keine Fragen gefunden.';
         return;
     }
     
     let pool = [];
-    
+
     if (state.currentCategory) {
         // Bestimmte Kategorie
-        const questions = currentSubjectData.questions[state.currentCategory];
+        const questions = registry.questionsCache[state.currentCategory];
         if (questions && questions.length > 0) {
             questions.forEach((q, idx) => {
                 pool.push({ category: state.currentCategory, index: idx, data: q });
             });
         }
     } else {
-        // Gemischter Modus - alle Kategorien
-        Object.entries(currentSubjectData.questions || {}).forEach(([catKey, questions]) => {
+        // Gemischter Modus - alle Kategorien aus dem Cache
+        Object.entries(registry.questionsCache || {}).forEach(([catKey, questions]) => {
             questions.forEach((q, idx) => {
                 pool.push({ category: catKey, index: idx, data: q });
             });
@@ -760,6 +890,32 @@ function nextQuestion() {
     }
 
     if (pool.length === 0) return;
+
+    if (state.difficultyFilter) {
+        const filteredPool = pool.filter(q => {
+            const stats = state.questionStats[q.category]?.[q.index] || { correct: 0, total: 0 };
+            const rate = stats.total > 0 ? (stats.correct / stats.total) : 0;
+
+            switch (state.difficultyFilter) {
+                case 'easy':
+                    return stats.total > 0 && rate > 0.8;
+                case 'medium':
+                    return stats.total > 0 && rate >= 0.5 && rate <= 0.8;
+                case 'hard':
+                    return stats.total > 0 && rate < 0.5;
+                case 'unplayed':
+                    return stats.total === 0;
+                default:
+                    return true;
+            }
+        });
+
+        if (filteredPool.length > 0) {
+            pool = filteredPool;
+        } else {
+            console.warn(`Keine Fragen für Filter ${state.difficultyFilter} gefunden; verwende gesamten Pool.`);
+        }
+    }
 
     let questionObj;
     if (state.smartMode) {
@@ -937,8 +1093,9 @@ function checkAnswer(el, selected, correct) {
     
     state.total++;
 
-    // Update individuelle Fragen-Statistik im Daten-Objekt
-    const qStats = currentSubjectData.questions[currentQuestion.category][currentQuestion.index].stats;
+    // Update individuelle Fragen-Statistik im Cache
+    const registry = subjectRegistry[currentSubject];
+    const qStats = registry.questionsCache[currentQuestion.category][currentQuestion.index].stats;
     if (qStats) {
         qStats.total++;
         if (isCorrect) qStats.correct++;
@@ -1006,19 +1163,34 @@ function toggleSmart() {
     document.querySelectorAll('#toggle-smart, #toggle-smart2').forEach(t => {
         t.classList.toggle('active', state.smartMode);
     });
+    updateSettingsUI();
     saveState();
 }
 
 function toggleConfetti() {
     state.confetti = !state.confetti;
     document.getElementById('toggle-confetti').classList.toggle('active', state.confetti);
+    updateSettingsUI();
     saveState();
 }
 
 function toggleSkipButton() {
     state.showSkipButton = !state.showSkipButton;
     document.getElementById('toggle-skip').classList.toggle('active', state.showSkipButton);
+    updateSettingsUI();
     saveState();
+}
+
+function updateSettingsUI() {
+    const smartBtns = document.querySelectorAll('#toggle-smart, #toggle-smart2');
+    smartBtns.forEach(btn => btn?.classList.toggle('active', state.smartMode));
+    
+    document.getElementById('toggle-confetti')?.classList.toggle('active', state.confetti);
+    document.getElementById('toggle-skip')?.classList.toggle('active', state.showSkipButton);
+
+    // UI-Elemente im aktiven Quiz sofort anpassen
+    const skipBtn = document.getElementById('skip-btn');
+    if (skipBtn && !answered) skipBtn.classList.toggle('hidden', !state.showSkipButton);
 }
 
 // ======================= EXPORT / IMPORT =======================
@@ -1118,6 +1290,7 @@ function getGradeSummary(grade) {
     let summary = { points: 0, correct: 0, total: 0, subjectsPlayed: 0, subjectsMastered: 0, totalSubjects: 0 };
     Object.entries(subjectRegistry).forEach(([key, subject]) => {
         if (subject.grade === grade) {
+            if (subject.excludeFromStats) return;
             summary.totalSubjects++;
             let data = null;
             
@@ -1160,9 +1333,8 @@ function renderStats() {
     
     const rate = state.total > 0 ? Math.round(state.correct / state.total * 100) : 0;
 
-    // Zusammenfassung für beide Klassenstufen berechnen
-    const grade6 = getGradeSummary('6r');
-    const grade8 = getGradeSummary('8g');
+    // Nur die aktuelle Klassenstufe anzeigen
+    const currentGradeSummary = getGradeSummary(state.grade);
     
     // Timeout nutzen, damit das DOM für badges-grid bereit ist
     setTimeout(() => renderBadges(), 0);
@@ -1170,7 +1342,8 @@ function renderStats() {
     // Schwierigkeits-Verteilung berechnen
     let dist = { easy: 0, medium: 0, hard: 0, unplayed: 0, totalCount: 0 };
     
-    Object.entries(currentSubjectData.questions).forEach(([catKey, questions]) => {
+    const statsRegistry = subjectRegistry[currentSubject];
+    Object.entries(statsRegistry.questionsCache).forEach(([catKey, questions]) => {
         questions.forEach((q, idx) => {
             dist.totalCount++;
             const stats = state.questionStats[catKey]?.[idx] || { correct: 0, total: 0 };
@@ -1188,7 +1361,7 @@ function renderStats() {
 
     // Problem-Fragen (Top 5 schlechteste Quote)
     let allAttemptedQuestions = [];
-    Object.entries(currentSubjectData.questions).forEach(([catKey, questions]) => {
+    Object.entries(statsRegistry.questionsCache).forEach(([catKey, questions]) => {
         questions.forEach((q, idx) => {
             const qStat = state.questionStats[catKey]?.[idx] || { correct: 0, total: 0 };
             if (qStat.total > 0) {
@@ -1210,25 +1383,16 @@ function renderStats() {
     const getPerc = (val) => (val / dist.totalCount * 100).toFixed(1);
     
     let html = `
-        <!-- Übersicht der Klassenstufen -->
+        <!-- Übersicht der aktuellen Klassenstufe -->
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 25px;">
-            <div class="stat-card ${grade6.isMastered ? 'mastery-glow' : ''}" style="border-top: 4px solid var(--success); text-align: left; padding: 15px; position: relative;">
-                ${grade6.isMastered ? '<div style="position: absolute; top: -10px; right: -10px; font-size: 1.5em;">👑</div>' : ''}
+            <div class="stat-card ${currentGradeSummary.isMastered ? 'mastery-glow' : ''}" style="border-top: 4px solid ${state.grade === '6r' ? 'var(--success)' : 'var(--secondary-color)'}; text-align: left; padding: 15px; position: relative;">
+                ${currentGradeSummary.isMastered ? '<div style="position: absolute; top: -10px; right: -10px; font-size: 1.5em;">👑</div>' : ''}
                 <div style="font-weight: bold; margin-bottom: 5px; opacity: 0.7; font-size: 0.85em;">
-                    📚 6. Klasse Realschule ${grade6.isMastered ? '<span style="color: var(--success)">- GEMEISTERT!</span>' : ''}
+                    ${state.grade === '6r' ? '📚 6. Klasse Realschule' : '🎓 8. Klasse Gymnasium'} ${currentGradeSummary.isMastered ? `<span style="color: ${state.grade === '6r' ? 'var(--success)' : 'var(--secondary-color)'}">- GEMEISTERT!</span>` : ''}
                 </div>
-                <div style="font-size: 1.5em; color: var(--primary-color); font-weight: bold;">${grade6.points} <span style="font-size: 0.6em; opacity: 0.6; font-weight: normal;">Punkte</span></div>
-                <div style="font-size: 0.85em; margin-top: 5px;">Richtig: <strong>${grade6.correct}</strong> / ${grade6.total}</div>
-                <div style="font-size: 0.75em; opacity: 0.6;">Meister-Fächer: ${grade6.subjectsMastered} / ${grade6.totalSubjects}</div>
-            </div>
-            <div class="stat-card ${grade8.isMastered ? 'mastery-glow' : ''}" style="border-top: 4px solid var(--secondary-color); text-align: left; padding: 15px; position: relative;">
-                ${grade8.isMastered ? '<div style="position: absolute; top: -10px; right: -10px; font-size: 1.5em;">👑</div>' : ''}
-                <div style="font-weight: bold; margin-bottom: 5px; opacity: 0.7; font-size: 0.85em;">
-                    🎓 8. Klasse Gymnasium ${grade8.isMastered ? '<span style="color: var(--secondary-color)">- GEMEISTERT!</span>' : ''}
-                </div>
-                <div style="font-size: 1.5em; color: var(--primary-color); font-weight: bold;">${grade8.points} <span style="font-size: 0.6em; opacity: 0.6; font-weight: normal;">Punkte</span></div>
-                <div style="font-size: 0.85em; margin-top: 5px;">Richtig: <strong>${grade8.correct}</strong> / ${grade8.total}</div>
-                <div style="font-size: 0.75em; opacity: 0.6;">Meister-Fächer: ${grade8.subjectsMastered} / ${grade8.totalSubjects}</div>
+                <div style="font-size: 1.5em; color: var(--primary-color); font-weight: bold;">${currentGradeSummary.points} <span style="font-size: 0.6em; opacity: 0.6; font-weight: normal;">Punkte</span></div>
+                <div style="font-size: 0.85em; margin-top: 5px;">Richtig: <strong>${currentGradeSummary.correct}</strong> / ${currentGradeSummary.total}</div>
+                <div style="font-size: 0.75em; opacity: 0.6;">Meister-Fächer: ${currentGradeSummary.subjectsMastered} / ${currentGradeSummary.totalSubjects}</div>
             </div>
         </div>
 
@@ -1302,6 +1466,7 @@ function renderStats() {
     Object.entries(currentSubjectData.categories).forEach(([key, category]) => {
         const stats = state.categories[key] || { correct: 0, total: 0 };
         const cRate = stats.total > 0 ? Math.round(stats.correct / stats.total * 100) : 0;
+        const categoryTotalQuestions = statsRegistry.questionsCache[key]?.length || 0;
         
         html += `
             <div style="background: var(--card-hover); padding: 15px; border-radius: 12px; margin-bottom: 12px; border-left: 4px solid ${category.color}">
@@ -1311,7 +1476,7 @@ function renderStats() {
                     </div>
                     <span style="color: ${category.color}; font-weight: bold;">${cRate}%</span>
                 </div>
-                <div style="font-size: 0.85em; color: var(--text-light);">${stats.correct}/${stats.total} von ${totalQuestions} verfügbar</div>
+                <div style="font-size: 0.85em; color: var(--text-light);">${stats.correct}/${stats.total} von ${categoryTotalQuestions} verfügbar</div>
             </div>
         `;
     });
@@ -1356,6 +1521,7 @@ function renderBadges() {
     // Berechne globale Statistiken für fachübergreifende Erfolge
     let globalStats = { points: 0, correct: 0, total: 0, maxStreak: state.maxStreak };
     Object.entries(subjectRegistry).forEach(([key, subject]) => {
+        if (subject.excludeFromStats) return;
         let data = null;
         if (key === currentSubject) {
             data = state;
@@ -1419,7 +1585,7 @@ function renderSubjectPointsLegend() {
     container.innerHTML = '';
     Object.entries(subjectRegistry).forEach(([key, subject]) => {
         // Filter: Nur Fächer anzeigen, die zur aktuell gewählten Klassenstufe gehören
-        if (!subject.data || subject.grade !== state.grade) return;
+        if (subject.grade !== state.grade) return;
         
         let pts = 0;
         // Wenn es das aktuelle Fach ist, nimm die Punkte aus dem State
@@ -1439,41 +1605,54 @@ function renderSubjectPointsLegend() {
         const div = document.createElement('div');
         div.className = 'subject-point-item';
         div.title = `${subject.name}: ${pts} Punkte`;
-        div.innerHTML = `<span>${subject.data.icon}</span> <strong>${pts}</strong>`;
+        div.innerHTML = `<span>${subject.icon}</span> <strong>${pts}</strong>`;
         container.appendChild(div);
     });
 }
 
 function createConfetti() {
-    const colors = ['#6366f1', '#10b981', '#f59e0b', '#ec4899', '#8b5cf6'];
-    for (let i = 0; i < 30; i++) {
+    const colors = ['#6366f1', '#10b981', '#f59e0b', '#ec4899', '#8b5cf6', '#f43f5e', '#14b8a6'];
+    const shapes = ['square', 'circle', 'rect-tall', 'rect-wide'];
+    
+    for (let i = 0; i < 50; i++) {
         const c = document.createElement('div');
-        c.className = 'confetti';
+        const shape = shapes[Math.floor(Math.random() * shapes.length)];
+        const size = 8 + Math.random() * 12;
+        const duration = 3.5 + Math.random() * 1.5;
+        const delay = Math.random() * 0.3;
+        const tx = (Math.random() - 0.5) * 200;
+        
+        c.className = 'confetti confetti-' + shape;
         c.style.left = Math.random() * 100 + 'vw';
         c.style.background = colors[Math.floor(Math.random() * colors.length)];
-        c.style.animationDuration = (2 + Math.random() * 2) + 's';
-        c.style.animationDelay = (Math.random() * 0.5) + 's';
-        c.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
+        c.style.setProperty('--size', size + 'px');
+        c.style.setProperty('--duration', duration + 's');
+        c.style.setProperty('--delay', delay + 's');
+        c.style.setProperty('--tx', tx + 'px');
+        
         document.body.appendChild(c);
-        setTimeout(() => c.remove(), 4000);
+        setTimeout(() => c.remove(), (duration + delay + 0.5) * 1000);
     }
 }
 
 function resetProgress() {
     if (confirm('Wirklich alle Fortschritte in diesem Fach löschen? Das kann nicht rückgängig gemacht werden.')) {
         // Reset Frage-Stats
-        Object.values(currentSubjectData.questions || {}).forEach(questions => {
+        const resetRegistry = subjectRegistry[currentSubject];
+        Object.values(resetRegistry.questionsCache || {}).forEach(questions => {
             questions.forEach(q => {
                 q.stats = { correct: 0, total: 0, difficulty: 1.0 };
             });
         });
         
         state = {
+            grade: state.grade,
             points: 0, streak: 0, maxStreak: 0, total: 0, correct: 0,
-            smartMode: true, confetti: true, darkMode: state.darkMode,
-            showSkipButton: true, // Reset to default for current subject
-            currentMode: 'categories', currentCategory: null,
-            categories: {}, answers: [], questionStats: {}, subjectStats: {}
+            smartMode: state.smartMode, confetti: state.confetti, darkMode: state.darkMode,
+            currentMode: 'categories', currentCategory: null, difficultyFilter: null,
+            showSkipButton: state.showSkipButton,
+            categories: {}, questionStats: {}, subjectStats: {},
+            unlockedIndices: [], sessionCount: 0
         };
         initializeState();
         saveState();
@@ -1544,14 +1723,18 @@ function injectMobileStyles() {
 
 // ======================= INIT =======================
 
-function init() {
-    // Zuerst State laden (initialisiert auch die Fach-Daten)
-    loadState();
+async function init() {
+    try {
+        await loadState();
+    } catch(e) {
+        console.error('[LernApp] Fehler in loadState():', e);
+    }
     injectMobileStyles();
     
     renderSubjectSelector();
     updateSubjectUI();
     updateGradeUI();
+    updateTabVisibility();
     updateStatsBar();
     renderDashboard();
     
@@ -1560,8 +1743,27 @@ function init() {
     });
     document.getElementById('toggle-confetti').classList.toggle('active', state.confetti);
     document.getElementById('toggle-skip').classList.toggle('active', state.showSkipButton);
+    updateSettingsUI();
     
     applyTheme();
+}
+
+// Ladezustand für Fragen (Spinner + Skeleton-Buttons)
+function showQuestionLoading() {
+    const questionText = document.getElementById('question-text');
+    if (questionText) {
+        questionText.innerHTML = '<div class="loading-spinner"></div><p style="text-align:center;margin-top:10px;">Lade Fragen...</p>';
+    }
+    const grid = document.getElementById('options-grid');
+    if (grid) {
+        grid.innerHTML = '';
+        for (let i = 0; i < 4; i++) {
+            const btn = document.createElement('button');
+            btn.className = 'option-btn skeleton';
+            btn.textContent = '………';
+            grid.appendChild(btn);
+        }
+    }
 }
 
 // Starte App wenn DOM bereit

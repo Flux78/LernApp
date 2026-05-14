@@ -5,7 +5,8 @@ Der **Multi-Subject Master** ist eine adaptive Lern-Anwendung, die speziell für
 
 Kernaspekte der Anwendung sind:
 - **Adaptivität:** Ein "Smart Mode" passt die Fragenhäufigkeit an den Lernerfolg des Nutzers an.
-- **Gamification:** Belohnungssysteme durch Badges, Streak-Counter und ein spezielles Minecraft-Unlock-System für jüngere Schüler.
+- **Gamification:** Belohnungssysteme durch Badges, Streak-Counter und ein spezielles Minecraft-Unlock-System.
+- **Breites Wissen:** Ein klassenstufenunabhängiger Bereich "Allgemeinwissen" ergänzt die schulischen Inhalte.
 - **Persistenz:** Lokale Speicherung aller Fortschritte ohne Notwendigkeit einer Datenbank-Anbindung.
 
 ## 2. Grobarchitektur
@@ -15,8 +16,16 @@ Die Anwendung folgt einem modularen **Single-Page-Application (SPA)** Ansatz, de
 ### Komponenten-Struktur
 - **Präsentationsschicht (UI):** Gesteuert über `index.html` und CSS-Variablen für themenspezifisches Design.
 - **Logik-Kern (`app.js`):** Verwaltet den globalen `state`, das Event-Handling und die Quiz-Algorithmen.
-- **Datenkataloge (`subjects/`):** Jedes Fach ist in einer separaten JavaScript-Datei gekapselt, die das Fragen-Pool-Objekt (`subjectData`) bereitstellt.
+- **Datenkataloge (`subjects/`):** Jedes Fach ist als Modul in einem eigenen Verzeichnis organisiert (Lazy Loading von Metadaten und Inhalten).
 - **Speicherschicht:** Nutzung der Web Storage API (`localStorage`) zur Persistierung des Nutzerfortschritts.
+
+### Dateistruktur der Fach-Module
+Jedes Fachverzeichnis (z. B. `subjects/english_6r/`) folgt einer strikten Struktur:
+
+| Datei | Beschreibung | Rolle in der Logik |
+| :--- | :--- | :--- |
+| `index.js` | Definiert Metadaten, Kategorien und `questionCounts`. | Basis für Fortschrittsberechnung und UI-Initialisierung. |
+| `questions.js` | Enthält den eigentlichen Fragen-Pool als Array. | Datenbasis für das Quiz-System. |
 
 ### Architektur-Diagramm
 
@@ -28,24 +37,44 @@ graph TD
         Storage[(LocalStorage)]
     end
 
-    subgraph Daten_Module
-        Math[math_6r.js]
-        Phys[phys_8g.js]
-        Lat[lat_8g.js]
-        More[...]
+    subgraph Fach_Module [subjects/ID/]
+        Index[index.js <br/>Metadata & Counts]
+        Questions[questions.js <br/>Question Pool]
     end
 
     UI <--> Logic
     Logic <--> Storage
-    Logic --- Math
-    Logic --- Phys
-    Logic --- Lat
-    Logic --- More
+    
+    Logic -- 1. Load --> Index
+    Logic -- 2. Load --> Questions
+
+    style Fach_Module fill:#f9f,stroke:#333,stroke-width:2px
 ```
 
 ## 3. Innerer Workflow
 
 Der zentrale Workflow der Anwendung ist der Quiz-Zyklus, der die Auswahl, Präsentation und Auswertung von Fragen steuert.
+
+### Technische Lade-Sequenz
+Die App nutzt ein modulares Ladesystem (Lazy Loading), um die Initiallast gering zu halten.
+
+```mermaid
+sequenceDiagram
+    participant User as Benutzer
+    participant Core as App Core (Main)
+    participant Index as Fach-Index (index.js)
+    participant Questions as Kategorie-Datei ([kat].js)
+    participant State as Progress/Lock Manager
+
+    User->>Core: Wählt Fach (z.B. 'english_6r')
+    Core->>Index: Dynamischer Import von index.js
+    Note over Index: Registriert window.__subjectData_[ID]_index
+    Index-->>Core: Metadaten bereit (Kategorien, Counts)
+    Core->>State: Berechne Fortschritt & Minecraft-Status
+    State-->>Core: Status: Gesperrt/Offen
+    Core->>User: Zeige Dashboard mit Fortschritt
+    User->>Core: Startet Lerneinheit -> Lädt [kategorie].js
+```
 
 ### Quiz-Workflow
 
@@ -87,7 +116,23 @@ flowchart TD
 
 ## 4. Features im Detail
 - **Smart Mode:** Nutzt eine Gewichtungslogik (Gewicht 20 bei Rate < 50%, Gewicht 2 bei Rate > 80%), um ineffizientes Lernen zu vermeiden.
-- **Minecraft-Belohnung:** Ein fächerübergreifender Zähler schaltet im Verhältnis 10:1 neue Fragen im Minecraft-Katalog frei.
+- **Minecraft-Belohnung:** Ein spezielles Belohnungssystem für die Unterstufe.
+    - **Logik:** Die App summiert die `questionCounts` aus der `index.js`. Der Fortschritt wird gegen die im `localStorage` als korrekt markierten IDs geprüft.
+    - **Trigger:** Bei Erreichen definierter Schwellenwerte (z.B. 100% einer Kategorie oder des Fachs) werden Bonus-Inhalte freigeschaltet.
+    
+    #### Fehlerbehebung Freischaltung:
+    Falls Fragen nicht freigeschaltet werden, folgende Punkte prüfen:
+    1. **Namenskonvention:** Globaler Namespace muss `window.__subjectData_[FachID]_index` entsprechen.
+    2. **Konsistenz:** Die Summe in `questionCounts` muss exakt der Anzahl der Objekte in den Kategorie-Dateien entsprechen.
+    3. **Kategorie-Keys:** Keys in `categories` müssen identisch mit denen in `questionCounts` sein.
+
+    #### Validierungstool:
+    Um die Übereinstimmung automatisch zu prüfen, kann das Validierungsskript genutzt werden:
+    ```bash
+    # Syntax: node scripts/validate_counts.js ./subjects/[FACH_ORDNER]
+    node scripts/validate_counts.js ./subjects/english_6r
+    ```
+
 - **Multi-Grade-Support:** Trennung der Logik und UI-Filter für Realschule (6r) und Gymnasium (8g).
 - **Textaufgaben-Mastery:** Ein dediziertes System zur Förderung der Lesekompetenz in MINT-Fächern. Es nutzt spezialisierte Sub-Modi:
     - *Text Surgeon:* Filtert "Rauschen" (irrelevante Story-Infos) aus Aufgaben.

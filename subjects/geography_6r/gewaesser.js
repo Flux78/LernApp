@@ -1,0 +1,642 @@
+window.__subjectData_geography_6r_gewaesser = [
+            {
+                "question": "Welcher ist der größte Ozean?",
+                "answers": [
+                    "Atlantik",
+                    "Indischer Ozean",
+                    "Pazifik",
+                    "Arktischer Ozean"
+                ],
+                "correct": 2,
+                "hint": "Zwischen Asien und Amerika",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher ist der längste Fluss der Welt?",
+                "answers": [
+                    "Nil",
+                    "Amazonas",
+                    "Jangtse",
+                    "Mississippi"
+                ],
+                "correct": 1,
+                "hint": "Südamerika, über 6.000 km",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher See ist der größte der Welt?",
+                "answers": [
+                    "Victoriasee",
+                    "Baikalsee",
+                    "Kaspisches Meer",
+                    "Oberer See"
+                ],
+                "correct": 2,
+                "hint": "Zwischen Europa und Asien",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegt die Tiefseegrube Marianengraben?",
+                "answers": [
+                    "Atlantik",
+                    "Indischer Ozean",
+                    "Pazifik",
+                    "Arktischer Ozean"
+                ],
+                "correct": 2,
+                "hint": "Tiefster Punkt der Erde",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Fluss fließt durch Paris?",
+                "answers": [
+                    "Themse",
+                    "Seine",
+                    "Rhein",
+                    "Donau"
+                ],
+                "correct": 1,
+                "hint": "Eiffelturm am Fluss",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist ein Delta?",
+                "answers": [
+                    "Ein Berg",
+                    "Eine Wüste",
+                    "Mündungsgebiet eines Flusses",
+                    "Ein See"
+                ],
+                "correct": 2,
+                "hint": "Dreieckige Landform",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Wasserfall ist der höchste der Welt?",
+                "answers": [
+                    "Niagarafälle",
+                    "Victoriafälle",
+                    "Angel Falls",
+                    "Iguazú"
+                ],
+                "correct": 2,
+                "hint": "Venezuela, über 900 m",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Meer liegt zwischen Europa und Afrika?",
+                "answers": [
+                    "Rotes Meer",
+                    "Mittelmeer",
+                    "Schwarzes Meer",
+                    "Kaspisches Meer"
+                ],
+                "correct": 1,
+                "hint": "Italien, Spanien, Griechenland...",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie heißt der wasserreichste Fluss der Erde?",
+                "answers": [
+                    "Nil",
+                    "Amazonas",
+                    "Donau",
+                    "Kongo"
+                ],
+                "correct": 1,
+                "hint": "Regenwald",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo entspringt der Rhein?",
+                "answers": [
+                    "Deutschland",
+                    "Schweiz",
+                    "Österreich",
+                    "Frankreich"
+                ],
+                "correct": 1,
+                "hint": "In den Alpen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "An welches Land grenzt der Bodensee NICHT?",
+                "answers": [
+                    "Deutschland",
+                    "Schweiz",
+                    "Österreich",
+                    "Liechtenstein"
+                ],
+                "correct": 3,
+                "hint": "Drei-Länder-Eck",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie nennt man die Stelle, an der ein Fluss beginnt?",
+                "answers": [
+                    "Mündung",
+                    "Quelle",
+                    "Ufer",
+                    "Delta"
+                ],
+                "correct": 1,
+                "hint": "Meist im Gebirge",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie nennt man die Stelle, an der ein Fluss ins Meer fließt?",
+                "answers": [
+                    "Mündung",
+                    "Quelle",
+                    "Flussbett",
+                    "Bach"
+                ],
+                "correct": 0,
+                "hint": "Ende des Flusses",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "In welches Meer mündet der Rhein?",
+                "answers": [
+                    "Ostsee",
+                    "Nordsee",
+                    "Mittelmeer",
+                    "Atlantik"
+                ],
+                "correct": 1,
+                "hint": "Bei Rotterdam",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Fluss fließt durch Ägypten?",
+                "answers": [
+                    "Nil",
+                    "Euphrat",
+                    "Tigris",
+                    "Jordan"
+                ],
+                "correct": 0,
+                "hint": "Lebensader der Wüste",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher See ist der tiefste der Welt?",
+                "answers": [
+                    "Bodensee",
+                    "Baikalsee",
+                    "Gardasee",
+                    "Titicacasee"
+                ],
+                "correct": 1,
+                "hint": "In Sibirien",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist Brackwasser?",
+                "answers": [
+                    "Gefrorenes Wasser",
+                    "Mischung aus Süß- und Salzwasser",
+                    "Sehr sauberes Wasser",
+                    "Abwasser"
+                ],
+                "correct": 1,
+                "hint": "Haftet oft an Flussmündungen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Fluss fließt durch Rom?",
+                "answers": [
+                    "Po",
+                    "Arno",
+                    "Tiber",
+                    "Etsch"
+                ],
+                "correct": 2,
+                "hint": "Mittelitalien",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie nennt man einen künstlich angelegten Wasserweg?",
+                "answers": [
+                    "Fluss",
+                    "Kanal",
+                    "Bach",
+                    "Strom"
+                ],
+                "correct": 1,
+                "hint": "Z.B. Panamakanal",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Ozean liegt zwischen Afrika und Australien?",
+                "answers": [
+                    "Atlantik",
+                    "Pazifik",
+                    "Indischer Ozean",
+                    "Arktik"
+                ],
+                "correct": 2,
+                "hint": "Südhalbkugel",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher ist der größte Ozean?",
+                "answers": [
+                    "Atlantik",
+                    "Indischer Ozean",
+                    "Pazifik",
+                    "Arktischer Ozean"
+                ],
+                "correct": 2,
+                "hint": "Zwischen Asien und Amerika",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher ist der längste Fluss der Welt?",
+                "answers": [
+                    "Nil",
+                    "Amazonas",
+                    "Jangtse",
+                    "Mississippi"
+                ],
+                "correct": 1,
+                "hint": "Südamerika, über 6.000 km",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher See ist der größte der Welt?",
+                "answers": [
+                    "Victoriasee",
+                    "Baikalsee",
+                    "Kaspisches Meer",
+                    "Oberer See"
+                ],
+                "correct": 2,
+                "hint": "Zwischen Europa und Asien",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegt die Tiefseegrube Marianengraben?",
+                "answers": [
+                    "Atlantik",
+                    "Indischer Ozean",
+                    "Pazifik",
+                    "Arktischer Ozean"
+                ],
+                "correct": 2,
+                "hint": "Tiefster Punkt der Erde",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Fluss fließt durch Paris?",
+                "answers": [
+                    "Themse",
+                    "Seine",
+                    "Rhein",
+                    "Donau"
+                ],
+                "correct": 1,
+                "hint": "Eiffelturm am Fluss",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist ein Delta?",
+                "answers": [
+                    "Ein Berg",
+                    "Eine Wüste",
+                    "Mündungsgebiet eines Flusses",
+                    "Ein See"
+                ],
+                "correct": 2,
+                "hint": "Dreieckige Landform",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Wasserfall ist der höchste der Welt?",
+                "answers": [
+                    "Niagarafälle",
+                    "Victoriafälle",
+                    "Angel Falls",
+                    "Iguazú"
+                ],
+                "correct": 2,
+                "hint": "Venezuela, über 900 m",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Meer liegt zwischen Europa und Afrika?",
+                "answers": [
+                    "Rotes Meer",
+                    "Mittelmeer",
+                    "Schwarzes Meer",
+                    "Kaspisches Meer"
+                ],
+                "correct": 1,
+                "hint": "Italien, Spanien, Griechenland...",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie heißt der wasserreichste Fluss der Erde?",
+                "answers": [
+                    "Nil",
+                    "Amazonas",
+                    "Donau",
+                    "Kongo"
+                ],
+                "correct": 1,
+                "hint": "Regenwald",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo entspringt der Rhein?",
+                "answers": [
+                    "Deutschland",
+                    "Schweiz",
+                    "Österreich",
+                    "Frankreich"
+                ],
+                "correct": 1,
+                "hint": "In den Alpen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "An welches Land grenzt der Bodensee NICHT?",
+                "answers": [
+                    "Deutschland",
+                    "Schweiz",
+                    "Österreich",
+                    "Liechtenstein"
+                ],
+                "correct": 3,
+                "hint": "Drei-Länder-Eck",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie nennt man die Stelle, an der ein Fluss beginnt?",
+                "answers": [
+                    "Mündung",
+                    "Quelle",
+                    "Ufer",
+                    "Delta"
+                ],
+                "correct": 1,
+                "hint": "Meist im Gebirge",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie nennt man die Stelle, an der ein Fluss ins Meer fließt?",
+                "answers": [
+                    "Mündung",
+                    "Quelle",
+                    "Flussbett",
+                    "Bach"
+                ],
+                "correct": 0,
+                "hint": "Ende des Flusses",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "In welches Meer mündet der Rhein?",
+                "answers": [
+                    "Ostsee",
+                    "Nordsee",
+                    "Mittelmeer",
+                    "Atlantik"
+                ],
+                "correct": 1,
+                "hint": "Bei Rotterdam",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Fluss fließt durch Ägypten?",
+                "answers": [
+                    "Nil",
+                    "Euphrat",
+                    "Tigris",
+                    "Jordan"
+                ],
+                "correct": 0,
+                "hint": "Lebensader der Wüste",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher See ist der tiefste der Welt?",
+                "answers": [
+                    "Bodensee",
+                    "Baikalsee",
+                    "Gardasee",
+                    "Titicacasee"
+                ],
+                "correct": 1,
+                "hint": "In Sibirien",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist Brackwasser?",
+                "answers": [
+                    "Gefrorenes Wasser",
+                    "Mischung aus Süß- und Salzwasser",
+                    "Sehr sauberes Wasser",
+                    "Abwasser"
+                ],
+                "correct": 1,
+                "hint": "Haftet oft an Flussmündungen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Fluss fließt durch Rom?",
+                "answers": [
+                    "Po",
+                    "Arno",
+                    "Tiber",
+                    "Etsch"
+                ],
+                "correct": 2,
+                "hint": "Mittelitalien",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie nennt man einen künstlich angelegten Wasserweg?",
+                "answers": [
+                    "Fluss",
+                    "Kanal",
+                    "Bach",
+                    "Strom"
+                ],
+                "correct": 1,
+                "hint": "Z.B. Panamakanal",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Ozean liegt zwischen Afrika und Australien?",
+                "answers": [
+                    "Atlantik",
+                    "Pazifik",
+                    "Indischer Ozean",
+                    "Arktik"
+                ],
+                "correct": 2,
+                "hint": "Südhalbkugel",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            }
+        ];

@@ -1,0 +1,802 @@
+window.__subjectData_geography_6r_deutschland = [
+            {
+                "question": "Wie viele Bundesländer hat Deutschland?",
+                "answers": [
+                    "14",
+                    "15",
+                    "16",
+                    "17"
+                ],
+                "correct": 2,
+                "hint": "Bayern, Berlin, Bremen...",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist die Hauptstadt Deutschlands?",
+                "answers": [
+                    "München",
+                    "Hamburg",
+                    "Frankfurt",
+                    "Berlin"
+                ],
+                "correct": 3,
+                "hint": "Brandenburger Tor",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches ist das flächenmäßig größte Bundesland?",
+                "answers": [
+                    "Nordrhein-Westfalen",
+                    "Bayern",
+                    "Niedersachsen",
+                    "Baden-Württemberg"
+                ],
+                "correct": 1,
+                "hint": "Bier und Berge",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Fluss fließt durch Köln?",
+                "answers": [
+                    "Elbe",
+                    "Donau",
+                    "Rhein",
+                    "Mosel"
+                ],
+                "correct": 2,
+                "hint": "Kölner Dom am Fluss",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo mündet die Donau?",
+                "answers": [
+                    "In die Nordsee",
+                    "In die Ostsee",
+                    "Ins Schwarze Meer",
+                    "Ins Mittelmeer"
+                ],
+                "correct": 2,
+                "hint": "Rumänien/Ukraine",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Bundesland hat die meisten Einwohner?",
+                "answers": [
+                    "Bayern",
+                    "Niedersachsen",
+                    "Nordrhein-Westfalen",
+                    "Baden-Württemberg"
+                ],
+                "correct": 2,
+                "hint": "Ruhrgebiet",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegt das Zugspitze?",
+                "answers": [
+                    "Österreich",
+                    "Bayern",
+                    "Schweiz",
+                    "Italien"
+                ],
+                "correct": 1,
+                "hint": "Deutschlands höchster Berg",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welche Stadt liegt an der Elbe?",
+                "answers": [
+                    "München",
+                    "Frankfurt",
+                    "Hamburg",
+                    "Stuttgart"
+                ],
+                "correct": 2,
+                "hint": "Hafenstadt",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Bayern?",
+                "answers": [
+                    "Nürnberg",
+                    "München",
+                    "Augsburg",
+                    "Regensburg"
+                ],
+                "correct": 1,
+                "hint": "Oktoberfest-Stadt",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Baden-Württemberg?",
+                "answers": [
+                    "Stuttgart",
+                    "Karlsruhe",
+                    "Mannheim",
+                    "Freiburg"
+                ],
+                "correct": 0,
+                "hint": "Autostadt",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Bundesland ist eine Inselgruppe?",
+                "answers": [
+                    "Bremen",
+                    "Hamburg",
+                    "Schleswig-Holstein",
+                    "Gibt es nicht"
+                ],
+                "correct": 3,
+                "hint": "Es gibt Inseln, aber kein Insel-Bundesland",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Nordrhein-Westfalen?",
+                "answers": [
+                    "Köln",
+                    "Düsseldorf",
+                    "Dortmund",
+                    "Essen"
+                ],
+                "correct": 1,
+                "hint": "Am Rhein gelegen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Sachsen?",
+                "answers": [
+                    "Leipzig",
+                    "Dresden",
+                    "Chemnitz",
+                    "Zwickau"
+                ],
+                "correct": 1,
+                "hint": "Frauenkirche",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Meer grenzt im Nordwesten an Deutschland?",
+                "answers": [
+                    "Ostsee",
+                    "Nordsee",
+                    "Mittelmeer",
+                    "Schwarzes Meer"
+                ],
+                "correct": 1,
+                "hint": "Ebbe und Flut",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Meer grenzt im Nordosten an Deutschland?",
+                "answers": [
+                    "Ostsee",
+                    "Nordsee",
+                    "Rotes Meer",
+                    "Eismeer"
+                ],
+                "correct": 0,
+                "hint": "Keine Gezeiten",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Hessen?",
+                "answers": [
+                    "Frankfurt",
+                    "Wiesbaden",
+                    "Kassel",
+                    "Darmstadt"
+                ],
+                "correct": 1,
+                "hint": "Kurstadt",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Niedersachsen?",
+                "answers": [
+                    "Hannover",
+                    "Braunschweig",
+                    "Osnabrück",
+                    "Göttingen"
+                ],
+                "correct": 0,
+                "hint": "Messe-Stadt",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches sind die drei Stadtstaaten?",
+                "answers": [
+                    "Berlin, Bremen, Hamburg",
+                    "München, Berlin, Köln",
+                    "Bremen, Hamburg, Kiel",
+                    "Berlin, Potsdam, Schwerin"
+                ],
+                "correct": 0,
+                "hint": "Eigene Bundesländer",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Höchstes Gebirge in Deutschland?",
+                "answers": [
+                    "Harz",
+                    "Alpen",
+                    "Eifel",
+                    "Schwarzwald"
+                ],
+                "correct": 1,
+                "hint": "Ganz im Süden",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Fluss fließt durch Dresden?",
+                "answers": [
+                    "Main",
+                    "Rhein",
+                    "Elbe",
+                    "Weser"
+                ],
+                "correct": 2,
+                "hint": "Sachsen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Größte deutsche Insel?",
+                "answers": [
+                    "Sylt",
+                    "Rügen",
+                    "Usedom",
+                    "Fehmarn"
+                ],
+                "correct": 1,
+                "hint": "Kreidefelsen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Rheinland-Pfalz?",
+                "answers": [
+                    "Koblenz",
+                    "Mainz",
+                    "Trier",
+                    "Ludwigshafen"
+                ],
+                "correct": 1,
+                "hint": "ZDF-Sitz",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Thüringen?",
+                "answers": [
+                    "Erfurt",
+                    "Jena",
+                    "Weimar",
+                    "Gera"
+                ],
+                "correct": 0,
+                "hint": "Mitte Deutschlands",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Brandenburg?",
+                "answers": [
+                    "Cottbus",
+                    "Potsdam",
+                    "Brandenburg",
+                    "Frankfurt (Oder)"
+                ],
+                "correct": 1,
+                "hint": "Schloss Sanssouci",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher See ist der größte in Deutschland?",
+                "answers": [
+                    "Chiemsee",
+                    "Bodensee",
+                    "Müritz",
+                    "Starnberger See"
+                ],
+                "correct": 1,
+                "hint": "Im Dreiländereck",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie viele Bundesländer hat Deutschland?",
+                "answers": [
+                    "14",
+                    "15",
+                    "16",
+                    "17"
+                ],
+                "correct": 2,
+                "hint": "Bayern, Berlin, Bremen...",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist die Hauptstadt Deutschlands?",
+                "answers": [
+                    "München",
+                    "Hamburg",
+                    "Frankfurt",
+                    "Berlin"
+                ],
+                "correct": 3,
+                "hint": "Brandenburger Tor",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches ist das flächenmäßig größte Bundesland?",
+                "answers": [
+                    "Nordrhein-Westfalen",
+                    "Bayern",
+                    "Niedersachsen",
+                    "Baden-Württemberg"
+                ],
+                "correct": 1,
+                "hint": "Bier und Berge",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Fluss fließt durch Köln?",
+                "answers": [
+                    "Elbe",
+                    "Donau",
+                    "Rhein",
+                    "Mosel"
+                ],
+                "correct": 2,
+                "hint": "Kölner Dom am Fluss",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo mündet die Donau?",
+                "answers": [
+                    "In die Nordsee",
+                    "In die Ostsee",
+                    "Ins Schwarze Meer",
+                    "Ins Mittelmeer"
+                ],
+                "correct": 2,
+                "hint": "Rumänien/Ukraine",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Bundesland hat die meisten Einwohner?",
+                "answers": [
+                    "Bayern",
+                    "Niedersachsen",
+                    "Nordrhein-Westfalen",
+                    "Baden-Württemberg"
+                ],
+                "correct": 2,
+                "hint": "Ruhrgebiet",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegt das Zugspitze?",
+                "answers": [
+                    "Österreich",
+                    "Bayern",
+                    "Schweiz",
+                    "Italien"
+                ],
+                "correct": 1,
+                "hint": "Deutschlands höchster Berg",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welche Stadt liegt an der Elbe?",
+                "answers": [
+                    "München",
+                    "Frankfurt",
+                    "Hamburg",
+                    "Stuttgart"
+                ],
+                "correct": 2,
+                "hint": "Hafenstadt",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Bayern?",
+                "answers": [
+                    "Nürnberg",
+                    "München",
+                    "Augsburg",
+                    "Regensburg"
+                ],
+                "correct": 1,
+                "hint": "Oktoberfest-Stadt",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Baden-Württemberg?",
+                "answers": [
+                    "Stuttgart",
+                    "Karlsruhe",
+                    "Mannheim",
+                    "Freiburg"
+                ],
+                "correct": 0,
+                "hint": "Autostadt",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Bundesland ist eine Inselgruppe?",
+                "answers": [
+                    "Bremen",
+                    "Hamburg",
+                    "Schleswig-Holstein",
+                    "Gibt es nicht"
+                ],
+                "correct": 3,
+                "hint": "Es gibt Inseln, aber kein Insel-Bundesland",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Nordrhein-Westfalen?",
+                "answers": [
+                    "Köln",
+                    "Düsseldorf",
+                    "Dortmund",
+                    "Essen"
+                ],
+                "correct": 1,
+                "hint": "Am Rhein gelegen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Sachsen?",
+                "answers": [
+                    "Leipzig",
+                    "Dresden",
+                    "Chemnitz",
+                    "Zwickau"
+                ],
+                "correct": 1,
+                "hint": "Frauenkirche",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Meer grenzt im Nordwesten an Deutschland?",
+                "answers": [
+                    "Ostsee",
+                    "Nordsee",
+                    "Mittelmeer",
+                    "Schwarzes Meer"
+                ],
+                "correct": 1,
+                "hint": "Ebbe und Flut",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Meer grenzt im Nordosten an Deutschland?",
+                "answers": [
+                    "Ostsee",
+                    "Nordsee",
+                    "Rotes Meer",
+                    "Eismeer"
+                ],
+                "correct": 0,
+                "hint": "Keine Gezeiten",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Hessen?",
+                "answers": [
+                    "Frankfurt",
+                    "Wiesbaden",
+                    "Kassel",
+                    "Darmstadt"
+                ],
+                "correct": 1,
+                "hint": "Kurstadt",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Niedersachsen?",
+                "answers": [
+                    "Hannover",
+                    "Braunschweig",
+                    "Osnabrück",
+                    "Göttingen"
+                ],
+                "correct": 0,
+                "hint": "Messe-Stadt",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches sind die drei Stadtstaaten?",
+                "answers": [
+                    "Berlin, Bremen, Hamburg",
+                    "München, Berlin, Köln",
+                    "Bremen, Hamburg, Kiel",
+                    "Berlin, Potsdam, Schwerin"
+                ],
+                "correct": 0,
+                "hint": "Eigene Bundesländer",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Höchstes Gebirge in Deutschland?",
+                "answers": [
+                    "Harz",
+                    "Alpen",
+                    "Eifel",
+                    "Schwarzwald"
+                ],
+                "correct": 1,
+                "hint": "Ganz im Süden",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Fluss fließt durch Dresden?",
+                "answers": [
+                    "Main",
+                    "Rhein",
+                    "Elbe",
+                    "Weser"
+                ],
+                "correct": 2,
+                "hint": "Sachsen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Größte deutsche Insel?",
+                "answers": [
+                    "Sylt",
+                    "Rügen",
+                    "Usedom",
+                    "Fehmarn"
+                ],
+                "correct": 1,
+                "hint": "Kreidefelsen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Rheinland-Pfalz?",
+                "answers": [
+                    "Koblenz",
+                    "Mainz",
+                    "Trier",
+                    "Ludwigshafen"
+                ],
+                "correct": 1,
+                "hint": "ZDF-Sitz",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Thüringen?",
+                "answers": [
+                    "Erfurt",
+                    "Jena",
+                    "Weimar",
+                    "Gera"
+                ],
+                "correct": 0,
+                "hint": "Mitte Deutschlands",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Brandenburg?",
+                "answers": [
+                    "Cottbus",
+                    "Potsdam",
+                    "Brandenburg",
+                    "Frankfurt (Oder)"
+                ],
+                "correct": 1,
+                "hint": "Schloss Sanssouci",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher See ist der größte in Deutschland?",
+                "answers": [
+                    "Chiemsee",
+                    "Bodensee",
+                    "Müritz",
+                    "Starnberger See"
+                ],
+                "correct": 1,
+                "hint": "Im Dreiländereck",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            }
+        ];

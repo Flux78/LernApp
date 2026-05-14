@@ -1,0 +1,642 @@
+window.__subjectData_geography_6r_gebirge = [
+            {
+                "question": "Welches ist das höchste Gebirge der Welt?",
+                "answers": [
+                    "Alpen",
+                    "Rocky Mountains",
+                    "Anden",
+                    "Himalaya"
+                ],
+                "correct": 3,
+                "hint": "Mount Everest",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie hoch ist der Mount Everest ungefähr?",
+                "answers": [
+                    "5.848 m",
+                    "6.848 m",
+                    "7.848 m",
+                    "8.848 m"
+                ],
+                "correct": 3,
+                "hint": "Fast 9 km",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegen die Alpen?",
+                "answers": [
+                    "Nur in Deutschland",
+                    "Nur in Österreich",
+                    "In mehreren europäischen Ländern",
+                    "Nur in der Schweiz"
+                ],
+                "correct": 2,
+                "hint": "Deutschland, Österreich, Schweiz, Italien, Frankreich...",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches ist das längste Gebirge der Welt?",
+                "answers": [
+                    "Himalaya",
+                    "Anden",
+                    "Rocky Mountains",
+                    "Alpen"
+                ],
+                "correct": 1,
+                "hint": "Südamerika",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegt der Kilimandscharo?",
+                "answers": [
+                    "Kenia",
+                    "Tansania",
+                    "Äthiopien",
+                    "Uganda"
+                ],
+                "correct": 1,
+                "hint": "Afrika, höchster Berg",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Vulkan zerstörte Pompeji?",
+                "answers": [
+                    "Ätna",
+                    "Vesuv",
+                    "Stromboli",
+                    "Vulcano"
+                ],
+                "correct": 1,
+                "hint": "Bei Neapel",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist ein Gletscher?",
+                "answers": [
+                    "Ein Fluss",
+                    "Ein eisiger Fluss",
+                    "Ein See",
+                    "Ein Wasserfall"
+                ],
+                "correct": 1,
+                "hint": "Langsam fließendes Eis",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegt der Mont Blanc?",
+                "answers": [
+                    "In den Pyrenäen",
+                    "In den Alpen",
+                    "In den Rocky Mountains",
+                    "In den Anden"
+                ],
+                "correct": 1,
+                "hint": "Höchster Berg Westeuropas",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie heißt das Gebirge in Nordamerika?",
+                "answers": [
+                    "Anden",
+                    "Alpen",
+                    "Rocky Mountains",
+                    "Himalaya"
+                ],
+                "correct": 2,
+                "hint": "Felsengebirge",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie nennt man die Entstehung von Gebirgen?",
+                "answers": [
+                    "Faltung",
+                    "Schmelzen",
+                    "Erosion",
+                    "Verwitterung"
+                ],
+                "correct": 0,
+                "hint": "Tektonik",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Gebirge liegt in Marokko (Afrika)?",
+                "answers": [
+                    "Anden",
+                    "Atlas",
+                    "Alpen",
+                    "Ural"
+                ],
+                "correct": 1,
+                "hint": "Namen eines Titanen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist Magma?",
+                "answers": [
+                    "Gefrorenes Eis",
+                    "Flüssiges Gestein unter der Erde",
+                    "Ein Mineral",
+                    "Asche"
+                ],
+                "correct": 1,
+                "hint": "Inneres der Erde",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie nennt man Magma, wenn es an die Oberfläche tritt?",
+                "answers": [
+                    "Wasser",
+                    "Lava",
+                    "Dampf",
+                    "Stein"
+                ],
+                "correct": 1,
+                "hint": "Vulkanausbruch",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegt der höchste Berg Japans, der Fuji?",
+                "answers": [
+                    "Kyoto",
+                    "Tokio",
+                    "Insel Honshu",
+                    "Hokkaido"
+                ],
+                "correct": 2,
+                "hint": "Vulkanberg",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Gebirge durchzieht Italien?",
+                "answers": [
+                    "Alpen",
+                    "Pyrenäen",
+                    "Apennin",
+                    "Karpaten"
+                ],
+                "correct": 2,
+                "hint": "Rückgrat Italiens",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist ein 'toter' Vulkan?",
+                "answers": [
+                    "Einer der brennt",
+                    "Einer der nie wieder ausbricht",
+                    "Einer im Wasser",
+                    "Einer aus Gold"
+                ],
+                "correct": 1,
+                "hint": "Erloschen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegt das 'Dach der Welt'?",
+                "answers": [
+                    "Alpen",
+                    "Tibet / Himalaya",
+                    "Anden",
+                    "Kaukasus"
+                ],
+                "correct": 1,
+                "hint": "Höchstes Plateau",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie heißt der höchste Berg Südamerikas?",
+                "answers": [
+                    "Aconcagua",
+                    "Mont Blanc",
+                    "Denali",
+                    "K2"
+                ],
+                "correct": 0,
+                "hint": "In den Anden",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist eine Gletscherspalte?",
+                "answers": [
+                    "Ein Weg",
+                    "Ein tiefer Riss im Eis",
+                    "Ein kleiner Bach",
+                    "Ein Tunnel"
+                ],
+                "correct": 1,
+                "hint": "Gefahr im Gebirge",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie heißt der höchste Berg Nordamerikas?",
+                "answers": [
+                    "Denali",
+                    "Mount Everest",
+                    "Zugspitze",
+                    "Aconcagua"
+                ],
+                "correct": 0,
+                "hint": "Früher Mount McKinley",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches ist das höchste Gebirge der Welt?",
+                "answers": [
+                    "Alpen",
+                    "Rocky Mountains",
+                    "Anden",
+                    "Himalaya"
+                ],
+                "correct": 3,
+                "hint": "Mount Everest",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie hoch ist der Mount Everest ungefähr?",
+                "answers": [
+                    "5.848 m",
+                    "6.848 m",
+                    "7.848 m",
+                    "8.848 m"
+                ],
+                "correct": 3,
+                "hint": "Fast 9 km",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegen die Alpen?",
+                "answers": [
+                    "Nur in Deutschland",
+                    "Nur in Österreich",
+                    "In mehreren europäischen Ländern",
+                    "Nur in der Schweiz"
+                ],
+                "correct": 2,
+                "hint": "Deutschland, Österreich, Schweiz, Italien, Frankreich...",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches ist das längste Gebirge der Welt?",
+                "answers": [
+                    "Himalaya",
+                    "Anden",
+                    "Rocky Mountains",
+                    "Alpen"
+                ],
+                "correct": 1,
+                "hint": "Südamerika",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegt der Kilimandscharo?",
+                "answers": [
+                    "Kenia",
+                    "Tansania",
+                    "Äthiopien",
+                    "Uganda"
+                ],
+                "correct": 1,
+                "hint": "Afrika, höchster Berg",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Vulkan zerstörte Pompeji?",
+                "answers": [
+                    "Ätna",
+                    "Vesuv",
+                    "Stromboli",
+                    "Vulcano"
+                ],
+                "correct": 1,
+                "hint": "Bei Neapel",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist ein Gletscher?",
+                "answers": [
+                    "Ein Fluss",
+                    "Ein eisiger Fluss",
+                    "Ein See",
+                    "Ein Wasserfall"
+                ],
+                "correct": 1,
+                "hint": "Langsam fließendes Eis",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegt der Mont Blanc?",
+                "answers": [
+                    "In den Pyrenäen",
+                    "In den Alpen",
+                    "In den Rocky Mountains",
+                    "In den Anden"
+                ],
+                "correct": 1,
+                "hint": "Höchster Berg Westeuropas",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie heißt das Gebirge in Nordamerika?",
+                "answers": [
+                    "Anden",
+                    "Alpen",
+                    "Rocky Mountains",
+                    "Himalaya"
+                ],
+                "correct": 2,
+                "hint": "Felsengebirge",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie nennt man die Entstehung von Gebirgen?",
+                "answers": [
+                    "Faltung",
+                    "Schmelzen",
+                    "Erosion",
+                    "Verwitterung"
+                ],
+                "correct": 0,
+                "hint": "Tektonik",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Gebirge liegt in Marokko (Afrika)?",
+                "answers": [
+                    "Anden",
+                    "Atlas",
+                    "Alpen",
+                    "Ural"
+                ],
+                "correct": 1,
+                "hint": "Namen eines Titanen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist Magma?",
+                "answers": [
+                    "Gefrorenes Eis",
+                    "Flüssiges Gestein unter der Erde",
+                    "Ein Mineral",
+                    "Asche"
+                ],
+                "correct": 1,
+                "hint": "Inneres der Erde",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie nennt man Magma, wenn es an die Oberfläche tritt?",
+                "answers": [
+                    "Wasser",
+                    "Lava",
+                    "Dampf",
+                    "Stein"
+                ],
+                "correct": 1,
+                "hint": "Vulkanausbruch",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegt der höchste Berg Japans, der Fuji?",
+                "answers": [
+                    "Kyoto",
+                    "Tokio",
+                    "Insel Honshu",
+                    "Hokkaido"
+                ],
+                "correct": 2,
+                "hint": "Vulkanberg",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Gebirge durchzieht Italien?",
+                "answers": [
+                    "Alpen",
+                    "Pyrenäen",
+                    "Apennin",
+                    "Karpaten"
+                ],
+                "correct": 2,
+                "hint": "Rückgrat Italiens",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist ein 'toter' Vulkan?",
+                "answers": [
+                    "Einer der brennt",
+                    "Einer der nie wieder ausbricht",
+                    "Einer im Wasser",
+                    "Einer aus Gold"
+                ],
+                "correct": 1,
+                "hint": "Erloschen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegt das 'Dach der Welt'?",
+                "answers": [
+                    "Alpen",
+                    "Tibet / Himalaya",
+                    "Anden",
+                    "Kaukasus"
+                ],
+                "correct": 1,
+                "hint": "Höchstes Plateau",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie heißt der höchste Berg Südamerikas?",
+                "answers": [
+                    "Aconcagua",
+                    "Mont Blanc",
+                    "Denali",
+                    "K2"
+                ],
+                "correct": 0,
+                "hint": "In den Anden",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist eine Gletscherspalte?",
+                "answers": [
+                    "Ein Weg",
+                    "Ein tiefer Riss im Eis",
+                    "Ein kleiner Bach",
+                    "Ein Tunnel"
+                ],
+                "correct": 1,
+                "hint": "Gefahr im Gebirge",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie heißt der höchste Berg Nordamerikas?",
+                "answers": [
+                    "Denali",
+                    "Mount Everest",
+                    "Zugspitze",
+                    "Aconcagua"
+                ],
+                "correct": 0,
+                "hint": "Früher Mount McKinley",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            }
+        ];

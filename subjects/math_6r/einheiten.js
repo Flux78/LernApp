@@ -1,0 +1,16 @@
+window.__subjectData_math_6r_einheiten = [ { question: "Wie viele Millimeter sind 3,5 Meter?", answers: ["35 mm", "350 mm", "3500 mm", "35000 mm"], correct: 2, hint: "1 m = 1000 mm", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viele Gramm sind 2,5 Kilogramm?", answers: ["25 g", "250 g", "2500 g", "25000 g"], correct: 2, hint: "1 kg = 1000 g", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viele Sekunden sind 5 Minuten?", answers: ["60 s", "300 s", "360 s", "500 s"], correct: 1, hint: "1 min = 60 s", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viele Minuten sind 1,5 Stunden?", answers: ["75 min", "90 min", "100 min", "120 min"], correct: 1, hint: "1 h = 60 min", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viele cm³ sind 1 Liter?", answers: ["100 cm³", "1000 cm³", "10000 cm³", "10 cm³"], correct: 1, hint: "1 dm³ = 1 l", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Was ist die Basiseinheit der Masse?", answers: ["Gramm", "Kilogramm", "Tonne", "Milligramm"], correct: 1, hint: "SI-Einheit", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wandle 0,5 km in Meter um.", answers: ["5 m", "50 m", "500 m", "5000 m"], correct: 2, hint: "1 km = 1000 m", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viele cm² sind 1 dm²?", answers: ["10", "100", "1000", "1"], correct: 1, hint: "10 * 10", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viele Ar (a) sind ein Hektar (ha)?", answers: ["10", "100", "1000", "10000"], correct: 1, hint: "Hekto = 100", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viel wiegt ein Milliliter Wasser ungefähr?", answers: ["1 mg", "1 g", "10 g", "1 kg"], correct: 1, hint: "1 l = 1 kg", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viele Stunden hat eine Woche?", answers: ["144", "168", "120", "180"], correct: 1, hint: "7 * 24", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viele m² sind 1 km²?", answers: ["1000", "10000", "100000", "1000000"], correct: 3, hint: "1000m * 1000m", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viele Millimeter sind 1 Zentimeter?", answers: ["5", "10", "100", "1000"], correct: 1, hint: "Maße", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viele Gramm sind 1 Kilogramm?", answers: ["10", "100", "1000", "10000"], correct: 2, hint: "Gewicht", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Wie viele Minuten haben 2 Stunden?", answers: ["60", "100", "120", "180"], correct: 2, hint: "Zeit", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+        ];

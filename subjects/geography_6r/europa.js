@@ -1,0 +1,898 @@
+window.__subjectData_geography_6r_europa = [
+            {
+                "question": "Was ist die Hauptstadt von Frankreich?",
+                "answers": [
+                    "London",
+                    "Berlin",
+                    "Madrid",
+                    "Paris"
+                ],
+                "correct": 3,
+                "hint": "Eiffelturm",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist die Hauptstadt von Italien?",
+                "answers": [
+                    "Rom",
+                    "Mailand",
+                    "Venedig",
+                    "Turin"
+                ],
+                "correct": 0,
+                "hint": "Vatikan",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist die Hauptstadt von Spanien?",
+                "answers": [
+                    "Barcelona",
+                    "Madrid",
+                    "Sevilla",
+                    "Valencia"
+                ],
+                "correct": 1,
+                "hint": "Zentral in Spanien",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches ist das kleinste Land der Welt?",
+                "answers": [
+                    "Monaco",
+                    "Vatikanstadt",
+                    "San Marino",
+                    "Andorra"
+                ],
+                "correct": 1,
+                "hint": "In Rom",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegt das Matterhorn?",
+                "answers": [
+                    "Österreich-Deutschland",
+                    "Schweiz-Italien",
+                    "Frankreich-Spanien",
+                    "Italien-Slowenien"
+                ],
+                "correct": 1,
+                "hint": "Alpen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist die Hauptstadt von Polen?",
+                "answers": [
+                    "Krakau",
+                    "Danzig",
+                    "Warschau",
+                    "Breslau"
+                ],
+                "correct": 2,
+                "hint": "An der Weichsel",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Land liegt zwischen Frankreich und Spanien?",
+                "answers": [
+                    "Andorra",
+                    "Portugal",
+                    "Luxemburg",
+                    "Belgien"
+                ],
+                "correct": 0,
+                "hint": "Zwischen den Pyrenäen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist die Hauptstadt von Norwegen?",
+                "answers": [
+                    "Stockholm",
+                    "Kopenhagen",
+                    "Helsinki",
+                    "Oslo"
+                ],
+                "correct": 3,
+                "hint": "Fjord",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Griechenland?",
+                "answers": [
+                    "Rom",
+                    "Athen",
+                    "Istanbul",
+                    "Nikosia"
+                ],
+                "correct": 1,
+                "hint": "Akropolis",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Österreich?",
+                "answers": [
+                    "Salzburg",
+                    "Graz",
+                    "Innsbruck",
+                    "Wien"
+                ],
+                "correct": 3,
+                "hint": "Stephansdom",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Portugal?",
+                "answers": [
+                    "Porto",
+                    "Lissabon",
+                    "Madrid",
+                    "Faro"
+                ],
+                "correct": 1,
+                "hint": "Am Tejo",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Irland?",
+                "answers": [
+                    "Belfast",
+                    "Dublin",
+                    "Cork",
+                    "Galway"
+                ],
+                "correct": 1,
+                "hint": "Grüne Insel",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Fluss fließt durch London?",
+                "answers": [
+                    "Seine",
+                    "Rhein",
+                    "Themse",
+                    "Donau"
+                ],
+                "correct": 2,
+                "hint": "Tower Bridge",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt der Niederlande?",
+                "answers": [
+                    "Den Haag",
+                    "Rotterdam",
+                    "Amsterdam",
+                    "Utrecht"
+                ],
+                "correct": 2,
+                "hint": "Grachten",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Schweden?",
+                "answers": [
+                    "Oslo",
+                    "Helsinki",
+                    "Stockholm",
+                    "Kopenhagen"
+                ],
+                "correct": 2,
+                "hint": "Liegt auf Inseln",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Belgien?",
+                "answers": [
+                    "Brüssel",
+                    "Antwerpen",
+                    "Gent",
+                    "Brügge"
+                ],
+                "correct": 0,
+                "hint": "Sitz der EU",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Land hat die Form eines Stiefels?",
+                "answers": [
+                    "Griechenland",
+                    "Italien",
+                    "Kroatien",
+                    "Spanien"
+                ],
+                "correct": 1,
+                "hint": "Mittelmeer",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Dänemark?",
+                "answers": [
+                    "Oslo",
+                    "Stockholm",
+                    "Kopenhagen",
+                    "Helsinki"
+                ],
+                "correct": 2,
+                "hint": "Kleine Meerjungfrau",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie heißt das Gebirge zwischen Frankreich und Spanien?",
+                "answers": [
+                    "Alpen",
+                    "Pyrenäen",
+                    "Karpaten",
+                    "Apennin"
+                ],
+                "correct": 1,
+                "hint": "Grenzgebirge",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Tschechien?",
+                "answers": [
+                    "Brünn",
+                    "Prag",
+                    "Pilsen",
+                    "Ostrau"
+                ],
+                "correct": 1,
+                "hint": "Moldau",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Ungarn?",
+                "answers": [
+                    "Bukarest",
+                    "Budapest",
+                    "Belgrad",
+                    "Sofia"
+                ],
+                "correct": 1,
+                "hint": "Donau",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Kroatien?",
+                "answers": [
+                    "Split",
+                    "Dubrovnik",
+                    "Zagreb",
+                    "Zadar"
+                ],
+                "correct": 2,
+                "hint": "Binnenland",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie heißt die größte Insel im Mittelmeer?",
+                "answers": [
+                    "Kreta",
+                    "Sardinien",
+                    "Zypern",
+                    "Sizilien"
+                ],
+                "correct": 3,
+                "hint": "Gehört zu Italien",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Finnland?",
+                "answers": [
+                    "Stockholm",
+                    "Oslo",
+                    "Helsinki",
+                    "Tallinn"
+                ],
+                "correct": 2,
+                "hint": "Nordisch",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Land liegt nördlich von Deutschland?",
+                "answers": [
+                    "Polen",
+                    "Dänemark",
+                    "Österreich",
+                    "Luxemburg"
+                ],
+                "correct": 1,
+                "hint": "Zwischen Nord- und Ostsee",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Rumänien?",
+                "answers": [
+                    "Budapest",
+                    "Bukarest",
+                    "Sofia",
+                    "Tirana"
+                ],
+                "correct": 1,
+                "hint": "Osteuropa",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Bulgarien?",
+                "answers": [
+                    "Bukarest",
+                    "Budapest",
+                    "Sofia",
+                    "Belgrad"
+                ],
+                "correct": 2,
+                "hint": "Stadt am Witoscha-Gebirge",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt der Schweiz?",
+                "answers": [
+                    "Zürich",
+                    "Genf",
+                    "Bern",
+                    "Basel"
+                ],
+                "correct": 2,
+                "hint": "Bundesstadt",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist die Hauptstadt von Frankreich?",
+                "answers": [
+                    "London",
+                    "Berlin",
+                    "Madrid",
+                    "Paris"
+                ],
+                "correct": 3,
+                "hint": "Eiffelturm",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist die Hauptstadt von Italien?",
+                "answers": [
+                    "Rom",
+                    "Mailand",
+                    "Venedig",
+                    "Turin"
+                ],
+                "correct": 0,
+                "hint": "Vatikan",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist die Hauptstadt von Spanien?",
+                "answers": [
+                    "Barcelona",
+                    "Madrid",
+                    "Sevilla",
+                    "Valencia"
+                ],
+                "correct": 1,
+                "hint": "Zentral in Spanien",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches ist das kleinste Land der Welt?",
+                "answers": [
+                    "Monaco",
+                    "Vatikanstadt",
+                    "San Marino",
+                    "Andorra"
+                ],
+                "correct": 1,
+                "hint": "In Rom",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wo liegt das Matterhorn?",
+                "answers": [
+                    "Österreich-Deutschland",
+                    "Schweiz-Italien",
+                    "Frankreich-Spanien",
+                    "Italien-Slowenien"
+                ],
+                "correct": 1,
+                "hint": "Alpen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist die Hauptstadt von Polen?",
+                "answers": [
+                    "Krakau",
+                    "Danzig",
+                    "Warschau",
+                    "Breslau"
+                ],
+                "correct": 2,
+                "hint": "An der Weichsel",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Land liegt zwischen Frankreich und Spanien?",
+                "answers": [
+                    "Andorra",
+                    "Portugal",
+                    "Luxemburg",
+                    "Belgien"
+                ],
+                "correct": 0,
+                "hint": "Zwischen den Pyrenäen",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Was ist die Hauptstadt von Norwegen?",
+                "answers": [
+                    "Stockholm",
+                    "Kopenhagen",
+                    "Helsinki",
+                    "Oslo"
+                ],
+                "correct": 3,
+                "hint": "Fjord",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Griechenland?",
+                "answers": [
+                    "Rom",
+                    "Athen",
+                    "Istanbul",
+                    "Nikosia"
+                ],
+                "correct": 1,
+                "hint": "Akropolis",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Österreich?",
+                "answers": [
+                    "Salzburg",
+                    "Graz",
+                    "Innsbruck",
+                    "Wien"
+                ],
+                "correct": 3,
+                "hint": "Stephansdom",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Portugal?",
+                "answers": [
+                    "Porto",
+                    "Lissabon",
+                    "Madrid",
+                    "Faro"
+                ],
+                "correct": 1,
+                "hint": "Am Tejo",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Irland?",
+                "answers": [
+                    "Belfast",
+                    "Dublin",
+                    "Cork",
+                    "Galway"
+                ],
+                "correct": 1,
+                "hint": "Grüne Insel",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welcher Fluss fließt durch London?",
+                "answers": [
+                    "Seine",
+                    "Rhein",
+                    "Themse",
+                    "Donau"
+                ],
+                "correct": 2,
+                "hint": "Tower Bridge",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt der Niederlande?",
+                "answers": [
+                    "Den Haag",
+                    "Rotterdam",
+                    "Amsterdam",
+                    "Utrecht"
+                ],
+                "correct": 2,
+                "hint": "Grachten",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Schweden?",
+                "answers": [
+                    "Oslo",
+                    "Helsinki",
+                    "Stockholm",
+                    "Kopenhagen"
+                ],
+                "correct": 2,
+                "hint": "Liegt auf Inseln",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Belgien?",
+                "answers": [
+                    "Brüssel",
+                    "Antwerpen",
+                    "Gent",
+                    "Brügge"
+                ],
+                "correct": 0,
+                "hint": "Sitz der EU",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Land hat die Form eines Stiefels?",
+                "answers": [
+                    "Griechenland",
+                    "Italien",
+                    "Kroatien",
+                    "Spanien"
+                ],
+                "correct": 1,
+                "hint": "Mittelmeer",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Dänemark?",
+                "answers": [
+                    "Oslo",
+                    "Stockholm",
+                    "Kopenhagen",
+                    "Helsinki"
+                ],
+                "correct": 2,
+                "hint": "Kleine Meerjungfrau",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie heißt das Gebirge zwischen Frankreich und Spanien?",
+                "answers": [
+                    "Alpen",
+                    "Pyrenäen",
+                    "Karpaten",
+                    "Apennin"
+                ],
+                "correct": 1,
+                "hint": "Grenzgebirge",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Tschechien?",
+                "answers": [
+                    "Brünn",
+                    "Prag",
+                    "Pilsen",
+                    "Ostrau"
+                ],
+                "correct": 1,
+                "hint": "Moldau",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Ungarn?",
+                "answers": [
+                    "Bukarest",
+                    "Budapest",
+                    "Belgrad",
+                    "Sofia"
+                ],
+                "correct": 1,
+                "hint": "Donau",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Kroatien?",
+                "answers": [
+                    "Split",
+                    "Dubrovnik",
+                    "Zagreb",
+                    "Zadar"
+                ],
+                "correct": 2,
+                "hint": "Binnenland",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Wie heißt die größte Insel im Mittelmeer?",
+                "answers": [
+                    "Kreta",
+                    "Sardinien",
+                    "Zypern",
+                    "Sizilien"
+                ],
+                "correct": 3,
+                "hint": "Gehört zu Italien",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Finnland?",
+                "answers": [
+                    "Stockholm",
+                    "Oslo",
+                    "Helsinki",
+                    "Tallinn"
+                ],
+                "correct": 2,
+                "hint": "Nordisch",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Welches Land liegt nördlich von Deutschland?",
+                "answers": [
+                    "Polen",
+                    "Dänemark",
+                    "Österreich",
+                    "Luxemburg"
+                ],
+                "correct": 1,
+                "hint": "Zwischen Nord- und Ostsee",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Rumänien?",
+                "answers": [
+                    "Budapest",
+                    "Bukarest",
+                    "Sofia",
+                    "Tirana"
+                ],
+                "correct": 1,
+                "hint": "Osteuropa",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt von Bulgarien?",
+                "answers": [
+                    "Bukarest",
+                    "Budapest",
+                    "Sofia",
+                    "Belgrad"
+                ],
+                "correct": 2,
+                "hint": "Stadt am Witoscha-Gebirge",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            },
+            {
+                "question": "Hauptstadt der Schweiz?",
+                "answers": [
+                    "Zürich",
+                    "Genf",
+                    "Bern",
+                    "Basel"
+                ],
+                "correct": 2,
+                "hint": "Bundesstadt",
+                "stats": {
+                    "correct": 0,
+                    "total": 0,
+                    "difficulty": 1.0
+                }
+            }
+        ];

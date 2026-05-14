@@ -1,0 +1,17 @@
+window.__subjectData_english_6r_comparatives = [ { question: "Steigerung von 'tall'?", answers: ["more tall", "taller", "tallest", "taler"], correct: 1, hint: "kurzes Wort: -er", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Steigerung von 'big'?", answers: ["biger", "bigger", "more big", "bigest"], correct: 1, hint: "kurzer Vokal: Konsonant verdoppeln", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Steigerung von 'interesting'?", answers: ["interestinger", "more interesting", "most interesting", "more interestinger"], correct: 1, hint: "langes Wort: more", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Steigerung von 'good'?", answers: ["gooder", "better", "best", "more good"], correct: 1, hint: "Unregelmäßig!", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Steigerung von 'bad'?", answers: ["badder", "worse", "worst", "more bad"], correct: 1, hint: "Unregelmäßig!", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Steigerung von 'small'?", answers: ["smaller", "more small", "smallest", "smaler"], correct: 0, hint: "-er", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Steigerung von 'difficult'?", answers: ["difficulter", "more difficult", "most difficult", "more difficulter"], correct: 1, hint: "more", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Vergleich: 'She is older ___ me.'", answers: ["as", "then", "than", "so"], correct: 2, hint: "als", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Steigerung von 'nice'?", answers: ["nicer", "more nice", "nicest", "niceer"], correct: 0, hint: "Nur ein r anhängen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Steigerung von 'happy'?", answers: ["happyer", "more happy", "happier", "happyer"], correct: 2, hint: "y wird zu i", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Steigerung von 'easy'?", answers: ["easier", "more easy", "easiest", "easyer"], correct: 0, hint: "y wird zu i", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Steigerung von 'expensive'?", answers: ["expensiveer", "more expensive", "expensiver", "most expensive"], correct: 1, hint: "lang", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "Steigerung von 'hot'?", answers: ["hoter", "hotter", "more hot", "hottest"], correct: 1, hint: "kurzer Vokal, Konsonant verdoppeln", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the comparative of 'small'?", answers: ["more small", "smaller", "smallest", "smaler"], correct: 1, hint: "Short word", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the comparative of 'dangerous'?", answers: ["dangerouser", "more dangerous", "most dangerous", "more danger"], correct: 1, hint: "Long word", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+            { question: "What is the comparative of 'good'?", answers: ["gooder", "better", "best", "more good"], correct: 1, hint: "Irregular", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+        ];
