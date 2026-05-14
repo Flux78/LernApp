@@ -446,6 +446,9 @@ function updateSubjectUI() {
     const gradeLabel = state.grade === '6r' ? '6R' : state.grade === '8g' ? '8G' : 'AW';
     document.getElementById('app-title').textContent = `🎓 ${cleanName} ${gradeLabel} Master`;
     
+    // Browser-Tab-Titel aktualisieren
+    document.title = `${cleanName} (${gradeLabel}) - LernApp`;
+    
     // Fach-Selektor aktualisieren
     document.querySelectorAll('.subject-btn').forEach(btn => {
         btn.classList.remove('active');
