@@ -36,7 +36,7 @@ window.__subjectData_lat_8g_index = {
         }
     },
     "questionCounts": {
-        "ablabs": 45,
+        "ablabs": 60,
         "geschichte": 41,
         "grammatik": 80,
         "kultur": 58,

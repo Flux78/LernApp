@@ -374,6 +374,7 @@ async function switchSubject(subjectKey) {
         currentMode: 'categories', currentCategory: null, difficultyFilter: null,
         showSkipButton: state.showSkipButton,
         categories: {}, questionStats: {}, subjectStats: {},
+        lastDifficulty: 1.0,
     };
     
     await loadState();
@@ -958,15 +959,15 @@ function nextQuestion() {
     if (state.difficultyFilter) {
         const filteredPool = pool.filter(q => {
             const stats = state.questionStats[q.category]?.[q.index] || { correct: 0, total: 0 };
-            const rate = stats.total > 0 ? (stats.correct / stats.total) : 0;
+            const diff = stats.difficulty ?? 1.0;
 
             switch (state.difficultyFilter) {
                 case 'easy':
-                    return stats.total > 0 && rate > 0.8;
+                    return diff <= 0.5;
                 case 'medium':
-                    return stats.total > 0 && rate >= 0.5 && rate <= 0.8;
+                    return diff > 0.5 && diff < 1.5;
                 case 'hard':
-                    return stats.total > 0 && rate < 0.5;
+                    return diff >= 1.5;
                 case 'unplayed':
                     return stats.total === 0;
                 default:
@@ -983,20 +984,26 @@ function nextQuestion() {
 
     let questionObj;
     if (state.smartMode) {
-        // SMART MODE: Gewichtete Auswahl
+        // SMART MODE: Dynamisch gewichtete Auswahl
         let weightedPool = [];
         pool.forEach(q => {
             const stats = state.questionStats[q.category]?.[q.index] || { correct: 0, total: 0 };
-            const rate = stats.total > 0 ? (stats.correct / stats.total) : 0;
-            
-            let weight = 10; // Basis-Gewicht für neue Fragen
-            if (stats.total > 0) {
-                if (rate < 0.5) weight = 20; // Schwache Fragen doppelt so oft
-                else if (rate > 0.8) weight = 2;  // Beherrschte Fragen selten
-                else weight = 10;
+            const diff = stats.difficulty ?? 1.0;
+
+            // Basis-Gewicht aus Schwierigkeitsgrad
+            let weight = diff <= 0.0 ? 1   // sehr leicht → fast nie
+                      : diff <= 0.5 ? 3   // leicht → selten
+                      : diff <= 1.0 ? 6   // mittel / neu → normal
+                      : diff <= 1.5 ? 10  // schwer → öfter
+                      : 15;               // sehr schwer → häufig
+
+            // Anti-Demotivation: nach einer schweren Frage
+            // leichte bevorzugen, schwere dämpfen
+            if (state.lastDifficulty >= 1.5) {
+                if (diff <= 0.5) weight *= 3;
+                else if (diff >= 1.5) weight *= 0.5;
             }
 
-            // Füge die Frage entsprechend ihrem Gewicht mehrfach in den Pool ein
             for (let i = 0; i < weight; i++) {
                 weightedPool.push(q);
             }
@@ -1163,7 +1170,14 @@ function checkAnswer(el, selected, correct) {
     if (qStats) {
         qStats.total++;
         if (isCorrect) qStats.correct++;
+        // Dynamische Schwierigkeit anpassen
+        if (isCorrect) {
+            qStats.difficulty = Math.max(0, (qStats.difficulty ?? 1.0) - 0.5);
+        } else {
+            qStats.difficulty = Math.min(2, (qStats.difficulty ?? 1.0) + 0.5);
+        }
     }
+    state.lastDifficulty = qStats?.difficulty ?? 1.0;
     
     if (isCorrect) {
         catStats.correct = (catStats.correct || 0) + 1;
@@ -1411,14 +1425,16 @@ function renderStats() {
         questions.forEach((q, idx) => {
             dist.totalCount++;
             const stats = state.questionStats[catKey]?.[idx] || { correct: 0, total: 0 };
+            const diff = stats.difficulty ?? 1.0;
             
             if (stats.total === 0) {
                 dist.unplayed++;
+            } else if (diff <= 0.5) {
+                dist.easy++;
+            } else if (diff < 1.5) {
+                dist.medium++;
             } else {
-                const r = stats.correct / stats.total;
-                if (r > 0.8) dist.easy++;
-                else if (r >= 0.5) dist.medium++;
-                else dist.hard++;
+                dist.hard++;
             }
         });
     });
@@ -1484,15 +1500,15 @@ function renderStats() {
                 <div class="dist-legend">
                     <div class="dist-legend-item">
                         <span class="dot" style="background: var(--error)"></span>
-                        <span>Schwer (< 50%): ${dist.hard}</span>
+                        <span>Schwer (≥ 1.5): ${dist.hard}</span>
                     </div>
                     <div class="dist-legend-item">
                         <span class="dot" style="background: var(--warning)"></span>
-                        <span>Mittel (50-80%): ${dist.medium}</span>
+                        <span>Mittel (0.5–1.5): ${dist.medium}</span>
                     </div>
                     <div class="dist-legend-item">
                         <span class="dot" style="background: var(--success)"></span>
-                        <span>Leicht (> 80%): ${dist.easy}</span>
+                        <span>Leicht (≤ 0.5): ${dist.easy}</span>
                     </div>
                     <div class="dist-legend-item">
                         <span class="dot" style="background: #94a3b8"></span>
@@ -1716,7 +1732,8 @@ function resetProgress() {
             currentMode: 'categories', currentCategory: null, difficultyFilter: null,
             showSkipButton: state.showSkipButton,
             categories: {}, questionStats: {}, subjectStats: {},
-            unlockedIndices: [], sessionCount: 0
+            unlockedIndices: [], sessionCount: 0,
+            lastDifficulty: 1.0
         };
         initializeState();
         saveState();

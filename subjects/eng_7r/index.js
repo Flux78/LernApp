@@ -9,5 +9,5 @@ window.__subjectData_eng_7r_index = {
         "reading": { "name": "Reading", "icon": "📖", "color": "#8b5cf6", "desc": "Text comprehension" },
         "textaufgaben_verstehen": { "name": "Textaufgaben verstehen", "icon": "🧠", "color": "#ff6b6b", "desc": "English texts and tasks" }
     },
-    "questionCounts": { "grammar": 15, "vocabulary": 14, "reading": 12, "textaufgaben_verstehen": 11 }
+    "questionCounts": { "grammar": 59, "vocabulary": 59, "reading": 57, "textaufgaben_verstehen": 40 }
 };

@@ -10,5 +10,5 @@ window.__subjectData_de_9g_index = {
         "grammatik": { "name": "Grammatik", "icon": "⚙️", "color": "#f59e0b", "desc": "Satzbau, Nebensätze, Stil" },
         "rechtschreibung": { "name": "Rechtschreibung", "icon": "✍️", "color": "#ec4899", "desc": "Kommasetzung, Groß/Klein" }
     },
-    "questionCounts": { "textanalyse": 14, "erroerterung": 14, "literaturgeschichte": 14, "grammatik": 14, "rechtschreibung": 14 }
+    "questionCounts": { "textanalyse": 45, "erroerterung": 45, "literaturgeschichte": 45, "grammatik": 45, "rechtschreibung": 45 }
 };

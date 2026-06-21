@@ -10,5 +10,5 @@ window.__subjectData_de_7r_index = {
         "zeichensetzung": { "name": "Zeichensetzung", "icon": "❓", "color": "#3b82f6", "desc": "Komma bei Satzgefügen" },
         "textaufgaben_verstehen": { "name": "Textaufgaben verstehen", "icon": "🧠", "color": "#ff6b6b", "desc": "Texte analysieren und verstehen" }
     },
-    "questionCounts": { "grammatik": 15, "rechtschreibung": 14, "textarten": 14, "zeichensetzung": 14, "textaufgaben_verstehen": 12 }
+    "questionCounts": { "grammatik": 39, "rechtschreibung": 38, "textarten": 38, "zeichensetzung": 37, "textaufgaben_verstehen": 34 }
 };

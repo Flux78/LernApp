@@ -40,6 +40,6 @@ window.__subjectData_eng_8g_index = {
         "usa_culture": 30,
         "grammar": 48,
         "vocabulary": 43,
-        "media": 41
+        "media": 40
     }
 };

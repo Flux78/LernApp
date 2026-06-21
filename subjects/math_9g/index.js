@@ -10,5 +10,5 @@ window.__subjectData_math_9g_index = {
         "wachstum": { "name": "Wachstum", "icon": "📊", "color": "#ec4899", "desc": "Lineares und exponentielles Wachstum" },
         "textaufgaben_verstehen": { "name": "Textaufgaben verstehen", "icon": "🧠", "color": "#ff6b6b", "desc": "Komplexe Textaufgaben verstehen" }
     },
-    "questionCounts": { "quadratische_funktionen": 14, "potenzen": 14, "trigonometrie": 14, "wachstum": 14, "textaufgaben_verstehen": 10 }
+    "questionCounts": { "quadratische_funktionen": 59, "potenzen": 59, "trigonometrie": 59, "wachstum": 59, "textaufgaben_verstehen": 54 }
 };

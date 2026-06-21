@@ -1,7 +1,7 @@
 # Dokumentation: Multi-Subject Master
 
 ## 1. Anwendungsbeschreibung
-Der **Multi-Subject Master** ist eine adaptive Lern-Anwendung, die speziell für Schüler in Bayern (6./7. Klasse Realschule und 8./9. Klasse Gymnasium) entwickelt wurde. Die App ermöglicht das Üben von Lehrplaninhalten durch ein interaktives Quiz-System.
+Der **Multi-Subject Master** ist eine adaptive Lern-Anwendung, die speziell für Schüler in Bayern (6./7. Klasse Realschule und 8./9. Klasse Gymnasium) entwickelt wurde. Die App ermöglicht das Üben von Lehrplaninhalten durch ein interaktives Quiz-System mit aktuell **6.239 Fragen in 28 Fächern**.
 
 Kernaspekte der Anwendung sind:
 - **Adaptivität:** Ein "Smart Mode" passt die Fragenhäufigkeit an den Lernerfolg des Nutzers an.
@@ -12,6 +12,17 @@ Kernaspekte der Anwendung sind:
 ## 2. Grobarchitektur
 
 Die Anwendung folgt einem modularen **Single-Page-Application (SPA)** Ansatz, der vollständig im Browser läuft.
+
+### Fächerbaum (28 Fächer, 6.239 Fragen)
+
+```
+📚 LernApp
+├── 6r (1.478 Fr.) ─── eng_6r · math_6r · de_6r · hist_6r · geo_6r · mc
+├── 7r (1.519 Fr.) ─── eng_7r · math_7r · de_7r · hist_7r · geo_7r · phys_7r · bio_7r
+├── 8g  (984 Fr.) ─── phys_8g · eng_8g · math_8g · bio_8g · lat_8g
+├── 9g (2.143 Fr.) ─── eng_9g · math_9g · de_9g · phys_9g · bio_9g · chem_9g · hist_9g · geo_9g · lat_9g
+└── aw  (115 Fr.) ─── welt · natur · kultur · technik
+```
 
 ### Komponenten-Struktur
 - **Präsentationsschicht (UI):** Gesteuert über `index.html` und CSS-Variablen für themenspezifisches Design.
@@ -25,7 +36,7 @@ Jedes Fachverzeichnis (z. B. `subjects/eng_6r/`) folgt einer strikten Struktur (
 | Datei | Beschreibung | Rolle in der Logik |
 | :--- | :--- | :--- |
 | `index.js` | Definiert Metadaten, Kategorien und `questionCounts`. | Basis für Fortschrittsberechnung und UI-Initialisierung. |
-| `questions.js` | Enthält den eigentlichen Fragen-Pool als Array. | Datenbasis für das Quiz-System. |
+| `[kategorie].js` | Enthält den Fragen-Pool einer Kategorie als Array. | Datenbasis für das Quiz-System. |
 
 ### Architektur-Diagramm
 
@@ -66,7 +77,7 @@ sequenceDiagram
     participant Questions as Kategorie-Datei ([kat].js)
     participant State as Progress/Lock Manager
 
-    User->>Core: Wählt Fach (z.B. 'english_6r')
+    User->>Core: Wählt Fach (z.B. 'eng_6r')
     Core->>Index: Dynamischer Import von index.js
     Note over Index: Registriert window.__subjectData_[ID]_index
     Index-->>Core: Metadaten bereit (Kategorien, Counts)
@@ -115,7 +126,11 @@ flowchart TD
 3.  **Persistierung:** `saveState()` konvertiert das State-Objekt in einen JSON-String und speichert es unter einem fachspezifischen Key (z.B. `lernapp_math_8g`) im `localStorage`.
 
 ## 4. Features im Detail
-- **Smart Mode:** Nutzt eine Gewichtungslogik (Gewicht 20 bei Rate < 50%, Gewicht 2 bei Rate > 80%), um ineffizientes Lernen zu vermeiden.
+- **Smart Mode:** Dynamische Schwierigkeitsanpassung pro Frage basierend auf dem letzten Ergebnis:
+  - `difficulty` wird nach jeder Antwort angepasst: richtig → −0.5, falsch → +0.5 (Bereich 0.0–2.0)
+  - Gewichtung: sehr leicht (≤0.0)→1, leicht (≤0.5)→3, mittel (≤1.0)→6, schwer (≤1.5)→10, sehr schwer (>1.5)→15
+  - **Anti-Demotivation:** Nach einer schweren Frage werden leichte Fragen 3× höher gewichtet, schwere nur halb so oft
+  - Ermöglicht eine ausgewogene Abfrage: schwere Fragen öfter, leichte seltener aber regelmäßig zur Motivationserhaltung
 - **Minecraft-Belohnung:** Ein spezielles Belohnungssystem für die Unterstufe.
     - **Logik:** Die App summiert die `questionCounts` aus der `index.js`. Der Fortschritt wird gegen die im `localStorage` als korrekt markierten IDs geprüft.
     - **Trigger:** Bei Erreichen definierter Schwellenwerte (z.B. 100% einer Kategorie oder des Fachs) werden Bonus-Inhalte freigeschaltet.
@@ -126,14 +141,14 @@ flowchart TD
     2. **Konsistenz:** Die Summe in `questionCounts` muss exakt der Anzahl der Objekte in den Kategorie-Dateien entsprechen.
     3. **Kategorie-Keys:** Keys in `categories` müssen identisch mit denen in `questionCounts` sein.
 
-    #### Validierungstool:
-    Um die Übereinstimmung automatisch zu prüfen, kann das Validierungsskript genutzt werden:
-    ```bash
-    # Syntax: node scripts/validate_counts.js ./subjects/[FACH_ORDNER]
-    node scripts/validate_counts.js ./subjects/english_6r
+    #### Validierung:
+    Zur Prüfung der Konsistenz kann folgender PowerShell-Befehl genutzt werden:
+    ```powershell
+    # Zählt Fragen in allen Kategorie-Dateien und vergleicht mit index.js
+    Get-ChildItem subjects/*/ -Directory | ForEach-Object { $d=$_.FullName; $idx=Get-Content "$d\index.js" -Raw; $m=[regex]::Match($idx,'questionCounts":\{([^}]+)\}'); if($m.Success){$c=@{};$m.Groups[1].Value-split','|%{$p=$_-split':'|%{$_.Trim().Trim('"')};if($p.Count-eq2){$c[$p[0]]=[int]$p[1]}};Get-ChildItem $d -Filter *.js|?{$_.Name-ne'index.js'}|%{$n=[regex]::Matches(($_|Get-Content -Raw),'"?question"?\s*:','Singleline').Count;$e=$c[$_.BaseName];if($e-ne$null-and$n-ne$e){Write-Warning "$($_.Directory.Name)/$($_.BaseName): $n vs $e"}}} }
     ```
 
-- **Multi-Grade-Support:** Trennung der Logik und UI-Filter für Realschule (6r, 7r) und Gymnasium (8g, 9g).
+- **Multi-Grade-Support:** Trennung der Logik und UI-Filter für Realschule (6r, 7r) und Gymnasium (8g, 9g) sowie Allgemeinwissen (aw).
 - **Textaufgaben-Mastery:** Ein dediziertes System zur Förderung der Lesekompetenz in MINT-Fächern. Es nutzt spezialisierte Sub-Modi:
     - *Text Surgeon:* Filtert "Rauschen" (irrelevante Story-Infos) aus Aufgaben.
     - *Question Hunter:* Trainiert das Erkennen der Zielsetzung.

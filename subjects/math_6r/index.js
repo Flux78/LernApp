@@ -61,6 +61,6 @@ window.__subjectData_math_6r_index = {
         "einheiten": 15,
         "zahlen": 19,
         "gleichungen": 19,
-        "textaufgaben_verstehen": 3
+        "textaufgaben_verstehen": 18
     }
 };

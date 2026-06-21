@@ -10,5 +10,5 @@ window.__subjectData_bio_9g_index = {
         "nerven_hormone": { "name": "Nerven & Hormone", "icon": "🧠", "color": "#3b82f6", "desc": "Nervensystem, Hormone" },
         "textaufgaben_verstehen": { "name": "Textaufgaben verstehen", "icon": "🧠", "color": "#ff6b6b", "desc": "Biologie-Textaufgaben verstehen" }
     },
-    "questionCounts": { "genetik": 14, "evolution": 14, "oekologie": 14, "nerven_hormone": 14, "textaufgaben_verstehen": 6 }
+    "questionCounts": { "genetik": 59, "evolution": 59, "oekologie": 58, "nerven_hormone": 58, "textaufgaben_verstehen": 49 }
 };

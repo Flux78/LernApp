@@ -42,11 +42,11 @@ window.__subjectData_math_8g_index = {
         }
     },
     "questionCounts": {
-        "funktionen": 0,
-        "systeme": 0,
-        "geometrie": 0,
-        "stochastik": 0,
-        "textaufgaben": 0,
-        "textaufgaben_verstehen": 0
+        "funktionen": 28,
+        "systeme": 23,
+        "geometrie": 18,
+        "stochastik": 18,
+        "textaufgaben": 23,
+        "textaufgaben_verstehen": 8
     }
 };

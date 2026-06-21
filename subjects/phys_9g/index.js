@@ -10,5 +10,5 @@ window.__subjectData_phys_9g_index = {
         "energie": { "name": "Energie", "icon": "⚡", "color": "#10b981", "desc": "Energieformen, Erhaltung, Leistung" },
         "textaufgaben_verstehen": { "name": "Textaufgaben verstehen", "icon": "🧠", "color": "#ff6b6b", "desc": "Physik-Textaufgaben verstehen" }
     },
-    "questionCounts": { "elektrik": 14, "magnetismus": 14, "atomphysik": 14, "energie": 14, "textaufgaben_verstehen": 10 }
+    "questionCounts": { "elektrik": 61, "magnetismus": 61, "atomphysik": 61, "energie": 46, "textaufgaben_verstehen": 42 }
 };

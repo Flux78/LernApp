@@ -8,5 +8,5 @@ window.__subjectData_geo_9g_index = {
         "entwicklung": { "name": "Entwicklungsgeographie", "icon": "📈", "color": "#f59e0b", "desc": "Entwicklungsländer, Nachhaltigkeit" },
         "deutschland": { "name": "Deutschland", "icon": "🇩🇪", "color": "#3b82f6", "desc": "Wirtschaftsräume, Strukturwandel" }
     },
-    "questionCounts": { "disparitaeten": 14, "entwicklung": 14, "deutschland": 14 }
+    "questionCounts": { "disparitaeten": 59, "entwicklung": 59, "deutschland": 59 }
 };

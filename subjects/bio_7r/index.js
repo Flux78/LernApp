@@ -10,5 +10,5 @@ window.__subjectData_bio_7r_index = {
         "stoffwechsel": { "name": "Stoffwechsel", "icon": "🍎", "color": "#ec4899", "desc": "Ernährung, Verdauung, Atmung" },
         "textaufgaben_verstehen": { "name": "Textaufgaben verstehen", "icon": "🧠", "color": "#ff6b6b", "desc": "Biologie-Textaufgaben verstehen" }
     },
-    "questionCounts": { "sinne": 14, "oekosysteme": 14, "wirbeltiere": 14, "stoffwechsel": 14, "textaufgaben_verstehen": 6 }
+    "questionCounts": { "sinne": 45, "oekosysteme": 45, "wirbeltiere": 45, "stoffwechsel": 45, "textaufgaben_verstehen": 37 }
 };

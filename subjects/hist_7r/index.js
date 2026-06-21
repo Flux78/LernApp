@@ -9,5 +9,5 @@ window.__subjectData_hist_7r_index = {
         "reformation": { "name": "Reformation", "icon": "⛪", "color": "#ec4899", "desc": "Luther, Bauernkrieg" },
         "dreissigj_krieg": { "name": "Dreißigjähriger Krieg", "icon": "⚔️", "color": "#ef4444", "desc": "Ursachen, Verlauf, Folgen" }
     },
-    "questionCounts": { "mittelalter": 14, "fruehe_neuzeit": 14, "reformation": 14, "dreissigj_krieg": 12 }
+    "questionCounts": { "mittelalter": 58, "fruehe_neuzeit": 57, "reformation": 45, "dreissigj_krieg": 43 }
 };

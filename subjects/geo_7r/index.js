@@ -9,5 +9,5 @@ window.__subjectData_geo_7r_index = {
         "bevoelkerung": { "name": "Bevölkerung", "icon": "👥", "color": "#ec4899", "desc": "Bevölkerungsentwicklung, Migration" },
         "landwirtschaft": { "name": "Landwirtschaft", "icon": "🌾", "color": "#10b981", "desc": "Landwirtschaftliche Nutzung, Ernährung" }
     },
-    "questionCounts": { "europa": 14, "klima_vegetation": 14, "bevoelkerung": 14, "landwirtschaft": 14 }
+    "questionCounts": { "europa": 57, "klima_vegetation": 57, "bevoelkerung": 57, "landwirtschaft": 57 }
 };

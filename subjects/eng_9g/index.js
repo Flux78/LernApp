@@ -10,5 +10,5 @@ window.__subjectData_eng_9g_index = {
         "global_issues": { "name": "Global Issues", "icon": "🌍", "color": "#ec4899", "desc": "Environment, politics, society" },
         "textaufgaben_verstehen": { "name": "Textaufgaben verstehen", "icon": "🧠", "color": "#ff6b6b", "desc": "Complex English text tasks" }
     },
-    "questionCounts": { "grammar": 14, "vocabulary": 14, "text_analysis": 14, "global_issues": 14, "textaufgaben_verstehen": 10 }
+    "questionCounts": { "grammar": 61, "vocabulary": 60, "text_analysis": 60, "global_issues": 60, "textaufgaben_verstehen": 55 }
 };

@@ -36,10 +36,10 @@ window.__subjectData_phys_8g_index = {
         }
     },
     "questionCounts": {
-        "mechanik": 0,
-        "energie": 0,
-        "optik": 0,
-        "waermelehre": 0,
-        "textaufgaben_verstehen": 0
+        "mechanik": 28,
+        "energie": 25,
+        "optik": 25,
+        "waermelehre": 25,
+        "textaufgaben_verstehen": 20
     }
 };

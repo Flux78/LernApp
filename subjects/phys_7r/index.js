@@ -10,5 +10,5 @@ window.__subjectData_phys_7r_index = {
         "magnetismus": { "name": "Magnetismus", "icon": "🧲", "color": "#ef4444", "desc": "Magnete, Magnetfeld, Kompass" },
         "textaufgaben_verstehen": { "name": "Textaufgaben verstehen", "icon": "🧠", "color": "#ff6b6b", "desc": "Physik-Textaufgaben verstehen" }
     },
-    "questionCounts": { "elektrizitaet": 14, "optik": 14, "akustik": 14, "magnetismus": 14, "textaufgaben_verstehen": 11 }
+    "questionCounts": { "elektrizitaet": 45, "optik": 45, "akustik": 45, "magnetismus": 45, "textaufgaben_verstehen": 41 }
 };

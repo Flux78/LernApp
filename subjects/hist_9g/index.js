@@ -9,5 +9,5 @@ window.__subjectData_hist_9g_index = {
         "ns_zeit": { "name": "NS-Zeit", "icon": "⚠️", "color": "#3b82f6", "desc": "Nationalsozialismus, Zweiter Weltkrieg" },
         "nachkriegszeit": { "name": "Nachkriegszeit", "icon": "🕊️", "color": "#10b981", "desc": "Teilung Deutschlands, Kalter Krieg" }
     },
-    "questionCounts": { "imperialismus": 14, "erster_weltkrieg": 14, "ns_zeit": 14, "nachkriegszeit": 14 }
+    "questionCounts": { "imperialismus": 45, "erster_weltkrieg": 45, "ns_zeit": 45, "nachkriegszeit": 45 }
 };

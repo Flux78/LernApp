@@ -10,5 +10,5 @@ window.__subjectData_math_7r_index = {
         "geometrie": { "name": "Geometrie", "icon": "📐", "color": "#8b5cf6", "desc": "Dreiecke, Kreis, Winkel" },
         "textaufgaben_verstehen": { "name": "Textaufgaben verstehen", "icon": "🧠", "color": "#ff6b6b", "desc": "Lerne, Textaufgaben richtig zu verstehen" }
     },
-    "questionCounts": { "zuordnungen": 15, "prozentrechnung": 14, "rationale_zahlen": 14, "geometrie": 14, "textaufgaben_verstehen": 12 }
+    "questionCounts": { "zuordnungen": 51, "prozentrechnung": 50, "rationale_zahlen": 51, "geometrie": 51, "textaufgaben_verstehen": 46 }
 };
