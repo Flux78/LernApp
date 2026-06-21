@@ -1,0 +1,16 @@
+window.__subjectData_eng_9g_vocabulary = [
+    { question: "What does 'sustainable' mean?", answers: ["nachhaltig", "überraschend", "haltbar", "unmöglich"], correct: 0, hint: "Environmentally friendly", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "What does 'significant' mean?", answers: ["unwichtig", "bedeutend", "sicher", "sichtbar"], correct: 1, hint: "Very important or noticeable", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "What does 'controversial' mean?", answers: ["zufrieden", "umstritten", "kontrolliert", "bequem"], correct: 1, hint: "Causing disagreement", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "What does 'inevitable' mean?", answers: ["unvermeidlich", "unglaublich", "unsichtbar", "unabhängig"], correct: 0, hint: "Cannot be avoided", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "What does 'to implement' mean?", answers: ["verbessern", "umsetzen / einführen", "importieren", "informieren"], correct: 1, hint: "Put into action", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "What does 'profound' mean?", answers: ["professionell", "tiefgreifend", "profitabel", "provisorisch"], correct: 1, hint: "Very deep or intense", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "What does 'to undermine' mean?", answers: ["unterstützen", "untergraben / schwächen", "unterrichten", "unterschreiben"], correct: 1, hint: "Weaken gradually", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "What does 'resilience' mean?", answers: ["Resistenz", "Widerstandsfähigkeit", "Rücksicht", "Rückschlag"], correct: 1, hint: "ability to recover quickly", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "What does 'ambiguous' mean?", answers: ["ambitioniert", "mehrdeutig", "angenehm", "unabhängig"], correct: 1, hint: "Having multiple meanings", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "What does 'to advocate' mean?", answers: ["ablehnen", "befürworten / eintreten für", "angreifen", "anpassen"], correct: 1, hint: "Support publicly", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "What does 'plausible' mean?", answers: ["plastisch", "glaubwürdig / einleuchtend", "planmäßig", "plötzlich"], correct: 1, hint: "Reasonable and believable", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "What does 'to deteriorate' mean?", answers: ["verbessern", "sich verschlechtern", "entdecken", "entscheiden"], correct: 1, hint: "Become worse", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "What does 'empathy' mean?", answers: ["Energie", "Einfühlungsvermögen", "Ehrgeiz", "Eifersucht"], correct: 1, hint: "Understanding others' feelings", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "What does 'nonetheless' mean?", answers: ["nichtsdestotrotz", "normalerweise", "notwendigerweise"], correct: 0, hint: "Despite that / nevertheless", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+];

@@ -1,0 +1,16 @@
+window.__subjectData_lat_9g_autoren = [
+    { question: "Über welchen Krieg schrieb Caesar?", answers: ["Peloponnesischer Krieg", "Gallischer Krieg", "Trojanischer Krieg", "Kalter Krieg"], correct: 1, hint: "De Bello Gallico", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Wer schrieb Liebesgedichte in der Antike?", answers: ["Caesar", "Catull", "Cicero", "Seneca"], correct: 1, hint: "Römischer Dichter", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "In welchem Stil schrieb Caesar seine Kommentare?", answers: ["Einfach, klar, militärisch", "Blumig, poetisch", "Philosophisch", "Satirisch"], correct: 0, hint: "Commentarii de Bello Gallico", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Wer war Cicero?", answers: ["Redner, Philosoph, Politiker", "Dichter, Dramatiker", "Historiker, Feldherr", "Kaiser, Feldherr"], correct: 0, hint: "Reden gegen Catilina", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Werk schrieb Ovid?", answers: ["Metamorphosen (Verwandlungen)", "De Bello Gallico", "Reden gegen Verres", "Naturalis Historia"], correct: 0, hint: "Mythen und Verwandlungen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welchen Autor bezeichnet man als 'römischen Nationaldichter'?", answers: ["Vergil", "Ovid", "Catull", "Horaz"], correct: 0, hint: "Aeneis", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Epos schrieb Vergil?", answers: ["Aeneis", "Odyssee", "Ilias", "Metamorphosen"], correct: 0, hint: "Gründung Roms durch Aeneas", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welcher Autor prägte den Begriff 'O tempora, o mores!'?", answers: ["Cicero", "Caesar", "Vergil", "Horaz"], correct: 0, hint: "Reden gegen Catilina", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welcher römische Historiker beschrieb den Aufstieg Roms?", answers: ["Livius (Titus Livius)", "Caesar", "Sallust", "Tacitus"], correct: 0, hint: "Ab urbe condita", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Für welche Gedichtform ist Catull bekannt?", answers: ["Liebesgedichte (Lesbia)", "Epen", "Satiren", "Tragödien"], correct: 0, hint: "Lesbia = Clodia", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welcher Spruch ist Cicero zuzuordnen?", answers: ["Cogito ergo sum", "Veni, vidi, vici", "Carpe diem", "Alea iacta est"], correct: 1, hint: "Cicero = Redner", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welcher Spruch stammt von Horaz?", answers: ["Carpe diem", "Veni, vidi, vici", "Alea iacta est", "Divide et impera"], correct: 0, hint: "Nutze den Tag", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Gattung pflegte Plautus?", answers: ["Comödie", "Tragödie", "Epos", "Elegie"], correct: 0, hint: "Komödien, z.B. Menaechmi", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welcher Autor schrieb über die Germanen?", answers: ["Tacitus (Germania)", "Caesar", "Livius", "Sallust"], correct: 0, hint: "Ethnographische Schrift", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+];

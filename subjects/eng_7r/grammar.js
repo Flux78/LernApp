@@ -1,0 +1,17 @@
+window.__subjectData_eng_7r_grammar = [
+    { question: "Which sentence is passive?", answers: ["The cat eats the mouse.", "The mouse is eaten by the cat.", "The cat ate the mouse.", "The cat will eat the mouse."], correct: 1, hint: "to be + past participle", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "What is the correct form: If it ____, we will stay at home.", answers: ["rains", "will rain", "rained", "would rain"], correct: 0, hint: "Type 1 conditional", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "She ____ to music when I came in.", answers: ["listened", "was listening", "has listened", "listens"], correct: 1, hint: "Past Continuous", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "We ____ already ____ our homework.", answers: ["have / finish", "have / finished", "did / finished", "are / finishing"], correct: 1, hint: "Present Perfect", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Look at those clouds! It ____.", answers: ["will rain", "is going to rain", "rains", "rained"], correct: 1, hint: "Prediction with evidence", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "How long ____ you ____ English?", answers: ["have / learn", "have / been learning", "are / learning", "do / learn"], correct: 1, hint: "Present Perfect Progressive", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "The letter ____ yesterday.", answers: ["sent", "was sent", "is sent", "sends"], correct: 1, hint: "Past Tense Passive", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "If I ____ you, I would apologise.", answers: ["was", "were", "am", "be"], correct: 1, hint: "Type 2 conditional", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "He ____ his bike when he fell.", answers: ["rode", "was riding", "has ridden", "rides"], correct: 1, hint: "Past Continuous + interruption", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "The window ____ by the boy.", answers: ["broke", "was broken", "is breaking", "breaks"], correct: 1, hint: "Passive, focus on object", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "They ____ each other since 2020.", answers: ["know", "knew", "have known", "are knowing"], correct: 2, hint: "Duration up to now", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "____ you ever ____ to London?", answers: ["Were / been", "Have / been", "Did / go", "Are / going"], correct: 1, hint: "Experience", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "The students ____ the test right now.", answers: ["write", "wrote", "are writing", "have written"], correct: 2, hint: "Present Continuous", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Cars ____ in this factory.", answers: ["make", "are made", "are making", "made"], correct: 1, hint: "General truth passive", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "If she had studied harder, she ____ the exam.", answers: ["passed", "would pass", "would have passed", "passes"], correct: 2, hint: "Type 3 conditional", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+];

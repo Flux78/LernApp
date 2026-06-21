@@ -1,0 +1,16 @@
+window.__subjectData_bio_7r_wirbeltiere = [
+    { question: "Welche Klasse hat Federn?", answers: ["Säugetiere", "Vögel", "Reptilien", "Fische"], correct: 1, hint: "Können fliegen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Merkmal haben alle Säugetiere gemeinsam?", answers: ["Sie legen Eier", "Sie säugen ihre Jungen", "Sie haben Kiemen", "Sie sind wechselwarm"], correct: 1, hint: "Milchdrüsen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Wirbeltierklasse ist wechselwarm und hat eine feuchte Haut?", answers: ["Vögel", "Amphibien (Lurche)", "Reptilien", "Säugetiere"], correct: 1, hint: "Frosch, Salamander", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Womit atmen Fische?", answers: ["Lunge", "Kiemen", "Haut", "Tracheen"], correct: 1, hint: "Im Wasser gelöster Sauerstoff", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Klasse legt Eier mit Kalkschale?", answers: ["Fische", "Amphibien", "Vögel", "Säugetiere"], correct: 2, hint: "Harte Schale schützt den Embryo", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Merkmal haben Reptilien?", answers: ["Fell", "Trockene Schuppenhaut", "Kiemen", "Federn"], correct: 1, hint: "Schlangen, Eidechsen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Säugetiere sind...", answers: ["Wechselwarm", "Gleichwarm", "Kaltblütig", "Mal warm, mal kalt"], correct: 1, hint: "Konstante Körpertemperatur", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welcher Körperbau ist typisch für Fische?", answers: ["Lange Beine", "Stromlinienförmig", "Flügel", "Panzer"], correct: 1, hint: "An das Schwimmen angepasst", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Warum müssen Amphibien in Gewässernähe leben?", answers: ["Sie trinken viel", "Ihre Haut und Fortpflanzung braucht Wasser", "Sie mögen Schwimmen", "Sie essen nur Wasserpflanzen"], correct: 1, hint: "Laich und Larven im Wasser", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Wie viele Wirbeltierklassen gibt es?", answers: ["3", "4", "5", "6"], correct: 2, hint: "Fische, Amphibien, Reptilien, Vögel, Säugetiere", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Eigenschaft haben Vögel zum Fliegen?", answers: ["Schwere Knochen", "Hohle Knochen, leichter Körper", "Große Zähne", "Starke Beine"], correct: 1, hint: "Gewichtsreduktion", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Säugetier kann fliegen?", answers: ["Vogel", "Fledermaus", "Eichhörnchen", "Pinguin"], correct: 1, hint: "Aktiver Flug mit Flughäuten", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Wie vermehren sich die meisten Fische?", answers: ["Lebendgeburt", "Eiablage (Laich)", "Zellteilung", "Knospung"], correct: 1, hint: "Laich im Wasser", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Tier gehört zu den Reptilien?", answers: ["Frosch", "Krokodil", "Pinguin", "Delfin"], correct: 1, hint: "Schuppen, kaltblütig", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+];

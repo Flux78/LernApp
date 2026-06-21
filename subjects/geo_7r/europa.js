@@ -1,0 +1,16 @@
+window.__subjectData_geo_7r_europa = [
+    { question: "Wie viele Mitgliedsstaaten hat die EU (2024)?", answers: ["25", "27", "30", "20"], correct: 1, hint: "Letzter Beitritt: 2013", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Währung wird in den meisten EU-Ländern verwendet?", answers: ["Pfund", "Euro", "Dollar", "Franken"], correct: 1, hint: "Gemeinsame Währung", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist die Hauptstadt von Frankreich?", answers: ["Lyon", "Paris", "Marseille", "Nizza"], correct: 1, hint: "Stadt der Liebe", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches ist das flächenmäßig größte Land Europas?", answers: ["Deutschland", "Frankreich", "Russland", "Schweden"], correct: 2, hint: "Erstreckt sich über zwei Kontinente", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches europäische Gebirge trennt Spanien von Frankreich?", answers: ["Alpen", "Pyrenäen", "Karpaten", "Apennin"], correct: 1, hint: "Grenzgebirge zwischen beiden Ländern", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Meer liegt zwischen Italien und dem Balkan?", answers: ["Nordsee", "Adriatisches Meer", "Ostsee", "Schwarzes Meer"], correct: 1, hint: "Nördlicher Teil des Mittelmeers", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist die Hauptstadt von Polen?", answers: ["Krakau", "Warschau", "Breslau", "Danzig"], correct: 1, hint: "Größte Stadt Polens", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welcher Fluss fließt durch London?", answers: ["Seine", "Themse", "Donau", "Rhein"], correct: 1, hint: "Englischer Fluss", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche EU-Institution hat ihren Sitz in Brüssel?", answers: ["Europäischer Gerichtshof", "Europäische Kommission", "Europäische Zentralbank", "Europäisches Parlament (Plenum)"], correct: 1, hint: "Exekutive der EU", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Land ist NICHT in der EU?", answers: ["Österreich", "Schweiz", "Schweden", "Spanien"], correct: 1, hint: "Alpenland ohne EU-Mitgliedschaft", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist die Hauptstadt von Italien?", answers: ["Mailand", "Rom", "Venedig", "Neapel"], correct: 1, hint: "Historische Hauptstadt", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche skandinavische Hauptstadt liegt auf einer Insel?", answers: ["Oslo", "Stockholm", "Kopenhagen", "Helsinki"], correct: 2, hint: "Dänische Hauptstadt", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welcher Berg ist der höchste Europas?", answers: ["Mont Blanc", "Zugspitze", "Matterhorn", "Elbrus"], correct: 3, hint: "Kaukasus, 5.642 m", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Land hat die längste Küstenlinie Europas?", answers: ["Italien", "Norwegen", "Griechenland", "Spanien"], correct: 1, hint: "Fjorde und Inseln", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+];

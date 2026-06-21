@@ -1,0 +1,16 @@
+window.__subjectData_de_9g_rechtschreibung = [
+    { question: "Welche Schreibung ist korrekt?", answers: ["das selbe", "dasselbe", "das Selbe", "daß selbe"], correct: 1, hint: "Zusammenschreibung", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Schreibung ist korrekt?", answers: ["im allgemeinen", "im Allgemeinen", "inn allgemeinen", "im allgemeinem"], correct: 1, hint: "Substantivierung von Adjektiven", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Schreibung ist korrekt?", answers: ["aufgrund", "auf Grund", "auf Grundt", "aufgründ"], correct: 0, hint: "Zusammenschreibung", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Groß oder klein? 'Er hat ____ (recht) bekommen.'", answers: ["recht", "Recht", "rechts", "Rechts"], correct: 0, hint: "Verbales Gefüge: recht bekommen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Schreibung ist korrekt?", answers: ["morgens", "morgends", "morgenns", "morgent"], correct: 0, hint: "Adverb der Zeit", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Getrennt oder zusammen? 'Er ____ (stehenbleiben) vor dem Haus.'", answers: ["bleibt stehen", "steht bleiben", "stehenbleibt", "stehst bleiben"], correct: 2, hint: "In neuer Rechtschreibung zusammengeschrieben", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Wort wird mit 'ss' geschrieben?", answers: ["Straße", "Maßnahme", "Flüsse", "dass"], correct: 3, hint: "Nach kurzem Vokal: ss", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Wort wird mit 'ß' geschrieben?", answers: ["Hass", "Kuss", "Fuß", "nass"], correct: 2, hint: "Nach langem Vokal oder Diphthong", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Groß oder klein? 'Die ____ (übrigen) können gehen.'", answers: ["übrigen", "Übrigen", "uebrigen", "Uebrigen"], correct: 1, hint: "Nominalisierung", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Schreibung ist korrekt?", answers: ["mehrdeutig", "mehrdeutich", "mehrdeutigg", "mehrdeühtig"], correct: 0, hint: "Abgeleitet von 'deuten'", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Getrennt oder zusammen? 'Er ____ (kennenlernen) seine neue Schule.'", answers: ["lernt kennen", "kennt lernen", "kennenlernt", "lernen kennt"], correct: 2, hint: "Neue Rechtschreibung: zusammengeschrieben", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Schreibung ist korrekt?", answers: ["allein", "alleine", "all ein", "alleinn"], correct: 0, hint: "Allein, nicht 'alleine' (standardsprachlich)", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Groß oder klein? 'Er ist der ____ (größte) in seiner Klasse.'", answers: ["größte", "Größte", "grosste", "Grosste"], correct: 1, hint: "Superlativ als Nomen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Schreibung ist korrekt?", answers: ["das Gleiche", "dass Gleiche", "das gleiche", "daßgleiche"], correct: 0, hint: "Gleiche ist hier ein substantiviertes Adjektiv", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+];

@@ -1,0 +1,16 @@
+window.__subjectData_math_7r_prozentrechnung = [
+    { question: "Ein Pullover kostet 40€. Du bekommst 20% Rabatt. Wie viel sparst du?", answers: ["4€", "8€", "10€", "20€"], correct: 1, hint: "10% = 4€, also 20% = ...", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "250€ werden zu 2% Zinsen angelegt. Wie viel Zinsen erhältst du nach einem Jahr?", answers: ["2,50€", "5€", "25€", "50€"], correct: 1, hint: "Z = K × p / 100", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was sind 15% von 200€?", answers: ["15€", "20€", "30€", "40€"], correct: 2, hint: "10% + 5%", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Eine Schule hat 800 Schüler. 45% sind Mädchen. Wie viele Jungen gibt es?", answers: ["360", "400", "440", "480"], correct: 2, hint: "55% der Schüler sind Jungen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Der Preis einer Hose steigt von 50€ auf 60€. Wie viel Prozent sind das?", answers: ["10%", "15%", "20%", "25%"], correct: 2, hint: "10€ von 50€ = 1/5 = 20%", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Ein Handy kostet 300€ plus 19% Mehrwertsteuer. Was ist der Endpreis?", answers: ["319€", "357€", "345€", "330€"], correct: 1, hint: "300 × 1,19", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "500€ werden zu 3% Zinsen angelegt. Wie viel Geld ist nach 2 Jahren auf dem Konto?", answers: ["515€", "530€", "545€", "560€"], correct: 1, hint: "2 Jahre × 3% Zinsen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "In einer Klasse sind 6 von 24 Schülern krank. Wie viel Prozent sind das?", answers: ["20%", "25%", "30%", "40%"], correct: 1, hint: "6 : 24 = 0,25 = 25%", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Ein Laptop kostet nach 15% Rabatt noch 425€. Was war der ursprüngliche Preis?", answers: ["475€", "500€", "525€", "550€"], correct: 1, hint: "425€ = 85% des Originalpreises", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Wie viel Prozent sind 30 von 120?", answers: ["15%", "20%", "25%", "30%"], correct: 2, hint: "30 : 120 = 0,25", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Eine Bahnfahrkarte kostet 80€. Mit BahnCard 50% Ermäßigung. Was kostet die Fahrt?", answers: ["30€", "40€", "50€", "60€"], correct: 1, hint: "50% = die Hälfte", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "1000€ werden zu 1,5% Zinsen angelegt. Wie viel Zinsen nach 6 Monaten?", answers: ["7,50€", "10€", "12€", "15€"], correct: 0, hint: "1,5% von 1000 = 15€ pro Jahr, halbes Jahr", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Ein Geschäft senkt den Preis von 120€ um 25%. Was ist der neue Preis?", answers: ["80€", "90€", "95€", "100€"], correct: 1, hint: "25% von 120 = 30€", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "In einer Umfrage wählen 72 von 240 Personen Fußball als Lieblingssport. Wie viel Prozent?", answers: ["25%", "30%", "35%", "40%"], correct: 1, hint: "72 : 240 = 0,30", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+];

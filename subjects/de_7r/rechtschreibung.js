@@ -1,0 +1,16 @@
+window.__subjectData_de_7r_rechtschreibung = [
+    { question: "Welche Schreibung ist richtig?", answers: ["das laufen", "das Laufen", "daß Laufen", "das Lauffen"], correct: 1, hint: "Verben als Nomen = groß", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Schreibung ist richtig?", answers: ["soviel", "so viel", "soh viel", "soh viel"], correct: 1, hint: "Getrenntschreibung", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Schreibung ist korrekt?", answers: ["der Artzt", "der Arzt", "der Arzst", "der Ahrzt"], correct: 1, hint: "tz statt z, aber kein d", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Groß oder klein? 'Er hat ____ (recht) behalten.'", answers: ["recht", "Recht", "Rechts", "rechts"], correct: 0, hint: "feststehende Wendung: recht haben", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Schreibung ist richtig?", answers: ["seid ihr", "seid Ihr", "seit ihr", "seit Ihr"], correct: 0, hint: "seid = 2. Person Plural von sein", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Wort wird mit 'tz' geschrieben?", answers: ["Katze", "Skat", "Katz", "Skatz"], correct: 0, hint: "Nach kurzem Vokal kommt tz", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Groß oder klein? 'Die ____ (beiden) kamen zu spät.'", answers: ["beiden", "Beiden", "beides", "Beides"], correct: 1, hint: "Nominalisierung: die Beiden", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Schreibung ist richtig?", answers: ["gar nicht", "garnicht", "gar nicht's", "garnicht's"], correct: 0, hint: "Getrennt und klein", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Wort ist falsch geschrieben?", answers: ["Straße", "Muße", "Waßer", "Maß"], correct: 2, hint: "Nach langem Vokal: ß", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Groß oder klein? 'Im ____ (Allgemeinen) gilt das.'", answers: ["allgemeinen", "Allgemeinen", "allgemeinem", "Allgemeinem"], correct: 1, hint: "Nominalisierung nach Präposition", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Schreibung ist korrekt?", answers: ["Tod", "Tott", "Thot", "Tood"], correct: 0, hint: "Tod (Sterben) vs. tot (Adjektiv)", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Getrennt oder zusammen? 'Er ____ (radfahren) gern.'", answers: ["rad fährt", "radfährt", "Rad fährt", "Rad fährt"], correct: 2, hint: "Rad (Nomen) + Verb = getrennt", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Schreibung ist richtig?", answers: ["heutige", "heutige", "heutige", "heütige"], correct: 0, hint: "eu, nicht äu bei heute", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Wort wird mit doppeltem 'm' geschrieben?", answers: ["Kamm", "Kame", "Kamen", "Kahm"], correct: 0, hint: "Nach kurzem Vokal: mm", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+];

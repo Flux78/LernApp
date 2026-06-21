@@ -1,0 +1,16 @@
+window.__subjectData_chem_9g_organische_chemie = [
+    { question: "Welches Element ist in allen organischen Verbindungen?", answers: ["Sauerstoff", "Kohlenstoff", "Stickstoff", "Wasserstoff"], correct: 1, hint: "Organisch = C", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist Methan?", answers: ["Ein Alkohol", "Ein Kohlenwasserstoff", "Eine Säure", "Ein Mineral"], correct: 1, hint: "CH₄", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Wie lautet die allgemeine Formel für Alkane?", answers: ["CₙH₂ₙ₊₂", "CₙH₂ₙ", "CₙH₂ₙ₋₂", "CₙHₙ"], correct: 0, hint: "Gesättigte Kohlenwasserstoffe", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist ein Alken?", answers: ["Kohlenwasserstoff mit Doppelbindung", "Kohlenwasserstoff mit Einfachbindung", "Ein Alkohol", "Eine Säure"], correct: 0, hint: "allgemein: CₙH₂ₙ", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Funktionsgruppe haben Alkohole?", answers: ["-OH (Hydroxygruppe)", "-COOH (Carboxygruppe)", "-NH₂ (Aminogruppe)", "-CHO (Aldehydgruppe)"], correct: 0, hint: "Ethanol = C₂H₅OH", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist ein Ester?", answers: ["Produkt aus Alkohol und Säure", "Ein Kohlenwasserstoff", "Ein Alkohol", "Eine Base"], correct: 0, hint: "Duftstoffe, Fette", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was versteht man unter 'Isomerie'?", answers: ["Gleiche Summenformel, unterschiedliche Struktur", "Unterschiedliche Summenformel", "Gleiche Struktur", "Radioaktiver Zerfall"], correct: 0, hint: "z.B. Butan und Isobutan", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was passiert bei einer Verbrennung von Alkanen?", answers: ["CO₂ und H₂O entstehen", "Es entstehen Säuren", "Es entstehen Alkohole", "Es entsteht Stickstoff"], correct: 0, hint: "Vollständige Verbrennung", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welcher Alkohol ist in Getränken enthalten?", answers: ["Methanol", "Ethanol", "Propanol", "Butanol"], correct: 1, hint: "Trinkalkohol", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist ein Kohlenhydrat?", answers: ["Eine Verbindung aus C, H, O", "Reiner Kohlenstoff", "Ein Kohlenwasserstoff", "Ein Protein"], correct: 0, hint: "Zucker, Stärke, Cellulose", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was sind Fette (chemisch)?", answers: ["Ester des Glycerins mit Fettsäuren", "Kohlenwasserstoffe", "Alkohole", "Proteine"], correct: 0, hint: "Triglyceride", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist Polymerisation?", answers: ["Verkettung vieler kleiner Moleküle zu großen", "Zerlegung von Molekülen", "Verbrennung", "Neutralisation"], correct: 0, hint: "Kunststoffe wie PE, PP", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Wie viele Kohlenstoffatome hat Butan?", answers: ["2", "3", "4", "5"], correct: 2, hint: "Methan C1, Ethan C2, Propan C3, Butan C4", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist die Funktionale Gruppe der Carbonsäuren?", answers: ["-COOH", "-OH", "-NH₂", "-CHO"], correct: 0, hint: "Essigsäure = CH₃COOH", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+];

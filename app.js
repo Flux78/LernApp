@@ -3,10 +3,14 @@
 // ============================================
 
 
+// Konstanten
+const MC_KEY = 'mc';
+const isRealschule = g => typeof g === 'string' && g.endsWith('r');
+
 // Fächer-Registrierung
 let subjectRegistry = {};
 // Aktuelles Fach
-let currentSubject = 'english';
+let currentSubject = 'eng_6r';
 let currentSubjectData = null;
 
 // ======================= STATE =======================
@@ -40,26 +44,77 @@ let hintTimer = null;
 
 // Fächer-Registrierung (statische Metadaten, Daten werden dynamisch geladen)
 subjectRegistry = {
-    english: { grade: '6r', key: 'english', name: 'Englisch', abbr: 'EN', path: 'english_6r', icon: '🇬🇧', color: '#3b82f6',
+    // ===== 6. Klasse Realschule =====
+    eng_6r: { grade: '6r', key: 'eng_6r', name: 'Englisch', abbr: 'EN', path: 'eng_6r', icon: '🇬🇧', color: '#3b82f6',
         bg: 'url("https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?q=80&w=1000&auto=format&fit=crop")',
         data: null, questionsCache: {} },
-    math: { grade: '6r', key: 'math', name: 'Mathematik', abbr: 'MA', path: 'math_6r', icon: '🔢', color: '#3b82f6',
+    math_6r: { grade: '6r', key: 'math_6r', name: 'Mathematik', abbr: 'MA', path: 'math_6r', icon: '🔢', color: '#3b82f6',
         bg: 'url("https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1000&auto=format&fit=crop")',
         data: null, questionsCache: {} },
-    german: { grade: '6r', key: 'german', name: 'Deutsch', abbr: 'DE', path: 'german_6r', icon: '📚', color: '#ec4899',
+    de_6r: { grade: '6r', key: 'de_6r', name: 'Deutsch', abbr: 'DE', path: 'de_6r', icon: '📚', color: '#ec4899',
         bg: 'url("https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1000&auto=format&fit=crop")',
         data: null, questionsCache: {} },
-    history: { grade: '6r', key: 'history', name: 'Geschichte', abbr: 'HI', path: 'history_6r', icon: '🏺', color: '#f59e0b',
+    hist_6r: { grade: '6r', key: 'hist_6r', name: 'Geschichte', abbr: 'GS', path: 'hist_6r', icon: '🏺', color: '#f59e0b',
         bg: 'url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1000&auto=format&fit=crop")',
         data: null, questionsCache: {} },
-    geography: { grade: '6r', key: 'geography', name: 'Geographie', abbr: 'GE', path: 'geography_6r', icon: '🌍', color: '#22c55e',
+    geo_6r: { grade: '6r', key: 'geo_6r', name: 'Geographie', abbr: 'GE', path: 'geo_6r', icon: '🌍', color: '#22c55e',
         bg: 'url("https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1000&auto=format&fit=crop")',
         data: null, questionsCache: {} },
-    allgemeinwissen: { grade: 'aw', key: 'allgemeinwissen', name: 'Allgemeinwissen', abbr: 'AW', path: 'allgemeinwissen', icon: '🧠', color: '#8b5cf6',
+    aw: { grade: 'aw', key: 'aw', name: 'Allgemeinwissen', abbr: 'AW', path: 'aw', icon: '🧠', color: '#8b5cf6',
         bg: 'url("https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1000&auto=format&fit=crop")',
         data: null, questionsCache: {}, excludeFromStats: true, excludeFromMinecraft: true },
-    minecraft: { grade: '6r', key: 'minecraft', name: 'Minecraft', abbr: 'MC', path: 'minecraft_6r', icon: '⛏️', color: '#4e7d1d',
+    mc: { grade: 'r', key: MC_KEY, name: 'Minecraft', abbr: 'MC', path: 'mc', icon: '⛏️', color: '#4e7d1d',
         bg: 'url("https://images.unsplash.com/photo-1622015663319-e97e697503ee?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    // ===== 7. Klasse Realschule =====
+    eng_7r: { grade: '7r', key: 'eng_7r', name: 'Englisch', abbr: 'EN', path: 'eng_7r', icon: '🇬🇧', color: '#3b82f6',
+        bg: 'url("https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    math_7r: { grade: '7r', key: 'math_7r', name: 'Mathematik', abbr: 'MA', path: 'math_7r', icon: '🔢', color: '#3b82f6',
+        bg: 'url("https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    de_7r: { grade: '7r', key: 'de_7r', name: 'Deutsch', abbr: 'DE', path: 'de_7r', icon: '📚', color: '#ec4899',
+        bg: 'url("https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    hist_7r: { grade: '7r', key: 'hist_7r', name: 'Geschichte', abbr: 'GS', path: 'hist_7r', icon: '🏺', color: '#f59e0b',
+        bg: 'url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    geo_7r: { grade: '7r', key: 'geo_7r', name: 'Geographie', abbr: 'GE', path: 'geo_7r', icon: '🌍', color: '#22c55e',
+        bg: 'url("https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    phys_7r: { grade: '7r', key: 'phys_7r', name: 'Physik', abbr: 'PH', path: 'phys_7r', icon: '⚛️', color: '#6366f1',
+        bg: 'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    bio_7r: { grade: '7r', key: 'bio_7r', name: 'Biologie', abbr: 'BI', path: 'bio_7r', icon: '🧬', color: '#10b981',
+        bg: 'url("https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    // ===== 9. Klasse Gymnasium =====
+    eng_9g: { grade: '9g', key: 'eng_9g', name: 'Englisch', abbr: 'EN', path: 'eng_9g', icon: '🇬🇧', color: '#3b82f6',
+        bg: 'url("https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    math_9g: { grade: '9g', key: 'math_9g', name: 'Mathematik', abbr: 'MA', path: 'math_9g', icon: '🔢', color: '#3b82f6',
+        bg: 'url("https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    de_9g: { grade: '9g', key: 'de_9g', name: 'Deutsch', abbr: 'DE', path: 'de_9g', icon: '📚', color: '#ec4899',
+        bg: 'url("https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    phys_9g: { grade: '9g', key: 'phys_9g', name: 'Physik', abbr: 'PH', path: 'phys_9g', icon: '⚛️', color: '#6366f1',
+        bg: 'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    bio_9g: { grade: '9g', key: 'bio_9g', name: 'Biologie', abbr: 'BI', path: 'bio_9g', icon: '🧬', color: '#10b981',
+        bg: 'url("https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    chem_9g: { grade: '9g', key: 'chem_9g', name: 'Chemie', abbr: 'CH', path: 'chem_9g', icon: '🧪', color: '#8b5cf6',
+        bg: 'url("https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    hist_9g: { grade: '9g', key: 'hist_9g', name: 'Geschichte', abbr: 'GS', path: 'hist_9g', icon: '🏺', color: '#f59e0b',
+        bg: 'url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    geo_9g: { grade: '9g', key: 'geo_9g', name: 'Geographie', abbr: 'GE', path: 'geo_9g', icon: '🌍', color: '#22c55e',
+        bg: 'url("https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1000&auto=format&fit=crop")',
+        data: null, questionsCache: {} },
+    lat_9g: { grade: '9g', key: 'lat_9g', name: 'Latein', abbr: 'LA', path: 'lat_9g', icon: '🏛️', color: '#f59e0b',
+        bg: 'url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1000&auto=format&fit=crop")',
         data: null, questionsCache: {} },
     phys_8g: { grade: '8g', key: 'phys_8g', name: 'Physik', abbr: 'PH', path: 'phys_8g', icon: '⚛️', color: '#6366f1',
         bg: 'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop")',
@@ -135,7 +190,25 @@ async function initializeState() {
     });
 }
 
+function migrateLegacyKeys() {
+    const MAP = {
+        english: 'eng_6r', math: 'math_6r', german: 'de_6r',
+        history: 'hist_6r', geography: 'geo_6r',
+        allgemeinwissen: 'aw', minecraft: MC_KEY
+    };
+    const subj = localStorage.getItem('lernapp_currentSubject');
+    if (subj && MAP[subj]) localStorage.setItem('lernapp_currentSubject', MAP[subj]);
+    Object.entries(MAP).forEach(([oldK, newK]) => {
+        const data = localStorage.getItem('lernapp_' + oldK);
+        if (data) {
+            if (!localStorage.getItem('lernapp_' + newK)) localStorage.setItem('lernapp_' + newK, data);
+            localStorage.removeItem('lernapp_' + oldK);
+        }
+    });
+}
+
 async function loadState() {
+    migrateLegacyKeys();
     // Globaler DarkMode (unabhängig vom Fach-Speicherstand)
     const globalDarkMode = localStorage.getItem('lernapp_darkMode') === 'true';
     const globalConfetti = localStorage.getItem('lernapp_confetti') !== 'false'; // Default true
@@ -347,8 +420,7 @@ function updateTabVisibility() {
 // ======================= REWARD SYSTEM (MINECRAFT UNLOCK) =======================
 
 function getMinecraftStatus() {
-    // Minecraft-Logik gilt nur für die 6. Klasse
-    if (state.grade !== '6r') return { unlocked: true, unlockedCount: 999, percent: 100 };
+    if (!isRealschule(state.grade)) return { unlocked: true, unlockedCount: 999, percent: 100 };
 
     let totalOtherAnswers = 0;
     let anySubjectReachedTen = false;
@@ -356,7 +428,7 @@ function getMinecraftStatus() {
     let totalPossibleOtherQuestions = 0;
 
     Object.entries(subjectRegistry).forEach(([key, subject]) => {
-        if (subject.grade !== '6r' || subject.excludeFromMinecraft) return;
+        if (!isRealschule(subject.grade) || key === MC_KEY || subject.excludeFromMinecraft) return;
         
         let sTotal = 0;
         if (key === currentSubject) {
@@ -371,10 +443,9 @@ function getMinecraftStatus() {
             }
         }
 
-        // Berechne die Gesamtanzahl der verfügbaren Fragen
         const subjectQuestionCount = getSubjectQuestionCount(subject);
 
-        if (key === 'minecraft') {
+        if (key === MC_KEY) {
             totalPossibleMinecraft = subjectQuestionCount;
         } else {
             totalPossibleOtherQuestions += subjectQuestionCount;
@@ -383,7 +454,6 @@ function getMinecraftStatus() {
         }
     });
 
-    // Dynamisches Verhältnis: Wie viele normale Fragen ergeben eine Minecraft-Frage?
     const questionsPerUnlock = (totalPossibleMinecraft > 0 && totalPossibleOtherQuestions > 0)
         ? (totalPossibleOtherQuestions / totalPossibleMinecraft)
         : Infinity;
@@ -391,28 +461,18 @@ function getMinecraftStatus() {
     if (Number.isFinite(questionsPerUnlock) && questionsPerUnlock > 0) {
         unlockedCount = Math.floor(totalOtherAnswers / questionsPerUnlock);
     }
-    // Deckelung auf die maximal verfügbaren Minecraft-Fragen
     unlockedCount = Math.min(unlockedCount, totalPossibleMinecraft);
     
-    // NEU: Zufällige Zuordnung der freigeschalteten Fragen
-    if (currentSubject === 'minecraft') {
+    if (currentSubject === MC_KEY) {
         if (!state.unlockedIndices) state.unlockedIndices = [];
-
-        // Falls mehr Fragen gespeichert sind als aktuell freigeschaltet sein dürfen: zurückschneiden
-        if (state.unlockedIndices.length > unlockedCount) {
-            state.unlockedIndices = state.unlockedIndices.slice(0, unlockedCount);
-            saveState();
-        }
         
-        // Wenn wir mehr Fragen verdient haben, als IDs gespeichert sind: neue würfeln
         if (state.unlockedIndices.length < unlockedCount) {
             let allPossibleKeys = [];
-            const mcRegistry = subjectRegistry['minecraft'];
+            const mcRegistry = subjectRegistry[MC_KEY];
             Object.entries(mcRegistry.questionsCache).forEach(([cat, list]) => {
                 list.forEach((_, idx) => allPossibleKeys.push(`${cat}:${idx}`));
             });
             
-            // Nur die nehmen, die noch NICHT in unlockedIndices sind
             let lockedKeys = allPossibleKeys.filter(k => !state.unlockedIndices.includes(k));
             
             while (state.unlockedIndices.length < unlockedCount && lockedKeys.length > 0) {
@@ -420,7 +480,6 @@ function getMinecraftStatus() {
                 const pickedKey = lockedKeys.splice(randIdx, 1)[0];
                 state.unlockedIndices.push(pickedKey);
             }
-            // State speichern, damit die Auswahl permanent bleibt
             saveState();
         }
     }
@@ -438,12 +497,13 @@ function updateSubjectUI() {
     if (!currentSubjectData) return;
 
     // Minecraft Modus global umschalten
-    document.body.classList.toggle('minecraft-mode', currentSubject === 'minecraft');
+    document.body.classList.toggle('minecraft-mode', currentSubject === MC_KEY);
 
     // Titel aktualisieren
     // Entferne (8G) oder (6R) aus dem Namen, falls vorhanden, und füge nur das Label hinzu
     const cleanName = currentSubjectData.name.replace(/\s*\(\d+[a-zA-Z]\)/, '');
-    const gradeLabel = state.grade === '6r' ? '6R' : state.grade === '8g' ? '8G' : 'AW';
+    const gradeLabels = { '6r': '6R', '7r': '7R', '8g': '8G', '9g': '9G', 'aw': 'AW' };
+    const gradeLabel = gradeLabels[state.grade] || state.grade.toUpperCase();
     document.getElementById('app-title').textContent = `🎓 ${cleanName} ${gradeLabel} Master`;
     
     // Browser-Tab-Titel aktualisieren
@@ -476,14 +536,16 @@ function renderSubjectSelector() {
     
     container.innerHTML = '';
     Object.entries(subjectRegistry).forEach(([key, subject]) => {
-        if (subject.grade !== state.grade) return;
+        const isMC = key === MC_KEY;
+        const isAW = subject.grade === 'aw';
+        const isCrossGrade = (isMC && isRealschule(state.grade)) || isAW;
+        if (subject.grade !== state.grade && !isCrossGrade) return;
         
         const status = getMinecraftStatus();
-        const isLocked = key === 'minecraft' && !status.unlocked;
+        const isLocked = isMC && !status.unlocked;
         
         const btn = document.createElement('button');
-        // Minecraft Button bekommt immer das Block-Design
-        btn.className = key === 'minecraft' ? 'subject-btn minecraft-btn-style' : 'subject-btn';
+        btn.className = isMC ? 'subject-btn minecraft-btn-style' : 'subject-btn';
         
         if (isLocked) {
             btn.style.opacity = '0.5';
@@ -498,7 +560,7 @@ function renderSubjectSelector() {
         btn.dataset.subject = key;
         if (key === currentSubject) {
             btn.classList.add('active');
-            if (key !== 'minecraft') btn.style.backgroundColor = subject.color;
+            if (!isMC) btn.style.backgroundColor = subject.color;
             btn.style.color = 'white';
         }
 
@@ -600,7 +662,7 @@ function renderDashboard() {
 
     // Berechnung der freigeschalteten Fragen pro Kategorie für Minecraft
     let unlockedPerCategory = {};
-    if (currentSubject === 'minecraft' && state.unlockedIndices) {
+    if (currentSubject === MC_KEY && state.unlockedIndices) {
         state.unlockedIndices.forEach(id => {
             const [cat] = id.split(':');
             unlockedPerCategory[cat] = (unlockedPerCategory[cat] || 0) + 1;
@@ -608,7 +670,7 @@ function renderDashboard() {
     }
 
     // Minecraft Fortschritt oben anzeigen
-    if (currentSubject === 'minecraft') {
+    if (currentSubject === MC_KEY) {
         const status = getMinecraftStatus();
         const progressCard = document.createElement('div');
         progressCard.style.cssText = "grid-column: 1 / -1; background: var(--card-bg); padding: 20px; border-radius: 12px; margin-bottom: 10px; border: 2px solid #4e7d1d; text-align: center;";
@@ -718,7 +780,7 @@ function renderDashboard() {
         }
         
         const unlockedInThisCat = unlockedPerCategory[key] || 0;
-        const isCategoryLocked = currentSubject === 'minecraft' && (unlockedInThisCat || 0) === 0;
+        const isCategoryLocked = currentSubject === MC_KEY && (unlockedInThisCat || 0) === 0;
 
         const card = document.createElement('div');
         card.className = 'tense-card';
@@ -730,7 +792,7 @@ function renderDashboard() {
         card.style.borderLeft = `4px solid ${category.color}`;
 
         let unlockedDisplay = "";
-        if (currentSubject === 'minecraft') {
+        if (currentSubject === MC_KEY) {
             const catQuestionCount = (currentSubjectData.questionCounts && currentSubjectData.questionCounts[key]) ? currentSubjectData.questionCounts[key] : 0;
             unlockedDisplay = `<div style="font-size: 0.85em; margin-bottom: 8px; font-weight: bold; color: ${isCategoryLocked ? 'var(--text-color)' : 'var(--success)'}">
                 ${isCategoryLocked ? '🔒 Noch gesperrt' : `🔓 Freigeschaltet: ${unlockedInThisCat} / ${catQuestionCount}`}
@@ -756,7 +818,6 @@ function renderDashboard() {
                 <div class="tense-badge ${badgeClass}">${badgeText}</div>
             </div>
         `;
-        card.onclick = () => startCategorySession(key);
         card.onclick = () => {
             if (isCategoryLocked) {
                 alert("Lerne erst in anderen Fächern weiter, um Fragen in dieser Minecraft-Kategorie freizuschalten!");
@@ -877,7 +938,7 @@ function nextQuestion() {
     }
 
     // MINECRAFT SPEZIAL: Pool auf freigeschaltete Fragen begrenzen
-    if (currentSubject === 'minecraft') {
+    if (currentSubject === MC_KEY) {
         const status = getMinecraftStatus();
         
         // Nutze die im State gespeicherten zufälligen IDs

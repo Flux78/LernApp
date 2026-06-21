@@ -1,0 +1,16 @@
+window.__subjectData_math_7r_geometrie = [
+    { question: "Wie viele Grad hat ein Dreieck insgesamt?", answers: ["90°", "180°", "270°", "360°"], correct: 1, hint: "Winkelsumme im Dreieck", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist die Kreiszahl Pi ungefähr?", answers: ["2,14", "3,14", "4,14", "3,41"], correct: 1, hint: "π ≈ ...", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Wie berechnet man den Umfang eines Kreises?", answers: ["U = π × r", "U = 2 × π × r", "U = π × r²", "U = 2 × r"], correct: 1, hint: "Durchmesser × π", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Winkelart ist 90°?", answers: ["Spitzer Winkel", "Rechter Winkel", "Stumpfer Winkel", "Gestreckter Winkel"], correct: 1, hint: "Wie eine Ecke eines Quadrats", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist ein gleichschenkliges Dreieck?", answers: ["Alle Seiten gleich lang", "Zwei Seiten gleich lang", "Ein rechter Winkel", "Alle Winkel 60°"], correct: 1, hint: "Schenkel = zwei gleiche Seiten", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Wie berechnet man die Fläche eines Dreiecks?", answers: ["A = a × b", "A = 0,5 × g × h", "A = g × h", "A = a × a"], correct: 1, hint: "Grundseite × Höhe durch 2", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Wie viel Grad hat ein gestreckter Winkel?", answers: ["90°", "180°", "270°", "360°"], correct: 1, hint: "Eine gerade Linie", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Berechne: Fläche eines Kreises mit Radius 5 cm.", answers: ["25π cm²", "10π cm²", "5π cm²", "20π cm²"], correct: 0, hint: "A = π × r²", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist die Winkelsumme im Viereck?", answers: ["180°", "270°", "360°", "540°"], correct: 2, hint: "Zwei Dreiecke ergeben ein Viereck", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Dreieck hat einen Winkel von 90°?", answers: ["Gleichseitiges Dreieck", "Rechtwinkliges Dreieck", "Gleichschenkliges Dreieck", "Spitzwinkliges Dreieck"], correct: 1, hint: "Ein Winkel ist genau 90°", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Wie viele Symmetrieachsen hat ein Quadrat?", answers: ["2", "3", "4", "unendlich"], correct: 2, hint: "Diagonale und Mittelachsen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Berechne: Fläche eines Rechtecks mit Länge 8 cm und Breite 5 cm.", answers: ["13 cm²", "26 cm²", "40 cm²", "45 cm²"], correct: 2, hint: "A = l × b", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was sind Nebenwinkel?", answers: ["Winkel, die sich zu 90° ergänzen", "Winkel, die sich zu 180° ergänzen", "Gleich große Winkel", "Winkel über 180°"], correct: 1, hint: "Sie liegen nebeneinander auf einer Geraden", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Ein Dreieck hat die Winkel 50° und 70°. Wie groß ist der dritte Winkel?", answers: ["50°", "60°", "70°", "80°"], correct: 1, hint: "180° - 50° - 70°", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+];

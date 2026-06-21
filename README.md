@@ -1,6 +1,6 @@
 # 🎓 Multi-Subject Master
 
-Eine adaptive Lern-Anwendung für Schüler in Bayern, speziell entwickelt für die **6. Klasse Realschule** und die **8. Klasse Gymnasium**.
+Eine adaptive Lern-Anwendung für Schüler in Bayern, speziell entwickelt für die **6./7. Klasse Realschule** und die **8./9. Klasse Gymnasium**.
 
 ## 🚀 Live Demo
 **[App jetzt im Browser öffnen](https://flux78.github.io/LernApp/)**  
@@ -15,8 +15,10 @@ Eine adaptive Lern-Anwendung für Schüler in Bayern, speziell entwickelt für d
 
 ## 📂 Fächerübersicht
 - **6. Klasse Realschule:** Englisch, Mathematik, Deutsch, Geschichte, Geographie.
+- **7. Klasse Realschule:** Englisch, Mathematik, Deutsch, Geschichte, Geographie, Physik, Biologie.
 - **8. Klasse Gymnasium:** Physik, Englisch, Mathematik, Biologie, Latein.
-- **Bonus:** Umfangreiches Allgemeinwissen-Quiz.
+- **9. Klasse Gymnasium:** Englisch, Mathematik, Deutsch, Physik, Biologie, Chemie, Geschichte, Geographie, Latein.
+- **Bonus:** Umfangreiches Allgemeinwissen-Quiz (alle Stufen).
 
 ## 🛠️ Technik
 Die Anwendung ist eine reine **Single-Page-Application (SPA)**:

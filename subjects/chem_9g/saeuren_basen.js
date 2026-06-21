@@ -1,0 +1,16 @@
+window.__subjectData_chem_9g_saeuren_basen = [
+    { question: "Welchen pH-Wert hat eine Säure?", answers: ["pH > 7", "pH < 7", "pH = 7", "pH = 0"], correct: 1, hint: "Sauer, z.B. Zitronensaft", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was entsteht bei einer Neutralisation?", answers: ["Salz und Wasser", "Nur Wasser", "Nur Salz", "Kohlendioxid"], correct: 0, hint: "Säure + Base = ...", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welchen pH-Wert hat eine Base (Lauge)?", answers: ["pH < 7", "pH > 7", "pH = 7", "pH = 0"], correct: 1, hint: "Alkalisch, z.B. Seifenlösung", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist ein Indikator?", answers: ["Ein Stoff, der den pH-Wert durch Farbänderung anzeigt", "Eine Säure", "Ein Salz", "Eine Base"], correct: 0, hint: "Lackmus, Phenolphthalein", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welcher pH-Wert ist neutral?", answers: ["pH 7", "pH 0", "pH 14", "pH 1"], correct: 0, hint: "Reines Wasser", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist eine starke Säure?", answers: ["Eine Säure, die vollständig dissoziiert", "Eine Säure mit hohem pH", "Eine ungefährliche Säure", "Eine farblose Säure"], correct: 0, hint: "z.B. HCl, H₂SO₄", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist eine schwache Säure?", answers: ["Eine Säure, die nur teilweise dissoziiert", "Eine Säure mit niedrigem pH", "Eine giftige Säure", "Eine Base"], correct: 0, hint: "z.B. Essigsäure", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Ionen entstehen bei der Dissoziation von HCl?", answers: ["H⁺ und Cl⁻", "H₂ und Cl", "HCl bleibt ganz", "OH⁻ und Cl"], correct: 0, hint: "Salzsäure", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist der pOH-Wert?", answers: ["Maß für die Hydroxidionen-Konzentration", "pH-Wert von Basen", "Säurestärke", "Ein Indikator"], correct: 0, hint: "pH + pOH = 14", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was versteht man unter 'Titration'?", answers: ["Bestimmung der Konzentration einer Lösung durch Neutralisation", "Herstellung einer Säure", "Verdünnung einer Base", "Färbung einer Lösung"], correct: 0, hint: "Äquivalenzpunkt", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Base ist in Natronlauge enthalten?", answers: ["NaOH (Natriumhydroxid)", "KOH", "Ca(OH)₂", "NH₃"], correct: 0, hint: "Starke Base", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist 'Puffern'?", answers: ["Eine Lösung hält den pH-Wert weitgehend konstant", "Eine Säure wird neutralisiert", "Eine Base wird neutralisiert", "pH-Wert steigt linear"], correct: 0, hint: "Pufferlösungen", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Wie reagiert Ammoniak (NH₃) in Wasser?", answers: ["Basisch (OH⁻-Ionen entstehen)", "Sauer (H⁺-Ionen entstehen)", "Neutral", "Es reagiert nicht"], correct: 0, hint: "Schwache Base", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welcher Stoff ist ein Beispiel für eine schwache Base?", answers: ["Ammoniak (NH₃)", "NaOH", "KOH", "HCl"], correct: 0, hint: "Teilweise Dissoziation", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+];

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lernapp-v3'; // Neue Version fuer ES-Modul-Struktur
+const CACHE_NAME = 'lernapp-v4'; // 7r + 9g hinzugefuegt
 
 // Kern-Assets, die immer gecacht werden
 const CORE_ASSETS = [

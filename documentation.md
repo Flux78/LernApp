@@ -1,7 +1,7 @@
 # Dokumentation: Multi-Subject Master
 
 ## 1. Anwendungsbeschreibung
-Der **Multi-Subject Master** ist eine adaptive Lern-Anwendung, die speziell für Schüler in Bayern (6. Klasse Realschule und 8. Klasse Gymnasium) entwickelt wurde. Die App ermöglicht das Üben von Lehrplaninhalten durch ein interaktives Quiz-System.
+Der **Multi-Subject Master** ist eine adaptive Lern-Anwendung, die speziell für Schüler in Bayern (6./7. Klasse Realschule und 8./9. Klasse Gymnasium) entwickelt wurde. Die App ermöglicht das Üben von Lehrplaninhalten durch ein interaktives Quiz-System.
 
 Kernaspekte der Anwendung sind:
 - **Adaptivität:** Ein "Smart Mode" passt die Fragenhäufigkeit an den Lernerfolg des Nutzers an.
@@ -20,7 +20,7 @@ Die Anwendung folgt einem modularen **Single-Page-Application (SPA)** Ansatz, de
 - **Speicherschicht:** Nutzung der Web Storage API (`localStorage`) zur Persistierung des Nutzerfortschritts.
 
 ### Dateistruktur der Fach-Module
-Jedes Fachverzeichnis (z. B. `subjects/english_6r/`) folgt einer strikten Struktur:
+Jedes Fachverzeichnis (z. B. `subjects/eng_6r/`) folgt einer strikten Struktur (Kurzform = Key = Path):
 
 | Datei | Beschreibung | Rolle in der Logik |
 | :--- | :--- | :--- |
@@ -133,7 +133,7 @@ flowchart TD
     node scripts/validate_counts.js ./subjects/english_6r
     ```
 
-- **Multi-Grade-Support:** Trennung der Logik und UI-Filter für Realschule (6r) und Gymnasium (8g).
+- **Multi-Grade-Support:** Trennung der Logik und UI-Filter für Realschule (6r, 7r) und Gymnasium (8g, 9g).
 - **Textaufgaben-Mastery:** Ein dediziertes System zur Förderung der Lesekompetenz in MINT-Fächern. Es nutzt spezialisierte Sub-Modi:
     - *Text Surgeon:* Filtert "Rauschen" (irrelevante Story-Infos) aus Aufgaben.
     - *Question Hunter:* Trainiert das Erkennen der Zielsetzung.

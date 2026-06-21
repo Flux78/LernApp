@@ -1,0 +1,16 @@
+window.__subjectData_de_9g_literaturgeschichte = [
+    { question: "Welche Literaturepoche war vor 1900?", answers: ["Expressionismus", "Realismus", "Nachkriegsliteratur", "Gegenwart"], correct: 1, hint: "19. Jahrhundert", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Wer schrieb 'Die Leiden des jungen Werthers'?", answers: ["Schiller", "Goethe", "Lessing", "Kleist"], correct: 1, hint: "Sturm und Drang", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Epoche folgte auf die Aufklärung?", answers: ["Barock", "Sturm und Drang", "Romantik", "Realismus"], correct: 1, hint: "1770-1785", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was kennzeichnet die Romantik?", answers: ["Vernunft und Logik", "Gefühl, Natur, Sehnsucht", "Realismus", "Sachlichkeit"], correct: 1, hint: "Blaue Blume", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welcher Autor gehört zur Weimarer Klassik?", answers: ["Kafka", "Goethe", "Brecht", "Böll"], correct: 1, hint: "1786-1805", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist typisch für den Expressionismus?", answers: ["Naturlyrik", "Subjektiver Ausdruck, Verzerrung, Großstadt", "Sachlichkeit", "Idyllische Landschaften"], correct: 1, hint: "1910-1920, 'Weltende'", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Wer schrieb 'Das Parfum'?", answers: ["Grass", "Süskind", "Mann", "Hesse"], correct: 1, hint: "Postmoderne, 1985", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was kennzeichnet die Literatur der Nachkriegszeit?", answers: ["Trümmerliteratur, Kahlschlag, kurze Sätze", "Blühende Fantasie", "Lange Romane", "Nur Lyrik"], correct: 0, hint: "1945-1960", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Epoche betont die 'Nachahmung der Wirklichkeit'?", answers: ["Romantik", "Realismus", "Expressionismus", "Barock"], correct: 1, hint: "1850-1890", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was war ein zentrales Thema der Aufklärung?", answers: ["Gefühl und Leidenschaft", "Vernunft und Menschenrechte", "Natur und Mystik", "Krieg und Zerstörung"], correct: 1, hint: "Kant: 'Habe Mut, dich deines Verstandes zu bedienen'", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welcher Autor schrieb 'Der Process'?", answers: ["Thomas Mann", "Franz Kafka", "Bertolt Brecht", "Heinrich Böll"], correct: 1, hint: "Expressionismus/Moderne", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was versteht man unter 'Moderne' (ca. 1900)?", answers: ["Bruch mit Traditionen, neue Erzähltechniken", "Fortsetzung des Realismus", "Nur Gedichte", "Volksliteratur"], correct: 0, hint: "Bewusstseinsstrom, Montage", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Gattung stand im Barock im Mittelpunkt?", answers: ["Roman", "Lyrik (Sonett)", "Drama", "Kurzgeschichte"], correct: 1, hint: "Carpe Diem, Vanitas", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Nenne ein Werk von Friedrich Schiller:", answers: ["Kabale und Liebe", "Der Steppenwolf", "Der Process", "Das Parfum"], correct: 0, hint: "Klassik", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+];

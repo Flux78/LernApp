@@ -1,0 +1,16 @@
+window.__subjectData_math_9g_trigonometrie = [
+    { question: "Was ist sin(30°)?", answers: ["0", "0,5", "1", "0,707"], correct: 1, hint: "Die Hälfte", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Mit welcher Formel berechnet man die Gegenkathete?", answers: ["G = H × sin(α)", "G = H × cos(α)", "G = A × tan(α)", "G = H / sin(α)"], correct: 0, hint: "sin = G/H", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist cos(60°)?", answers: ["0", "0,5", "1", "0,866"], correct: 1, hint: "sin(30°) = cos(60°)", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welches Verhältnis beschreibt der Tangens?", answers: ["G/A (Gegenkathete/Ankathete)", "G/H", "A/H", "H/G"], correct: 0, hint: "tan = sin/cos", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "In einem rechtwinkligen Dreieck ist die Hypotenuse 10 cm, die Gegenkathete 6 cm. Berechne sin(α).", answers: ["0,6", "0,8", "1,0", "0,4"], correct: 0, hint: "sin = G/H = 6/10", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist tan(45°)?", answers: ["0", "0,5", "1", "√2"], correct: 2, hint: "Gegenkathete = Ankathete", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Wie lautet der Satz des Pythagoras?", answers: ["a² + b² = c²", "a + b = c", "a² = b² + c²", "a² - b² = c²"], correct: 0, hint: "Im rechtwinkligen Dreieck", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Berechne sin(90°)", answers: ["0", "0,5", "1", "Nicht definiert"], correct: 2, hint: "Gegenkathete = Hypotenuse", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welcher Winkel hat cos(α) = 0?", answers: ["0°", "45°", "90°", "180°"], correct: 2, hint: "Ankathete = 0", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "In einem rechtwinkligen Dreieck ist die Ankathete 8 und die Hypotenuse 17. Berechne cos(α).", answers: ["8/17", "15/17", "8/15", "17/8"], correct: 0, hint: "cos = A/H", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist die Höhe eines gleichseitigen Dreiecks mit Seitenlänge 10?", answers: ["5√3", "10", "5", "√10"], correct: 0, hint: "Höhe teilt Dreieck in zwei 30-60-90", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Welche Winkelfunktion verwendet man, um einen Winkel aus Gegenkathete und Ankathete zu berechnen?", answers: ["sin⁻¹", "cos⁻¹", "tan⁻¹", "cot⁻¹"], correct: 2, hint: "G/A", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was ist der Sinussatz?", answers: ["a/sin(α) = b/sin(β) = c/sin(γ)", "a = b × sin(α)", "a² = b² + c² - 2bc × cos(α)", "sin(α) = cos(90°-α)"], correct: 0, hint: "Verhältnisse in beliebigen Dreiecken", stats: { correct: 0, total: 0, difficulty: 1.0 } },
+    { question: "Was beschreibt der Kosinussatz?", answers: ["a² = b² + c² - 2bc × cos(α)", "a/sin(α) = b/sin(β)", "a = b × cos(α)", "cos(α) = A/H"], correct: 0, hint: "Verallgemeinerter Pythagoras", stats: { correct: 0, total: 0, difficulty: 1.0 } }
+];
